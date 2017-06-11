@@ -1,0 +1,56 @@
+{% extends 'base/base.html' %}
+
+{% block bodyheader %}
+    <div class="col-lg-12">
+        <h1 class="page-header">식당 정보 보기</h1>
+    </div>
+{% endblock %}<!-- bodyheader end -->
+
+{% block bodycontent %}
+    <div style="align-content: center;">
+        {% if store %}
+            <table class="table table-bordered" id="restaurant_info_table">
+                <colgroup>
+                    <col width="40%">
+                    <col width="60%">
+                </colgroup>
+                <thead>
+                    <th><img src="http://placehold.it/320x150" width=""></th>
+                    <th>
+                        <div><a href="/searchrestaurant?storeid={{ store.storeId }}"><label class="lead">{{ store.storeName }}</label></a></div>
+                        <div>전화번호 : {{ store.callNumber }}</div>
+                        <div>검색횟수 : {{ store.searchCount }}</div>
+                        <div>식당평점 : {{ store.rate }}</div>
+                    </th>
+                </thead>
+            </table>
+            <table class="table table-bordered" style="text-align: center;">
+                <colgroup>
+                    <col width="33%">
+                    <col width="33%">
+                    <col width="33%">
+                </colgroup>
+                <tbody>
+                    <tr>
+                         {% for menu in menulist %}
+                            <td>
+                                <div><img src="{{ menu.imgurl }}"/></div>
+                                <div><label>{{ menu.name }}</label></div>
+                                <div>{{ menu.price }}</div>
+                                <input type="hidden" name="menu_number" value="{{ menu.number }}">
+                            </td>
+                             {% if forloop.counter|divisibleby:"3" %}
+                                 </tr><tr>
+                             {% endif %}
+                         {% endfor %}
+
+                    </tr>
+                </tbody>
+            </table>
+        {% else %}
+
+        {% endif %}
+
+    </div>
+{% endblock %}
+

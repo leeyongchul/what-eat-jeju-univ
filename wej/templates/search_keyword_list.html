@@ -1,0 +1,22 @@
+{% extends 'base/base.html' %}
+
+{% block bodyheader %}
+    <div class="col-lg-12">
+        <h1 class="page-header">추천키워드</h1>
+    </div>
+{% endblock %}<!-- bodyheader end -->
+
+{% block bodycontent %}
+    <div style="align-content: center;">
+        <table id="keyword_table" class="col-md-12" style="text-align: center;">
+            <tbody>
+                {% for keyword in keywordList %}
+                    <tr>
+                        <td><a href="#" onclick="javascript:searchKeyword('{{ keyword }}');return false;"><h3>{{ keyword }}</h3></a></td>
+                    </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+    </div>
+{% endblock %}
+

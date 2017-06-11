@@ -19,5 +19,8 @@ from wej import views
 
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
-    url(r'', views.my_view, name="main"),
+    url(r'^$', views.searchkeywordlist, name="search_keyword_list"),
+    url(r'^searchkeyword/$', views.searchkeyword, name="search_keyword"),
+    url(r'^bestrestaurant/$', views.bestrestaurant, name="best_restaurant"),
+    url(r'^searchrestaurant/$', views.searchrestaurant, name="search_restaurant"),
 ]

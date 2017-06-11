@@ -1,0 +1,35 @@
+{% extends 'base/base.html' %}
+
+{% block bodyheader %}
+    <div class="col-lg-12">
+        <h1 class="page-header">추천식당</h1>
+    </div>
+{% endblock %}<!-- bodyheader end -->
+
+{% block bodycontent %}
+    <div style="align-content: center;">
+        <table class="table" id="best_restaurants_table">
+            <colgroup>
+                <col width="45%"/>
+                <col width="55%"/>
+            </colgroup>
+            <thead>
+            </thead>
+            <tbody>
+                {% for store in storeList %}
+                    <tr>
+                        <td><img src="http://placehold.it/320x150" width=""></td>
+                        <td>
+                            <div><a href="/searchrestaurant?storeid={{ store.storeId }}"><label>{{ store.storeName }}</label></a></div>
+                            <div>전화번호 : {{ store.callNumber }}</div>
+                            <div>검색횟수 : {{ store.searchCount }}</div>
+                            <div>식당평점 : {{ store.rate }}</div>
+                        </td>
+                    </tr>
+                {% endfor %}
+                <tr></tr>
+            </tbody>
+        </table>
+    </div>
+{% endblock %}
+
