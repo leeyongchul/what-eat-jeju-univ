@@ -2,7 +2,7 @@
 from django.template.context import RequestContext
 from django.views.generic import TemplateView
 from django.http import HttpResponse
-from django.shortcuts import render, render_to_response
+from django.shortcuts import render, render_to_response,redirect
 from wej.models import User
 
 import json
@@ -123,3 +123,11 @@ def logout(request):
         request.session['user_id'] = ''
 
         return HttpResponse(status=200)
+
+def addDatabasePageView(request):
+
+    if request.method == 'GET':
+        if request.session['user_id'] and request.session['user_id'] == 'admin':
+            return render(request, 'add_database.html', {})
+        else:
+            return redirect('/')

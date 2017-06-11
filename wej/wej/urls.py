@@ -27,4 +27,5 @@ urlpatterns = [
     url(r'^login/$', views.login, name="login"),
     url(r'^signup/$', views.signup, name="signup"),
     url(r'^logout/$', views.logout, name="logout"),
+    url(r'^adddatabaseview/$', views.addDatabasePageView, name="add_database_view"),
 ]

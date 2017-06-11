@@ -58,8 +58,7 @@ function userLogin( id, pw ) {
         data : { 'id' : id, 'pw' : pw, 'csrfmiddlewaretoken':$('input[name=csrfmiddlewaretoken]').val() },
         success : function() {
             alert( "로그인 되었습니다." );
-            $('#login_modal').modal('hide');
-            document.location.reload();
+            window.location.assign('/');
         },error : function () {
             alert( "아이디와 비밀번호를 확인해주세요." );
         }
@@ -92,7 +91,7 @@ function logout() {
         type : 'get',
         success : function () {
             alert('로그아웃 되었습니다.');
-            document.location.reload();
+            window.location.assign('/');
         }
     });
 }

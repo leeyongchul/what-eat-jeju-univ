@@ -95,6 +95,11 @@
                         <li>
                             <a href="/bestrestaurant"><i class="fa fa-table fa-fw"></i> 추천식당</a>
                         </li>
+                        {% if request.session.user_id and request.session.user_id == 'admin'%}
+                            <li>
+                                <a href="/adddatabaseview"><i class="fa fa-table fa-fw"></i> 관리자 페이지</a>
+                            </li>
+                        {% endif %}
                     </ul>
                 </div>
                 <!-- /.sidebar-collapse -->
