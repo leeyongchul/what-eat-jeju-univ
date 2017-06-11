@@ -23,4 +23,8 @@ urlpatterns = [
     url(r'^searchkeyword/$', views.searchkeyword, name="search_keyword"),
     url(r'^bestrestaurant/$', views.bestrestaurant, name="best_restaurant"),
     url(r'^searchrestaurant/$', views.searchrestaurant, name="search_restaurant"),
+    url(r'^ratestore/$', views.ratestore, name="search_restaurant"),
+    url(r'^login/$', views.login, name="login"),
+    url(r'^signup/$', views.signup, name="signup"),
+    url(r'^logout/$', views.logout, name="logout"),
 ]

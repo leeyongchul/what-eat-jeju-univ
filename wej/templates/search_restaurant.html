@@ -37,7 +37,7 @@
                                 <div><img src="{{ menu.imgurl }}"/></div>
                                 <div><label>{{ menu.name }}</label></div>
                                 <div>{{ menu.price }}</div>
-                                <input type="hidden" name="menu_number" value="{{ menu.number }}">
+                                <div><input type="button" class="btn btn-primary" value="평점보기" onclick="javascript:rateStoreView('{{ store.storeId }}','{{ menu.number }}');"></div>
                             </td>
                              {% if forloop.counter|divisibleby:"3" %}
                                  </tr><tr>
@@ -54,3 +54,7 @@
     </div>
 {% endblock %}
 
+{% block appendBlock %}
+    {% load staticfiles %}
+    <script type="text/javascript" src="{% static "js/search_restaurant.js" %}"></script>
+{% endblock %}

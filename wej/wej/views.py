@@ -3,6 +3,7 @@ from django.template.context import RequestContext
 from django.views.generic import TemplateView
 from django.http import HttpResponse
 from django.shortcuts import render, render_to_response
+from wej.models import User
 
 import json
 
@@ -68,3 +69,57 @@ def searchrestaurant(request):
         ]
 
         return render(request, 'search_restaurant.html', responseData)
+
+def ratestore(request):
+    if request.method == 'GET':
+        storeId = request.GET.get('store_id', '')
+        menuId = request.GET.get('store_id', '')
+
+        responseData = {}
+
+
+        return HttpResponse(json.loads(responseData), content_type="application/json")
+
+    if request.method == 'POST':
+        storeId = request.GET.get('store_id', '')
+        menuId = request.GET.get('menu_id', '')
+
+        responseData = {}
+
+        return  HttpResponse(json.loads(responseData), content_type="application/json")
+
+def login(request):
+
+    if request.method == 'POST':
+        id = request.POST.get('id','')
+        pw = request.POST.get('pw','')
+
+        user = User.objects.get(id=id)
+
+        if user.password == pw:
+            request.session['user_id'] = user.id
+            return HttpResponse(status=200)
+        else:
+            return HttpResponse(status=404)
+
+def signup(request):
+
+    if request.method == 'POST':
+        id = request.POST.get('id','')
+        pw = request.POST.get('pw','')
+
+        User.objects.create(id=id, password=pw)
+        user = User.objects.get(id=id)
+
+        if user:
+            request.session['user_id'] = user.id
+            return HttpResponse(status=200)
+        else:
+            return HttpResponse(status=404)
+
+def logout(request):
+
+    if request.method == 'GET':
+        request.session['user_id'] = ''
+
+        return HttpResponse(status=200)

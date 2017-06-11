@@ -54,15 +54,15 @@
             <ul class="nav navbar-top-links navbar-right">
                 <li class="dropdown">
                     <a class="dropdown-toggle" data-toggle="dropdown" href="#">
-                        <i class="fa fa-user fa-fw"></i> <i class="fa fa-caret-down"></i>
+                        <i class="fa fa-user fa-fw"></i> {% if request.session.user_id %}{{ request.session.user_id }}{% endif %} <i class="fa fa-caret-down"> </i>
                     </a>
                     <ul class="dropdown-menu dropdown-user">
-                        <li><a href="#"><i class="fa fa-user fa-fw"></i> User Profile</a>
-                        </li>
-                        <li><a href="#"><i class="fa fa-gear fa-fw"></i> Settings</a>
-                        </li>
-                        <li class="divider"></li>
-                        <li><a href="login.html"><i class="fa fa-sign-out fa-fw"></i> Logout</a>
+                        {% if not request.session.user_id %}
+                            <li><a href="#" onclick="javascript:loginModalView();return false;"><i class="fa fa-sign-in fa-fw"></i> login</a>
+                            <li><a href="#" onclick="javascript:signupModalView();return false;"><i class="fa fa-sign-in fa-fw"></i> sign up</a>
+                        {% else %}
+                            <li><a href="#" onclick="javascript:logout();return false;"><i class="fa fa-sign-out fa-fw"></i> logout</a>
+                        {% endif %}
                         </li>
                     </ul>
                     <!-- /.dropdown-user -->
@@ -120,6 +120,66 @@
             <!-- /.row -->
         </div>
         <!-- /#page-wrapper -->
+        <!-- Modal -->
+        <div class="modal fade" id="login_modal" role="dialog"><!-- login Modal -->
+            <div class="modal-dialog">
+                <!-- Modal content-->
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                        <h4 class="modal-title">Login</h4>
+                    </div>
+                    <div class="modal-body">
+                        <form action="/login" method="post" id="login_form">
+                            <div class="form-group">
+                                <label for="user_id" class="form-control-label">ID :</label>
+                                <input type="text" class="form-control" id="user_id" name="user_id">
+                            </div>
+                            <div class="form-group">
+                                <label for="user_pw" class="form-control-label">PW :</label>
+                                <input type="password" class="form-control" id="user_pw" name="user_pw">
+                            </div>
+                        </form>
+                    </div>
+                    <div class="modal-footer">
+                        <input type="button" class="btn btn-default" data-dismiss="modal" value="login" id="login_submit">
+                    </div>
+                </div>
+
+            </div>
+        </div><!-- login Modal end -->
+
+        <div class="modal fade" id="signup_modal" role="dialog"><!-- signup Modal -->
+            <div class="modal-dialog">
+                <!-- Modal content-->
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                        <h4 class="modal-title">SignUp</h4>
+                    </div>
+                    <div class="modal-body">
+                        <form action="/login" method="post" id="login_form">
+                            <div class="form-group">
+                                <label for="user_id" class="form-control-label">ID :</label>
+                                <input type="text" class="form-control" id="signup_id" name="signup_id">
+                            </div>
+                            <div class="form-group">
+                                <label for="user_pw" class="form-control-label">PW :</label>
+                                <input type="password" class="form-control" id="signup_pw" name="signup_pw">
+                            </div>
+                            <div class="form-group">
+                                <label for="user_pw" class="form-control-label">PW Check:</label>
+                                <input type="password" class="form-control" id="signup_pw_check" name="signup_pw_check">
+                            </div>
+                        </form>
+                    </div>
+                    <div class="modal-footer">
+                        <input type="button" class="btn btn-default" data-dismiss="modal" value="SignUp" id="sign_submit">
+                    </div>
+                </div>
+
+            </div>
+        </div><!-- signup Modal end -->
 
     </div>
     <!-- /#wrapper -->
@@ -141,6 +201,8 @@
     <script src="{% static "bootstrap/js/sb-admin-2.js" %}"></script>
 
     <script src="{% static "js/base.js" %}"></script>
+    {% block appendBlock %}
+    {% endblock %}
 </body>
 
 </html>
