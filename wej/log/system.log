@@ -1,0 +1,384 @@
+(0.001) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+(0.001) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+(0.001) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."session_key" = 'bul4h97f1s9i0az0q16eyqbst3v8ap4c' AND "django_session"."expire_date" > '2017-06-12 11:16:10.607284'); args=('bul4h97f1s9i0az0q16eyqbst3v8ap4c', '2017-06-12 11:16:10.607284')
+(0.001) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+(0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+(0.003) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+(0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+(0.002) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+(0.002) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+(0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+(0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+(0.001) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+(0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+(0.001) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+(0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+(0.001) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."expire_date" > '2017-06-12 11:19:35.694675' AND "django_session"."session_key" = 'bul4h97f1s9i0az0q16eyqbst3v8ap4c'); args=('2017-06-12 11:19:35.694675', 'bul4h97f1s9i0az0q16eyqbst3v8ap4c')
+(0.002) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+(0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+(0.001) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."session_key" = 'bul4h97f1s9i0az0q16eyqbst3v8ap4c' AND "django_session"."expire_date" > '2017-06-12 11:21:38.623597'); args=('bul4h97f1s9i0az0q16eyqbst3v8ap4c', '2017-06-12 11:21:38.623597')
+(0.010) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."session_key" = 'bul4h97f1s9i0az0q16eyqbst3v8ap4c' AND "django_session"."expire_date" > '2017-06-12 11:26:14.725030'); args=('bul4h97f1s9i0az0q16eyqbst3v8ap4c', '2017-06-12 11:26:14.725030')
+(0.002) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."session_key" = 'bul4h97f1s9i0az0q16eyqbst3v8ap4c' AND "django_session"."expire_date" > '2017-06-12 11:26:14.912103'); args=('bul4h97f1s9i0az0q16eyqbst3v8ap4c', '2017-06-12 11:26:14.912103')
+(0.001) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."session_key" = 'bul4h97f1s9i0az0q16eyqbst3v8ap4c' AND "django_session"."expire_date" > '2017-06-12 11:26:20.905502'); args=('bul4h97f1s9i0az0q16eyqbst3v8ap4c', '2017-06-12 11:26:20.905502')
+(0.001) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+(0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+(0.002) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+(0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+(0.001) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+(0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+(0.001) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+(0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+(0.001) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+(0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+(0.001) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+(0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+(0.001) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+(0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+(0.001) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+(0.001) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+(0.001) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+(0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+(0.001) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+(0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+(0.001) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."session_key" = 'bul4h97f1s9i0az0q16eyqbst3v8ap4c' AND "django_session"."expire_date" > '2017-06-12 11:28:47.615591'); args=('bul4h97f1s9i0az0q16eyqbst3v8ap4c', '2017-06-12 11:28:47.615591')
+(0.001) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."session_key" = 'bul4h97f1s9i0az0q16eyqbst3v8ap4c' AND "django_session"."expire_date" > '2017-06-12 11:28:47.756400'); args=('bul4h97f1s9i0az0q16eyqbst3v8ap4c', '2017-06-12 11:28:47.756400')
+(0.001) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+(0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+(0.001) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+(0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+(0.001) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."session_key" = 'bul4h97f1s9i0az0q16eyqbst3v8ap4c' AND "django_session"."expire_date" > '2017-06-12 11:29:53.177633'); args=('bul4h97f1s9i0az0q16eyqbst3v8ap4c', '2017-06-12 11:29:53.177633')
+(0.001) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."session_key" = 'bul4h97f1s9i0az0q16eyqbst3v8ap4c' AND "django_session"."expire_date" > '2017-06-12 11:29:53.381220'); args=('bul4h97f1s9i0az0q16eyqbst3v8ap4c', '2017-06-12 11:29:53.381220')
+(0.001) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+(0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+(0.000) BEGIN; args=None
+(0.002) INSERT INTO "wej_restaurant" ("name", "callNumber", "viewCount", "restaurantImg", "keyword") VALUES ('그램그램', '070-747-0000', 0, '', '소고기,회식,가족모임,모임,송년회'); args=['그램그램', '070-747-0000', 0, '', '소고기,회식,가족모임,모임,송년회']
+(0.001) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+(0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+(0.000) BEGIN; args=None
+(0.001) INSERT INTO "wej_restaurant" ("name", "callNumber", "viewCount", "restaurantImg", "keyword") VALUES ('중앙떡방아', '064-762-0001', 0, '', '떡,잔치요리,축하기념,생일잔치'); args=['중앙떡방아', '064-762-0001', 0, '', '떡,잔치요리,축하기념,생일잔치']
+(0.001) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."expire_date" > '2017-06-12 11:32:05.134403' AND "django_session"."session_key" = 'bul4h97f1s9i0az0q16eyqbst3v8ap4c'); args=('2017-06-12 11:32:05.134403', 'bul4h97f1s9i0az0q16eyqbst3v8ap4c')
+(0.001) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."expire_date" > '2017-06-12 11:32:05.371553' AND "django_session"."session_key" = 'bul4h97f1s9i0az0q16eyqbst3v8ap4c'); args=('2017-06-12 11:32:05.371553', 'bul4h97f1s9i0az0q16eyqbst3v8ap4c')
+Internal Server Error: /bestrestaurant/
+Traceback (most recent call last):
+  File "/Users/kimsno/Documents/virtualenv/wej/lib/python3.5/site-packages/django/core/handlers/base.py", line 149, in get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/kimsno/Documents/virtualenv/wej/lib/python3.5/site-packages/django/core/handlers/base.py", line 147, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/kimsno/Documents/GitHub/what-eat-jeju-univ/wej/wej/views.py", line 45, in bestrestaurant
+    print( restaurantList )
+  File "/Users/kimsno/Documents/virtualenv/wej/lib/python3.5/site-packages/django/db/models/query.py", line 234, in __repr__
+    data = list(self[:REPR_OUTPUT_SIZE + 1])
+  File "/Users/kimsno/Documents/virtualenv/wej/lib/python3.5/site-packages/django/db/models/query.py", line 258, in __iter__
+    self._fetch_all()
+  File "/Users/kimsno/Documents/virtualenv/wej/lib/python3.5/site-packages/django/db/models/query.py", line 1074, in _fetch_all
+    self._result_cache = list(self.iterator())
+  File "/Users/kimsno/Documents/virtualenv/wej/lib/python3.5/site-packages/django/db/models/query.py", line 52, in __iter__
+    results = compiler.execute_sql()
+  File "/Users/kimsno/Documents/virtualenv/wej/lib/python3.5/site-packages/django/db/models/sql/compiler.py", line 837, in execute_sql
+    sql, params = self.as_sql()
+  File "/Users/kimsno/Documents/virtualenv/wej/lib/python3.5/site-packages/django/db/models/sql/compiler.py", line 382, in as_sql
+    extra_select, order_by, group_by = self.pre_sql_setup()
+  File "/Users/kimsno/Documents/virtualenv/wej/lib/python3.5/site-packages/django/db/models/sql/compiler.py", line 49, in pre_sql_setup
+    order_by = self.get_order_by()
+  File "/Users/kimsno/Documents/virtualenv/wej/lib/python3.5/site-packages/django/db/models/sql/compiler.py", line 295, in get_order_by
+    field, self.query.get_meta(), default_order=asc))
+  File "/Users/kimsno/Documents/virtualenv/wej/lib/python3.5/site-packages/django/db/models/sql/compiler.py", line 566, in find_ordering_name
+    field, targets, alias, joins, path, opts = self._setup_joins(pieces, opts, alias)
+  File "/Users/kimsno/Documents/virtualenv/wej/lib/python3.5/site-packages/django/db/models/sql/compiler.py", line 599, in _setup_joins
+    pieces, opts, alias)
+  File "/Users/kimsno/Documents/virtualenv/wej/lib/python3.5/site-packages/django/db/models/sql/query.py", line 1405, in setup_joins
+    names, opts, allow_many, fail_on_missing=True)
+  File "/Users/kimsno/Documents/virtualenv/wej/lib/python3.5/site-packages/django/db/models/sql/query.py", line 1330, in names_to_path
+    "Choices are: %s" % (name, ", ".join(available)))
+django.core.exceptions.FieldError: Cannot resolve keyword 'pub_date' into field. Choices are: callNumber, id, keyword, name, rate, restaurantImg, restaurantmenu, viewCount
+(0.004) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+(0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+(0.001) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+(0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+(0.001) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+(0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+Internal Server Error: /bestrestaurant/
+Traceback (most recent call last):
+  File "/Users/kimsno/Documents/virtualenv/wej/lib/python3.5/site-packages/django/core/handlers/base.py", line 149, in get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/kimsno/Documents/virtualenv/wej/lib/python3.5/site-packages/django/core/handlers/base.py", line 147, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/kimsno/Documents/GitHub/what-eat-jeju-univ/wej/wej/views.py", line 45, in bestrestaurant
+    if len( restaurantList ) > 10:
+  File "/Users/kimsno/Documents/virtualenv/wej/lib/python3.5/site-packages/django/db/models/query.py", line 240, in __len__
+    self._fetch_all()
+  File "/Users/kimsno/Documents/virtualenv/wej/lib/python3.5/site-packages/django/db/models/query.py", line 1074, in _fetch_all
+    self._result_cache = list(self.iterator())
+  File "/Users/kimsno/Documents/virtualenv/wej/lib/python3.5/site-packages/django/db/models/query.py", line 52, in __iter__
+    results = compiler.execute_sql()
+  File "/Users/kimsno/Documents/virtualenv/wej/lib/python3.5/site-packages/django/db/models/sql/compiler.py", line 837, in execute_sql
+    sql, params = self.as_sql()
+  File "/Users/kimsno/Documents/virtualenv/wej/lib/python3.5/site-packages/django/db/models/sql/compiler.py", line 382, in as_sql
+    extra_select, order_by, group_by = self.pre_sql_setup()
+  File "/Users/kimsno/Documents/virtualenv/wej/lib/python3.5/site-packages/django/db/models/sql/compiler.py", line 49, in pre_sql_setup
+    order_by = self.get_order_by()
+  File "/Users/kimsno/Documents/virtualenv/wej/lib/python3.5/site-packages/django/db/models/sql/compiler.py", line 295, in get_order_by
+    field, self.query.get_meta(), default_order=asc))
+  File "/Users/kimsno/Documents/virtualenv/wej/lib/python3.5/site-packages/django/db/models/sql/compiler.py", line 566, in find_ordering_name
+    field, targets, alias, joins, path, opts = self._setup_joins(pieces, opts, alias)
+  File "/Users/kimsno/Documents/virtualenv/wej/lib/python3.5/site-packages/django/db/models/sql/compiler.py", line 599, in _setup_joins
+    pieces, opts, alias)
+  File "/Users/kimsno/Documents/virtualenv/wej/lib/python3.5/site-packages/django/db/models/sql/query.py", line 1405, in setup_joins
+    names, opts, allow_many, fail_on_missing=True)
+  File "/Users/kimsno/Documents/virtualenv/wej/lib/python3.5/site-packages/django/db/models/sql/query.py", line 1330, in names_to_path
+    "Choices are: %s" % (name, ", ".join(available)))
+django.core.exceptions.FieldError: Cannot resolve keyword 'pub_date' into field. Choices are: callNumber, id, keyword, name, rate, restaurantImg, restaurantmenu, viewCount
+(0.001) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+(0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+(0.001) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+(0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+(0.001) SELECT "wej_restaurant"."id", "wej_restaurant"."name", "wej_restaurant"."callNumber", "wej_restaurant"."viewCount", "wej_restaurant"."restaurantImg", "wej_restaurant"."keyword" FROM "wej_restaurant" ORDER BY "wej_restaurant"."viewCount" ASC; args=()
+Internal Server Error: /bestrestaurant/
+Traceback (most recent call last):
+  File "/Users/kimsno/Documents/virtualenv/wej/lib/python3.5/site-packages/django/core/handlers/base.py", line 149, in get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/kimsno/Documents/virtualenv/wej/lib/python3.5/site-packages/django/core/handlers/base.py", line 147, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/kimsno/Documents/GitHub/what-eat-jeju-univ/wej/wej/views.py", line 57, in bestrestaurant
+    'rate': Rate.objects.filter( restaurantId=restaurant.id ).avg()
+AttributeError: 'QuerySet' object has no attribute 'avg'
+(0.001) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+(0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+(0.001) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+(0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+(0.001) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+(0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+(0.001) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+(0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+(0.001) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+(0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+(0.001) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+(0.001) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+(0.001) SELECT "wej_restaurant"."id", "wej_restaurant"."name", "wej_restaurant"."callNumber", "wej_restaurant"."viewCount", "wej_restaurant"."restaurantImg", "wej_restaurant"."keyword" FROM "wej_restaurant" ORDER BY "wej_restaurant"."viewCount" ASC; args=()
+(0.008) SELECT AVG("wej_rate"."rate") AS "rate__avg" FROM "wej_rate" WHERE "wej_rate"."restaurantId_id" = 1; args=(1,)
+Internal Server Error: /bestrestaurant/
+Traceback (most recent call last):
+  File "/Users/kimsno/Documents/virtualenv/wej/lib/python3.5/site-packages/django/core/handlers/base.py", line 149, in get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/kimsno/Documents/virtualenv/wej/lib/python3.5/site-packages/django/core/handlers/base.py", line 147, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/kimsno/Documents/GitHub/what-eat-jeju-univ/wej/wej/views.py", line 58, in bestrestaurant
+    'rate': float( Rate.objects.filter( restaurantId=restaurant.id ).aggregate( Avg('rate') )['rate__avg'] )
+TypeError: float() argument must be a string or a number, not 'NoneType'
+(0.001) SELECT "wej_restaurant"."id", "wej_restaurant"."name", "wej_restaurant"."callNumber", "wej_restaurant"."viewCount", "wej_restaurant"."restaurantImg", "wej_restaurant"."keyword" FROM "wej_restaurant" ORDER BY "wej_restaurant"."viewCount" ASC; args=()
+(0.000) SELECT AVG("wej_rate"."rate") AS "rate__avg" FROM "wej_rate" WHERE "wej_rate"."restaurantId_id" = 1; args=(1,)
+Internal Server Error: /bestrestaurant/
+Traceback (most recent call last):
+  File "/Users/kimsno/Documents/virtualenv/wej/lib/python3.5/site-packages/django/core/handlers/base.py", line 149, in get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/kimsno/Documents/virtualenv/wej/lib/python3.5/site-packages/django/core/handlers/base.py", line 147, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/kimsno/Documents/GitHub/what-eat-jeju-univ/wej/wej/views.py", line 58, in bestrestaurant
+    'rate': float( Rate.objects.filter( restaurantId=restaurant.id ).aggregate( Avg('rate') )['rate__avg'] )
+TypeError: float() argument must be a string or a number, not 'NoneType'
+(0.001) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+(0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+(0.000) SELECT "wej_restaurant"."id", "wej_restaurant"."name", "wej_restaurant"."callNumber", "wej_restaurant"."viewCount", "wej_restaurant"."restaurantImg", "wej_restaurant"."keyword" FROM "wej_restaurant" ORDER BY "wej_restaurant"."viewCount" ASC; args=()
+(0.000) SELECT "wej_rate"."seq", "wej_rate"."restaurantId_id", "wej_rate"."rate" FROM "wej_rate" WHERE "wej_rate"."restaurantId_id" = 1; args=(1,)
+(0.000) SELECT "wej_rate"."seq", "wej_rate"."restaurantId_id", "wej_rate"."rate" FROM "wej_rate" WHERE "wej_rate"."restaurantId_id" = 2; args=(2,)
+(0.000) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."session_key" = 'bul4h97f1s9i0az0q16eyqbst3v8ap4c' AND "django_session"."expire_date" > '2017-06-12 11:38:51.081516'); args=('bul4h97f1s9i0az0q16eyqbst3v8ap4c', '2017-06-12 11:38:51.081516')
+(0.001) SELECT "wej_restaurant"."id", "wej_restaurant"."name", "wej_restaurant"."callNumber", "wej_restaurant"."viewCount", "wej_restaurant"."restaurantImg", "wej_restaurant"."keyword" FROM "wej_restaurant" ORDER BY "wej_restaurant"."viewCount" ASC; args=()
+(0.000) SELECT "wej_rate"."seq", "wej_rate"."restaurantId_id", "wej_rate"."rate" FROM "wej_rate" WHERE "wej_rate"."restaurantId_id" = 1; args=(1,)
+(0.000) SELECT "wej_rate"."seq", "wej_rate"."restaurantId_id", "wej_rate"."rate" FROM "wej_rate" WHERE "wej_rate"."restaurantId_id" = 2; args=(2,)
+(0.000) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."session_key" = 'bul4h97f1s9i0az0q16eyqbst3v8ap4c' AND "django_session"."expire_date" > '2017-06-12 11:38:51.292460'); args=('bul4h97f1s9i0az0q16eyqbst3v8ap4c', '2017-06-12 11:38:51.292460')
+(0.000) SELECT "wej_restaurant"."id", "wej_restaurant"."name", "wej_restaurant"."callNumber", "wej_restaurant"."viewCount", "wej_restaurant"."restaurantImg", "wej_restaurant"."keyword" FROM "wej_restaurant" WHERE "wej_restaurant"."id" = 1; args=(1,)
+(0.000) BEGIN; args=None
+(0.000) UPDATE "wej_restaurant" SET "name" = '그램그램', "callNumber" = '070-747-0000', "viewCount" = 1, "restaurantImg" = '', "keyword" = '소고기,회식,가족모임,모임,송년회' WHERE "wej_restaurant"."id" = 1; args=('그램그램', '070-747-0000', 1, '', '소고기,회식,가족모임,모임,송년회', 1)
+Internal Server Error: /searchrestaurant/
+Traceback (most recent call last):
+  File "/Users/kimsno/Documents/virtualenv/wej/lib/python3.5/site-packages/django/core/handlers/base.py", line 149, in get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/kimsno/Documents/virtualenv/wej/lib/python3.5/site-packages/django/core/handlers/base.py", line 147, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/kimsno/Documents/GitHub/what-eat-jeju-univ/wej/wej/views.py", line 96, in searchrestaurant
+    'rate': Rate.objects.filter( restaurantId=restaurant.id ).avg()
+AttributeError: 'QuerySet' object has no attribute 'avg'
+(0.001) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+(0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+(0.001) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+(0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+(0.004) SELECT "wej_restaurant"."id", "wej_restaurant"."name", "wej_restaurant"."callNumber", "wej_restaurant"."viewCount", "wej_restaurant"."restaurantImg", "wej_restaurant"."keyword" FROM "wej_restaurant" WHERE "wej_restaurant"."id" = 1; args=(1,)
+(0.000) BEGIN; args=None
+(0.001) UPDATE "wej_restaurant" SET "name" = '그램그램', "callNumber" = '070-747-0000', "viewCount" = 2, "restaurantImg" = '', "keyword" = '소고기,회식,가족모임,모임,송년회' WHERE "wej_restaurant"."id" = 1; args=('그램그램', '070-747-0000', 2, '', '소고기,회식,가족모임,모임,송년회', 1)
+(0.000) SELECT "wej_rate"."seq", "wej_rate"."restaurantId_id", "wej_rate"."rate" FROM "wej_rate" WHERE "wej_rate"."restaurantId_id" = 1; args=(1,)
+(0.000) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."expire_date" > '2017-06-12 11:40:25.847557' AND "django_session"."session_key" = 'bul4h97f1s9i0az0q16eyqbst3v8ap4c'); args=('2017-06-12 11:40:25.847557', 'bul4h97f1s9i0az0q16eyqbst3v8ap4c')
+Exception while resolving variable 'searchCount' in template 'search_restaurant.html'.
+Traceback (most recent call last):
+  File "/Users/kimsno/Documents/virtualenv/wej/lib/python3.5/site-packages/django/template/base.py", line 883, in _resolve_lookup
+    current = current[bit]
+KeyError: 'searchCount'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/kimsno/Documents/virtualenv/wej/lib/python3.5/site-packages/django/template/base.py", line 891, in _resolve_lookup
+    current = getattr(current, bit)
+AttributeError: 'dict' object has no attribute 'searchCount'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/kimsno/Documents/virtualenv/wej/lib/python3.5/site-packages/django/template/base.py", line 898, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'searchCount'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/kimsno/Documents/virtualenv/wej/lib/python3.5/site-packages/django/template/base.py", line 905, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [searchCount] in "{'viewCount': 2, 'storeName': '그램그램', 'storeId': 1, 'callNumber': '070-747-0000', 'rate': 0}"
+(0.001) SELECT "wej_restaurant"."id", "wej_restaurant"."name", "wej_restaurant"."callNumber", "wej_restaurant"."viewCount", "wej_restaurant"."restaurantImg", "wej_restaurant"."keyword" FROM "wej_restaurant" WHERE "wej_restaurant"."id" = 1; args=(1,)
+(0.000) BEGIN; args=None
+(0.001) UPDATE "wej_restaurant" SET "name" = '그램그램', "callNumber" = '070-747-0000', "viewCount" = 3, "restaurantImg" = '', "keyword" = '소고기,회식,가족모임,모임,송년회' WHERE "wej_restaurant"."id" = 1; args=('그램그램', '070-747-0000', 3, '', '소고기,회식,가족모임,모임,송년회', 1)
+(0.000) SELECT "wej_rate"."seq", "wej_rate"."restaurantId_id", "wej_rate"."rate" FROM "wej_rate" WHERE "wej_rate"."restaurantId_id" = 1; args=(1,)
+(0.000) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."expire_date" > '2017-06-12 11:40:26.092685' AND "django_session"."session_key" = 'bul4h97f1s9i0az0q16eyqbst3v8ap4c'); args=('2017-06-12 11:40:26.092685', 'bul4h97f1s9i0az0q16eyqbst3v8ap4c')
+Exception while resolving variable 'searchCount' in template 'search_restaurant.html'.
+Traceback (most recent call last):
+  File "/Users/kimsno/Documents/virtualenv/wej/lib/python3.5/site-packages/django/template/base.py", line 883, in _resolve_lookup
+    current = current[bit]
+KeyError: 'searchCount'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/kimsno/Documents/virtualenv/wej/lib/python3.5/site-packages/django/template/base.py", line 891, in _resolve_lookup
+    current = getattr(current, bit)
+AttributeError: 'dict' object has no attribute 'searchCount'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/kimsno/Documents/virtualenv/wej/lib/python3.5/site-packages/django/template/base.py", line 898, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'searchCount'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/kimsno/Documents/virtualenv/wej/lib/python3.5/site-packages/django/template/base.py", line 905, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [searchCount] in "{'viewCount': 3, 'storeName': '그램그램', 'storeId': 1, 'callNumber': '070-747-0000', 'rate': 0}"
+(0.000) SELECT "wej_restaurant"."id", "wej_restaurant"."name", "wej_restaurant"."callNumber", "wej_restaurant"."viewCount", "wej_restaurant"."restaurantImg", "wej_restaurant"."keyword" FROM "wej_restaurant" WHERE "wej_restaurant"."id" = 1; args=(1,)
+(0.000) BEGIN; args=None
+(0.000) UPDATE "wej_restaurant" SET "name" = '그램그램', "callNumber" = '070-747-0000', "viewCount" = 4, "restaurantImg" = '', "keyword" = '소고기,회식,가족모임,모임,송년회' WHERE "wej_restaurant"."id" = 1; args=('그램그램', '070-747-0000', 4, '', '소고기,회식,가족모임,모임,송년회', 1)
+(0.000) SELECT "wej_rate"."seq", "wej_rate"."restaurantId_id", "wej_rate"."rate" FROM "wej_rate" WHERE "wej_rate"."restaurantId_id" = 1; args=(1,)
+(0.000) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."expire_date" > '2017-06-12 11:41:00.115187' AND "django_session"."session_key" = 'bul4h97f1s9i0az0q16eyqbst3v8ap4c'); args=('2017-06-12 11:41:00.115187', 'bul4h97f1s9i0az0q16eyqbst3v8ap4c')
+(0.001) SELECT "wej_restaurant"."id", "wej_restaurant"."name", "wej_restaurant"."callNumber", "wej_restaurant"."viewCount", "wej_restaurant"."restaurantImg", "wej_restaurant"."keyword" FROM "wej_restaurant" WHERE "wej_restaurant"."id" = 1; args=(1,)
+(0.000) BEGIN; args=None
+(0.000) UPDATE "wej_restaurant" SET "name" = '그램그램', "callNumber" = '070-747-0000', "viewCount" = 5, "restaurantImg" = '', "keyword" = '소고기,회식,가족모임,모임,송년회' WHERE "wej_restaurant"."id" = 1; args=('그램그램', '070-747-0000', 5, '', '소고기,회식,가족모임,모임,송년회', 1)
+(0.000) SELECT "wej_rate"."seq", "wej_rate"."restaurantId_id", "wej_rate"."rate" FROM "wej_rate" WHERE "wej_rate"."restaurantId_id" = 1; args=(1,)
+(0.001) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."expire_date" > '2017-06-12 11:41:00.312893' AND "django_session"."session_key" = 'bul4h97f1s9i0az0q16eyqbst3v8ap4c'); args=('2017-06-12 11:41:00.312893', 'bul4h97f1s9i0az0q16eyqbst3v8ap4c')

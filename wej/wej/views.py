@@ -3,9 +3,12 @@ from django.template.context import RequestContext
 from django.views.generic import TemplateView
 from django.http import HttpResponse
 from django.shortcuts import render, render_to_response,redirect
-from wej.models import User
-
+from wej.models import User, Restaurant, RestaurantMenu, Menu, Rate
+from django.db.models import Avg
+import logging
 import json
+
+logger = logging.getLogger('django')
 
 def searchkeywordlist(request):
     if request.method == 'GET':
@@ -39,16 +42,28 @@ def bestrestaurant(request):
     if request.method == 'GET':
         responseData = {}
 
-        responseData['storeList'] = [
-            {'storeId':1, 'storeName':'store1','callNumber':'000-0000-0000', 'searchCount':10, 'rate':4.5},
-            {'storeId':2, 'storeName':'store2','callNumber':'000-0000-0000', 'searchCount':10, 'rate':4.5},
-            {'storeId':3, 'storeName':'store3','callNumber':'000-0000-0000', 'searchCount':10, 'rate':4.5},
-            {'storeId':4, 'storeName':'store4','callNumber':'000-0000-0000', 'searchCount':10, 'rate':4.5},
-            {'storeId':5, 'storeName':'store5','callNumber':'000-0000-0000', 'searchCount':10, 'rate':4.5},
-            {'storeId':6, 'storeName':'store6','callNumber':'000-0000-0000', 'searchCount':10, 'rate':4.5},
-            {'storeId':7, 'storeName':'store7','callNumber':'000-0000-0000', 'searchCount':10, 'rate':4.5},
-            {'storeId':8, 'storeName':'store8','callNumber':'000-0000-0000', 'searchCount':10, 'rate':4.5},
-        ]
+        restaurantList = Restaurant.objects.order_by( 'viewCount' )
+        if len( restaurantList ) > 10:
+            restaurantList = restaurantList[10:]
+
+        storeList = []
+
+        for restaurant in restaurantList:
+            RateResult = Rate.objects.filter( restaurantId=restaurant.id )
+            if len( RateResult ) > 0:
+                rateAvg = float( RateResult.aggregate( Avg('rate') )['rate__avg'] )
+            else:
+                rateAvg = 0
+
+            storeList.append( {
+                'storeId' : restaurant.id,
+                'storeName': restaurant.name,
+                'callNumber' : restaurant.callNumber,
+                'viewCount' : restaurant.viewCount,
+                'rate' : rateAvg
+            } )
+
+        responseData['storeList'] = storeList
 
         return render(request, 'bestrestaurant.html', responseData)
 
@@ -59,7 +74,26 @@ def searchrestaurant(request):
 
         responseData = {}
 
-        responseData['store'] = {'storeId':8, 'storeName':'store1','callNumber':'000-0000-0000', 'searchCount':10, 'rate':4.5}
+        restaurant = Restaurant.objects.get(id=storeId)
+        restaurant.viewCount += 1
+        restaurant.save()
+
+        RateResult = Rate.objects.filter(restaurantId=restaurant.id)
+        if len(RateResult) > 0:
+            rateAvg = float(RateResult.aggregate(Avg('rate'))['rate__avg'])
+        else:
+            rateAvg = 0
+
+        responseData['store'] = {
+            'storeId' : restaurant.id,
+            'storeName': restaurant.name,
+            'callNumber' : restaurant.callNumber,
+            'viewCount' : restaurant.viewCount,
+            'rate': rateAvg
+        }
+
+        # {'storeId':8, 'storeName':'store1','callNumber':'000-0000-0000', 'searchCount':10, 'rate':4.5}
+
         responseData['menulist'] = [
             {'number':1, 'name':'감자탕', 'price':7000, 'imgurl':'http://placehold.it/320x150' },
             {'number':2, 'name':'감자탕', 'price':7000, 'imgurl':'http://placehold.it/320x150' },
@@ -131,3 +165,31 @@ def addDatabasePageView(request):
             return render(request, 'add_database.html', {})
         else:
             return redirect('/')
+
+def saveDatabase(request):
+
+    if request.method == 'GET':
+        type = request.GET.get('data_type', '')
+
+        if type == 'store':
+            return storeDataSave( request.GET.get('name',''), request.GET.get('call_number', ''), request.GET.get('keyword', ''))
+        elif type == 'menu':
+            ''
+        elif type == 'store_menu':
+            ''
+        else:
+            return HttpResponse(status=404)
+
+def storeDataSave( name='', callNumber='', keyword='', img=None):
+
+    logger.debug('name={}, callNumber={}, keyword={}', name, callNumber, keyword)
+
+    if name == '':
+        return HttpResponse(status=404)
+
+    restaurant = Restaurant.objects.create(name=name, keyword=keyword, callNumber=callNumber)
+
+    if restaurant:
+        return HttpResponse(status=200)
+    else:
+        return HttpResponse(status=404)

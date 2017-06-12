@@ -1,4 +1,10 @@
 $(document).ready(function(){
+    $.ajax({
+        beforeSend : function(xhr){
+            xhr.setRequestHeader("Content-type","application/x-www-form-urlencoded; charset=UTF-8");
+        }
+    });
+
     $('#search_btn').on('click', function(){
         searchKeyword( $('#search_keyword_input').val() );
     });

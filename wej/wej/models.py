@@ -7,9 +7,9 @@ class User(models.Model):
 class Restaurant(models.Model):
     id = models.AutoField(auto_created=True, primary_key=True)
     name = models.CharField(max_length=50)
-    callNumber = models.CharField(max_length=15)
+    callNumber = models.CharField(max_length=15, unique=True)
     viewCount = models.IntegerField(default=0)
-    restaurantImg = models.CharField(max_length=100)
+    restaurantImg = models.CharField(max_length=100) #comment img로 바꿀것
     keyword = models.CharField(max_length=100)
 
 
