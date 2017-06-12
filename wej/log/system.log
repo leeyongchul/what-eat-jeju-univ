@@ -1791,3 +1791,108 @@ restaurantId=1, menuId=1, price=13000
 (0.000) SELECT "wej_rate"."seq", "wej_rate"."restaurantId_id", "wej_rate"."rate" FROM "wej_rate" WHERE "wej_rate"."restaurantId_id" = 2; args=(2,)
 (0.000) SELECT "wej_rate"."seq", "wej_rate"."restaurantId_id", "wej_rate"."rate" FROM "wej_rate" WHERE "wej_rate"."restaurantId_id" = 1; args=(1,)
 (0.000) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."expire_date" > '2017-06-12 14:09:24.223211' AND "django_session"."session_key" = 'bul4h97f1s9i0az0q16eyqbst3v8ap4c'); args=('2017-06-12 14:09:24.223211', 'bul4h97f1s9i0az0q16eyqbst3v8ap4c')
+(0.001) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+(0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+(0.001) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+(0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+(0.001) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+(0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+(0.001) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+(0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+(0.001) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+(0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+(0.001) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+(0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+(0.002) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+(0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+(0.001) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+(0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+(0.001) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+(0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+(0.001) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+(0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+Internal Server Error: /searchrestaurant/
+Traceback (most recent call last):
+  File "/Users/kimsno/Documents/virtualenv/wej/lib/python3.5/site-packages/django/core/handlers/base.py", line 149, in get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/kimsno/Documents/virtualenv/wej/lib/python3.5/site-packages/django/core/handlers/base.py", line 147, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/kimsno/Documents/GitHub/what-eat-jeju-univ/wej/wej/views.py", line 80, in searchrestaurant
+    restaurant = Restaurant.objects.get(id=storeId)
+  File "/Users/kimsno/Documents/virtualenv/wej/lib/python3.5/site-packages/django/db/models/manager.py", line 122, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/Users/kimsno/Documents/virtualenv/wej/lib/python3.5/site-packages/django/db/models/query.py", line 378, in get
+    clone = self.filter(*args, **kwargs)
+  File "/Users/kimsno/Documents/virtualenv/wej/lib/python3.5/site-packages/django/db/models/query.py", line 790, in filter
+    return self._filter_or_exclude(False, *args, **kwargs)
+  File "/Users/kimsno/Documents/virtualenv/wej/lib/python3.5/site-packages/django/db/models/query.py", line 808, in _filter_or_exclude
+    clone.query.add_q(Q(*args, **kwargs))
+  File "/Users/kimsno/Documents/virtualenv/wej/lib/python3.5/site-packages/django/db/models/sql/query.py", line 1243, in add_q
+    clause, _ = self._add_q(q_object, self.used_aliases)
+  File "/Users/kimsno/Documents/virtualenv/wej/lib/python3.5/site-packages/django/db/models/sql/query.py", line 1269, in _add_q
+    allow_joins=allow_joins, split_subq=split_subq,
+  File "/Users/kimsno/Documents/virtualenv/wej/lib/python3.5/site-packages/django/db/models/sql/query.py", line 1149, in build_filter
+    lookups, parts, reffed_expression = self.solve_lookup_type(arg)
+  File "/Users/kimsno/Documents/virtualenv/wej/lib/python3.5/site-packages/django/db/models/sql/query.py", line 1035, in solve_lookup_type
+    _, field, _, lookup_parts = self.names_to_path(lookup_splitted, self.get_meta())
+  File "/Users/kimsno/Documents/virtualenv/wej/lib/python3.5/site-packages/django/db/models/sql/query.py", line 1330, in names_to_path
+    "Choices are: %s" % (name, ", ".join(available)))
+django.core.exceptions.FieldError: Cannot resolve keyword 'id' into field. Choices are: callNumber, keyword, rate, restaurantId, restaurantImg, restaurantName, restaurant_rel, viewCount
+(0.001) SELECT "wej_restaurant"."restaurantId", "wej_restaurant"."restaurantName", "wej_restaurant"."callNumber", "wej_restaurant"."viewCount", "wej_restaurant"."restaurantImg", "wej_restaurant"."keyword" FROM "wej_restaurant" LIMIT 21; args=()
+(0.000) SELECT "wej_restaurant"."restaurantId", "wej_restaurant"."restaurantName", "wej_restaurant"."callNumber", "wej_restaurant"."viewCount", "wej_restaurant"."restaurantImg", "wej_restaurant"."keyword" FROM "wej_restaurant" LIMIT 21; args=()
+(0.000) SELECT "wej_restaurant"."restaurantId", "wej_restaurant"."restaurantName", "wej_restaurant"."callNumber", "wej_restaurant"."viewCount", "wej_restaurant"."restaurantImg", "wej_restaurant"."keyword" FROM "wej_restaurant" LIMIT 21; args=()
+(0.000) SELECT "wej_restaurant"."restaurantId", "wej_restaurant"."restaurantName", "wej_restaurant"."callNumber", "wej_restaurant"."viewCount", "wej_restaurant"."restaurantImg", "wej_restaurant"."keyword" FROM "wej_restaurant" LIMIT 21; args=()
+(0.001) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+(0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+(0.001) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+(0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+(0.001) SELECT "wej_restaurant"."restaurantId", "wej_restaurant"."restaurantName", "wej_restaurant"."callNumber", "wej_restaurant"."viewCount", "wej_restaurant"."restaurantImg", "wej_restaurant"."keyword" FROM "wej_restaurant" WHERE "wej_restaurant"."restaurantId" = 1; args=(1,)
+(0.000) BEGIN; args=None
+(0.001) UPDATE "wej_restaurant" SET "restaurantName" = '그램그램', "callNumber" = '070-747-0000', "viewCount" = 6, "restaurantImg" = '', "keyword" = '소고기,회식,가족모임,모임,송년회' WHERE "wej_restaurant"."restaurantId" = 1; args=('그램그램', '070-747-0000', 6, '', '소고기,회식,가족모임,모임,송년회', 1)
+(0.000) SELECT "wej_rate"."seq", "wej_rate"."restaurantId_id", "wej_rate"."rate" FROM "wej_rate" WHERE "wej_rate"."restaurantId_id" = 1; args=(1,)
+(0.000) SELECT "wej_restaurantmenu"."id", "wej_restaurantmenu"."restaurantId_id", "wej_restaurantmenu"."menuId_id", "wej_restaurantmenu"."restaurantMenuImg", "wej_restaurantmenu"."price" FROM "wej_restaurantmenu" WHERE "wej_restaurantmenu"."restaurantId_id" = 1; args=(1,)
+(0.000) SELECT "wej_menu"."menuId", "wej_menu"."menuName" FROM "wej_menu" WHERE "wej_menu"."menuId" = 1; args=(1,)
+(0.000) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."expire_date" > '2017-06-12 14:13:52.011909' AND "django_session"."session_key" = 'bul4h97f1s9i0az0q16eyqbst3v8ap4c'); args=('2017-06-12 14:13:52.011909', 'bul4h97f1s9i0az0q16eyqbst3v8ap4c')
+(0.001) SELECT "wej_restaurant"."restaurantId", "wej_restaurant"."restaurantName", "wej_restaurant"."callNumber", "wej_restaurant"."viewCount", "wej_restaurant"."restaurantImg", "wej_restaurant"."keyword" FROM "wej_restaurant" WHERE "wej_restaurant"."restaurantId" = 1; args=(1,)
+(0.000) BEGIN; args=None
+(0.000) UPDATE "wej_restaurant" SET "restaurantName" = '그램그램', "callNumber" = '070-747-0000', "viewCount" = 7, "restaurantImg" = '', "keyword" = '소고기,회식,가족모임,모임,송년회' WHERE "wej_restaurant"."restaurantId" = 1; args=('그램그램', '070-747-0000', 7, '', '소고기,회식,가족모임,모임,송년회', 1)
+(0.000) SELECT "wej_rate"."seq", "wej_rate"."restaurantId_id", "wej_rate"."rate" FROM "wej_rate" WHERE "wej_rate"."restaurantId_id" = 1; args=(1,)
+(0.000) SELECT "wej_restaurantmenu"."id", "wej_restaurantmenu"."restaurantId_id", "wej_restaurantmenu"."menuId_id", "wej_restaurantmenu"."restaurantMenuImg", "wej_restaurantmenu"."price" FROM "wej_restaurantmenu" WHERE "wej_restaurantmenu"."restaurantId_id" = 1; args=(1,)
+(0.000) SELECT "wej_menu"."menuId", "wej_menu"."menuName" FROM "wej_menu" WHERE "wej_menu"."menuId" = 1; args=(1,)
+(0.000) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."expire_date" > '2017-06-12 14:13:52.183648' AND "django_session"."session_key" = 'bul4h97f1s9i0az0q16eyqbst3v8ap4c'); args=('2017-06-12 14:13:52.183648', 'bul4h97f1s9i0az0q16eyqbst3v8ap4c')

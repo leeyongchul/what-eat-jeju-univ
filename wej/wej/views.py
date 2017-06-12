@@ -77,11 +77,11 @@ def searchrestaurant(request):
 
         responseData = {}
 
-        restaurant = Restaurant.objects.get(id=storeId)
+        restaurant = Restaurant.objects.get(restaurantId=storeId)
         restaurant.viewCount += 1
         restaurant.save()
 
-        RateResult = Rate.objects.filter(restaurantId=restaurant.id)
+        RateResult = Rate.objects.filter(restaurantId=restaurant.restaurantId)
         if len(RateResult) > 0:
             rateAvg = float(RateResult.aggregate(Avg('rate'))['rate__avg'])
         else:
@@ -95,15 +95,25 @@ def searchrestaurant(request):
             'rate': rateAvg
         }
 
-        # {'storeId':8, 'storeName':'store1','callNumber':'000-0000-0000', 'searchCount':10, 'rate':4.5}
+        restaurantMenuList = RestaurantMenu.objects.filter(restaurantId = restaurant)
 
-        responseData['menulist'] = [
-            {'number':1, 'name':'감자탕', 'price':7000, 'imgurl':'http://placehold.it/320x150' },
-            {'number':2, 'name':'감자탕', 'price':7000, 'imgurl':'http://placehold.it/320x150' },
-            {'number':3, 'name':'감자탕', 'price':7000, 'imgurl':'http://placehold.it/320x150' },
-            {'number':4, 'name':'감자탕', 'price':7000, 'imgurl':'http://placehold.it/320x150' },
-            {'number':5, 'name':'감자탕', 'price':7000, 'imgurl':'http://placehold.it/320x150' },
-        ]
+        menuList = []
+        for restaurantMenu in restaurantMenuList:
+            menuList.append({
+                'number': restaurantMenu.pk,
+                'name': restaurantMenu.menuId.menuName,
+                'price': restaurantMenu.price,
+                'imgurl': 'http://placehold.it/320x150'
+            })
+
+        responseData['menulist'] = menuList
+        #     [
+        #     {},
+        #     {'number':2, 'name':'감자탕', 'price':7000, 'imgurl':'http://placehold.it/320x150' },
+        #     {'number':3, 'name':'감자탕', 'price':7000, 'imgurl':'http://placehold.it/320x150' },
+        #     {'number':4, 'name':'감자탕', 'price':7000, 'imgurl':'http://placehold.it/320x150' },
+        #     {'number':5, 'name':'감자탕', 'price':7000, 'imgurl':'http://placehold.it/320x150' },
+        # ]
 
         return render(request, 'search_restaurant.html', responseData)
 

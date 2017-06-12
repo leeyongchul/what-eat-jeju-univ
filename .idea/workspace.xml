@@ -4,11 +4,6 @@
     <list default="true" id="93cf6a4d-e6f4-4aec-a1a7-e4d260b777b3" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wej/db.sqlite3" afterPath="$PROJECT_DIR$/wej/db.sqlite3" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wej/log/system.log" afterPath="$PROJECT_DIR$/wej/log/system.log" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wej/static/js/add_database.js" afterPath="$PROJECT_DIR$/wej/static/js/add_database.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wej/templates/add_database.html" afterPath="$PROJECT_DIR$/wej/templates/add_database.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wej/wej/models.py" afterPath="$PROJECT_DIR$/wej/wej/models.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wej/wej/settings.py" afterPath="$PROJECT_DIR$/wej/wej/settings.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wej/wej/urls.py" afterPath="$PROJECT_DIR$/wej/wej/urls.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wej/wej/views.py" afterPath="$PROJECT_DIR$/wej/wej/views.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -54,8 +49,8 @@
       <file leaf-file-name="views.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/wej/wej/views.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="296">
-              <caret line="256" column="67" lean-forward="true" selection-start-line="256" selection-start-column="67" selection-end-line="256" selection-end-column="67" />
+            <state relative-caret-position="332">
+              <caret line="100" column="49" lean-forward="true" selection-start-line="100" selection-start-column="49" selection-end-line="100" selection-end-column="49" />
               <folding>
                 <element signature="e#15#65#0" expanded="true" />
               </folding>
@@ -651,8 +646,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/wej/wej/views.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="296">
-          <caret line="256" column="67" lean-forward="true" selection-start-line="256" selection-start-column="67" selection-end-line="256" selection-end-column="67" />
+        <state relative-caret-position="332">
+          <caret line="100" column="49" lean-forward="true" selection-start-line="100" selection-start-column="49" selection-end-line="100" selection-end-column="49" />
           <folding>
             <element signature="e#15#65#0" expanded="true" />
           </folding>
