@@ -11,98 +11,134 @@
     <div class="col-lg-12">
         <div><h3>가게정보 입력</h3></div>
         <div>
-            <form action="/savedatabase" method="get" id="store_data_form">
-                <input type="hidden" name="call_number" value="">
-                <input type="hidden" name="save_type" value="store">
-                <table class="table table-bordered">
-                    <colgroup>
-                        <col width="10%">
-                        <col width="*%">
-                        <col width="10%">
-                        <col width="*%">
-                    </colgroup>
-                    <tbody>
-                        <tr>
-                            <td><label>가게이름 </label>: </td>
-                            <td colspan="3">
-                                <div class="col-lg-11">
-                                    <input class="form-control" type="text" id="name" name="name">
-                                </div>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td><label>전화번호 </label>: </td>
-                            <td colspan="3">
-                                <div>
-                                    <div class="col-lg-3">
-                                        <input class="form-control" type="number" maxlength="3" minlength="3" id="store_first_call_number">
-                                    </div>
-                                    <div class="col-lg-4">
-                                        <input class="form-control" type="number" maxlength="4" minlength="3" id="store_middle_call_number">
-                                    </div>
-                                    <div class="col-lg-4">
-                                        <input class="form-control" type="number" maxlength="4" minlength="4" id="store_last_call_number">
-                                    </div>
-                                </div>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td><label>키워드(or 태그) </label>: </td>
-                            <td colspan="3">
-                                <div class="col-lg-12">
-                                    <label class="text-danger">*공백을 포함할 수 없으며, 단어의 구분은 쉽표(,)를 이용하세요.</label>
-                                </div>
-                                <div class="col-lg-11">
-                                    <input class="form-control" type="text" id="keyword" name="keyword">
-                                </div>
-                            </td>
-                        </tr>
-                    </tbody>
-                </table>
-            </form>
-            <div style="text-align: right;">
-                <input type="button" class="btn btn-primary" value="저장" onclick="javascript:saveData('store');">
-            </div>
-        </div>
-
-    </div>
-    <div class="col-lg-12">
-        <div><h3>메뉴 입력</h3></div>
-        <div>
-            <table class="table table-bordered">
+            <input type="hidden" name="call_number" value="">
+            <input type="hidden" name="save_type" value="store">
+            <table class="table table-bordered" id="store_data_table">
+                <colgroup>
+                    <col width="10%">
+                    <col width="*%">
+                    <col width="10%">
+                    <col width="*%">
+                    <col width="5%">
+                </colgroup>
                 <tbody>
                     <tr>
-                        <td></td>
-                        <td></td>
+                        <td class="active"><label>가게이름 </label>: </td>
+                        <td colspan="3">
+                            <div class="col-lg-11">
+                                <input class="form-control" type="text" name="name">
+                            </div>
+                        </td>
+                        <td rowspan="3" class="align-middle">
+                            <input type="button" class="btn btn-primary" value="저장" onclick="javascript:saveData('store');">
+                        </td>
                     </tr>
                     <tr>
-                        <td></td>
-                        <td></td>
+                        <td class="active"><label>전화번호 </label>: </td>
+                        <td colspan="3">
+                            <div>
+                                <div class="col-lg-3">
+                                    <input class="form-control" type="number" maxlength="3" minlength="3" id="store_first_call_number">
+                                </div>
+                                <div class="col-lg-4">
+                                    <input class="form-control" type="number" maxlength="4" minlength="3" id="store_middle_call_number">
+                                </div>
+                                <div class="col-lg-4">
+                                    <input class="form-control" type="number" maxlength="4" minlength="4" id="store_last_call_number">
+                                </div>
+                            </div>
+                        </td>
                     </tr>
                     <tr>
-                        <td></td>
-                        <td></td>
+                        <td class="active"><label>키워드(or 태그) </label>: </td>
+                        <td colspan="3">
+                            <div class="col-lg-12">
+                                <label class="text-danger">*공백을 포함할 수 없으며, 단어의 구분은 쉽표(,)를 이용하세요.</label>
+                            </div>
+                            <div class="col-lg-11">
+                                <input class="form-control" type="text" name="keyword">
+                            </div>
+                        </td>
                     </tr>
                 </tbody>
             </table>
         </div>
     </div>
     <div class="col-lg-12">
-        <div><h3>가게 메뉴 입력</h3></div>
+        <div><h3>메뉴 입력</h3></div>
         <div>
-            <table class="table table-bordered">
+            <table class="table table-bordered" id="menu_data_table">
                 <tbody>
                     <tr>
-                        <td>가게선택</td>
-                        <td></td>
+                        <td class="active">
+                            <label>메뉴명 </label>:
+                        </td>
+                        <td>
+                            <div class="col-lg-11">
+                                <input class="form-control" type="text" name="name">
+                            </div>
+                        </td>
+                        <td>
+                            <input type="button" class="btn btn-primary" value="저장" onclick="javascript:saveData('menu');">
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <div class="col-lg-12">
+        <div class="row">
+            <div class="col-lg-2">
+                <h3>메뉴 입력</h3>
+            </div>
+            <div class="col-lg-10">
+                <div class="col-lg-12">
+                    <label class="text-danger">*가게 메뉴를 추가하기전 밑의 버튼을 눌러서 가게메뉴 정보를 갱신하세요.</label>
+                </div>
+                <div class="col-lg-12">
+                    <input type="button" class="btn btn-xs btn-primary align-right" value="가게&메뉴 정보 불러오기" onclick="javascript:loadStoreAndMenu();">
+                </div>
+            </div>
+        </div>
+        <div>
+            <table class="table table-bordered" id="store_menu_info_table">
+                <colgroup>
+                    <col width="10%">
+                    <col width="40%">
+                    <col width="10%">
+                    <col width="40%">
+                </colgroup>
+                <tbody>
+                    <tr>
+                        <td class="active"><label>가게선택 </label>:</td>
+                        <td>
+                            <div class="col-lg-10">
+                                <select class="form-control" id="store_list_selectbox" disabled>
+
+                                </select>
+                            </div>
+                        </td>
+                        <td class="active"><label>메뉴선택 </label>:</td>
+                        <td>
+                            <div class="col-lg-10">
+                                <select class="form-control" id="menu_list_selectbox" disabled>
+
+                                </select>
+                            </div>
+                        </td>
                     </tr>
                     <tr>
-                        <td>메뉴선택</td>
-                        <td></td>
-                    </tr>
-                    <tr>
-                        <td>가격</td>
-                        <td></td>
+                        <td class="active"><label>가격</label> :</td>
+                        <td>
+                            <div class="col-lg-11">
+                                <input type="number" class="form-control" name="price"  disabled>
+                            </div>
+                        </td>
+                        <td colspan="2">
+                            <div>
+                                <input type="button" class="btn btn-primary" value="저장" onclick="javascript:saveData('store_menu');">
+                            </div>
+                        </td>
                     </tr>
                 </tbody>
             </table>

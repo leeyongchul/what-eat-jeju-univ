@@ -382,3 +382,1412 @@ django.template.base.VariableDoesNotExist: Failed lookup for key [searchCount] i
 (0.000) UPDATE "wej_restaurant" SET "name" = '그램그램', "callNumber" = '070-747-0000', "viewCount" = 5, "restaurantImg" = '', "keyword" = '소고기,회식,가족모임,모임,송년회' WHERE "wej_restaurant"."id" = 1; args=('그램그램', '070-747-0000', 5, '', '소고기,회식,가족모임,모임,송년회', 1)
 (0.000) SELECT "wej_rate"."seq", "wej_rate"."restaurantId_id", "wej_rate"."rate" FROM "wej_rate" WHERE "wej_rate"."restaurantId_id" = 1; args=(1,)
 (0.001) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."expire_date" > '2017-06-12 11:41:00.312893' AND "django_session"."session_key" = 'bul4h97f1s9i0az0q16eyqbst3v8ap4c'); args=('2017-06-12 11:41:00.312893', 'bul4h97f1s9i0az0q16eyqbst3v8ap4c')
+(0.001) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."expire_date" > '2017-06-12 11:41:17.209319' AND "django_session"."session_key" = 'bul4h97f1s9i0az0q16eyqbst3v8ap4c'); args=('2017-06-12 11:41:17.209319', 'bul4h97f1s9i0az0q16eyqbst3v8ap4c')
+(0.001) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."expire_date" > '2017-06-12 11:41:17.354091' AND "django_session"."session_key" = 'bul4h97f1s9i0az0q16eyqbst3v8ap4c'); args=('2017-06-12 11:41:17.354091', 'bul4h97f1s9i0az0q16eyqbst3v8ap4c')
+(0.000) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."expire_date" > '2017-06-12 11:44:05.194308' AND "django_session"."session_key" = 'bul4h97f1s9i0az0q16eyqbst3v8ap4c'); args=('2017-06-12 11:44:05.194308', 'bul4h97f1s9i0az0q16eyqbst3v8ap4c')
+(0.001) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."expire_date" > '2017-06-12 11:44:05.389710' AND "django_session"."session_key" = 'bul4h97f1s9i0az0q16eyqbst3v8ap4c'); args=('2017-06-12 11:44:05.389710', 'bul4h97f1s9i0az0q16eyqbst3v8ap4c')
+(0.001) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."expire_date" > '2017-06-12 11:44:45.199022' AND "django_session"."session_key" = 'bul4h97f1s9i0az0q16eyqbst3v8ap4c'); args=('2017-06-12 11:44:45.199022', 'bul4h97f1s9i0az0q16eyqbst3v8ap4c')
+(0.003) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."expire_date" > '2017-06-12 11:44:45.377956' AND "django_session"."session_key" = 'bul4h97f1s9i0az0q16eyqbst3v8ap4c'); args=('2017-06-12 11:44:45.377956', 'bul4h97f1s9i0az0q16eyqbst3v8ap4c')
+(0.001) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."expire_date" > '2017-06-12 11:44:46.156651' AND "django_session"."session_key" = 'bul4h97f1s9i0az0q16eyqbst3v8ap4c'); args=('2017-06-12 11:44:46.156651', 'bul4h97f1s9i0az0q16eyqbst3v8ap4c')
+(0.002) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."expire_date" > '2017-06-12 11:44:46.373037' AND "django_session"."session_key" = 'bul4h97f1s9i0az0q16eyqbst3v8ap4c'); args=('2017-06-12 11:44:46.373037', 'bul4h97f1s9i0az0q16eyqbst3v8ap4c')
+(0.000) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."expire_date" > '2017-06-12 11:45:49.905348' AND "django_session"."session_key" = 'bul4h97f1s9i0az0q16eyqbst3v8ap4c'); args=('2017-06-12 11:45:49.905348', 'bul4h97f1s9i0az0q16eyqbst3v8ap4c')
+(0.001) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."expire_date" > '2017-06-12 11:45:50.098862' AND "django_session"."session_key" = 'bul4h97f1s9i0az0q16eyqbst3v8ap4c'); args=('2017-06-12 11:45:50.098862', 'bul4h97f1s9i0az0q16eyqbst3v8ap4c')
+(0.001) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."expire_date" > '2017-06-12 11:45:50.750181' AND "django_session"."session_key" = 'bul4h97f1s9i0az0q16eyqbst3v8ap4c'); args=('2017-06-12 11:45:50.750181', 'bul4h97f1s9i0az0q16eyqbst3v8ap4c')
+(0.003) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."expire_date" > '2017-06-12 11:45:50.923238' AND "django_session"."session_key" = 'bul4h97f1s9i0az0q16eyqbst3v8ap4c'); args=('2017-06-12 11:45:50.923238', 'bul4h97f1s9i0az0q16eyqbst3v8ap4c')
+(0.001) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."expire_date" > '2017-06-12 11:46:13.255638' AND "django_session"."session_key" = 'bul4h97f1s9i0az0q16eyqbst3v8ap4c'); args=('2017-06-12 11:46:13.255638', 'bul4h97f1s9i0az0q16eyqbst3v8ap4c')
+(0.002) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."expire_date" > '2017-06-12 11:46:13.457351' AND "django_session"."session_key" = 'bul4h97f1s9i0az0q16eyqbst3v8ap4c'); args=('2017-06-12 11:46:13.457351', 'bul4h97f1s9i0az0q16eyqbst3v8ap4c')
+(0.001) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."expire_date" > '2017-06-12 11:46:14.076407' AND "django_session"."session_key" = 'bul4h97f1s9i0az0q16eyqbst3v8ap4c'); args=('2017-06-12 11:46:14.076407', 'bul4h97f1s9i0az0q16eyqbst3v8ap4c')
+(0.001) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."expire_date" > '2017-06-12 11:46:14.236625' AND "django_session"."session_key" = 'bul4h97f1s9i0az0q16eyqbst3v8ap4c'); args=('2017-06-12 11:46:14.236625', 'bul4h97f1s9i0az0q16eyqbst3v8ap4c')
+(0.001) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."expire_date" > '2017-06-12 11:47:18.631178' AND "django_session"."session_key" = 'bul4h97f1s9i0az0q16eyqbst3v8ap4c'); args=('2017-06-12 11:47:18.631178', 'bul4h97f1s9i0az0q16eyqbst3v8ap4c')
+(0.004) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."expire_date" > '2017-06-12 11:47:18.832779' AND "django_session"."session_key" = 'bul4h97f1s9i0az0q16eyqbst3v8ap4c'); args=('2017-06-12 11:47:18.832779', 'bul4h97f1s9i0az0q16eyqbst3v8ap4c')
+(0.001) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."expire_date" > '2017-06-12 11:47:19.595499' AND "django_session"."session_key" = 'bul4h97f1s9i0az0q16eyqbst3v8ap4c'); args=('2017-06-12 11:47:19.595499', 'bul4h97f1s9i0az0q16eyqbst3v8ap4c')
+(0.003) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."expire_date" > '2017-06-12 11:47:19.757315' AND "django_session"."session_key" = 'bul4h97f1s9i0az0q16eyqbst3v8ap4c'); args=('2017-06-12 11:47:19.757315', 'bul4h97f1s9i0az0q16eyqbst3v8ap4c')
+(0.001) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+(0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+(0.001) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+(0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+(0.001) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+(0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+(0.001) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+(0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+(0.001) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+(0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+(0.001) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+(0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+(0.001) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+(0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+(0.001) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+(0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+(0.001) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+(0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+(0.002) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+(0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+(0.001) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+(0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+(0.001) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+(0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+(0.001) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+(0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+(0.001) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+(0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+(0.001) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+(0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+(0.001) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+(0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+(0.001) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+(0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+(0.001) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+(0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+(0.001) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+(0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+(0.001) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+(0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+(0.002) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+(0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+(0.001) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+(0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+(0.001) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."session_key" = 'bul4h97f1s9i0az0q16eyqbst3v8ap4c' AND "django_session"."expire_date" > '2017-06-12 11:59:44.763824'); args=('bul4h97f1s9i0az0q16eyqbst3v8ap4c', '2017-06-12 11:59:44.763824')
+(0.001) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."session_key" = 'bul4h97f1s9i0az0q16eyqbst3v8ap4c' AND "django_session"."expire_date" > '2017-06-12 11:59:44.875169'); args=('bul4h97f1s9i0az0q16eyqbst3v8ap4c', '2017-06-12 11:59:44.875169')
+(0.001) SELECT "wej_restaurant"."id", "wej_restaurant"."name", "wej_restaurant"."callNumber", "wej_restaurant"."viewCount", "wej_restaurant"."restaurantImg", "wej_restaurant"."keyword" FROM "wej_restaurant" ORDER BY "wej_restaurant"."viewCount" ASC; args=()
+(0.000) SELECT "wej_rate"."seq", "wej_rate"."restaurantId_id", "wej_rate"."rate" FROM "wej_rate" WHERE "wej_rate"."restaurantId_id" = 2; args=(2,)
+(0.000) SELECT "wej_rate"."seq", "wej_rate"."restaurantId_id", "wej_rate"."rate" FROM "wej_rate" WHERE "wej_rate"."restaurantId_id" = 1; args=(1,)
+(0.000) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."session_key" = 'bul4h97f1s9i0az0q16eyqbst3v8ap4c' AND "django_session"."expire_date" > '2017-06-12 11:59:45.979612'); args=('bul4h97f1s9i0az0q16eyqbst3v8ap4c', '2017-06-12 11:59:45.979612')
+(0.001) SELECT "wej_restaurant"."id", "wej_restaurant"."name", "wej_restaurant"."callNumber", "wej_restaurant"."viewCount", "wej_restaurant"."restaurantImg", "wej_restaurant"."keyword" FROM "wej_restaurant" ORDER BY "wej_restaurant"."viewCount" ASC; args=()
+(0.000) SELECT "wej_rate"."seq", "wej_rate"."restaurantId_id", "wej_rate"."rate" FROM "wej_rate" WHERE "wej_rate"."restaurantId_id" = 2; args=(2,)
+(0.000) SELECT "wej_rate"."seq", "wej_rate"."restaurantId_id", "wej_rate"."rate" FROM "wej_rate" WHERE "wej_rate"."restaurantId_id" = 1; args=(1,)
+(0.000) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."session_key" = 'bul4h97f1s9i0az0q16eyqbst3v8ap4c' AND "django_session"."expire_date" > '2017-06-12 11:59:46.067396'); args=('bul4h97f1s9i0az0q16eyqbst3v8ap4c', '2017-06-12 11:59:46.067396')
+(0.001) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+(0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+(0.001) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+(0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+(0.001) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+(0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+(0.001) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+(0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+(0.001) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+(0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+(0.000) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+(0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+(0.001) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+(0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+(0.000) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+(0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+(0.001) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+(0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+(0.000) PRAGMA foreign_keys; args=None
+(0.000) PRAGMA foreign_keys = 0; args=None
+(0.000) BEGIN; args=None
+CREATE TABLE "wej_keyword" ("keyword" varchar(100) NOT NULL PRIMARY KEY, "count" integer NOT NULL); (params None)
+(0.001) CREATE TABLE "wej_keyword" ("keyword" varchar(100) NOT NULL PRIMARY KEY, "count" integer NOT NULL); args=None
+ALTER TABLE "wej_restaurantmenu" RENAME TO "wej_restaurantmenu__old"; (params [])
+(0.000) ALTER TABLE "wej_restaurantmenu" RENAME TO "wej_restaurantmenu__old"; args=[]
+CREATE TABLE "wej_restaurantmenu" ("id" integer NOT NULL PRIMARY KEY AUTOINCREMENT, "price" integer NOT NULL, "menuId_id" integer NOT NULL REFERENCES "wej_menu" ("id"), "restaurantId_id" integer NOT NULL REFERENCES "wej_restaurant" ("id"), "restaurantMenuImg" varchar(100) NOT NULL); (params None)
+(0.000) CREATE TABLE "wej_restaurantmenu" ("id" integer NOT NULL PRIMARY KEY AUTOINCREMENT, "price" integer NOT NULL, "menuId_id" integer NOT NULL REFERENCES "wej_menu" ("id"), "restaurantId_id" integer NOT NULL REFERENCES "wej_restaurant" ("id"), "restaurantMenuImg" varchar(100) NOT NULL); args=None
+INSERT INTO "wej_restaurantmenu" ("restaurantId_id", "id", "price", "restaurantMenuImg", "menuId_id") SELECT "restaurantId_id", "id", "price", '', "menuId_id" FROM "wej_restaurantmenu__old"; (params [])
+(0.000) INSERT INTO "wej_restaurantmenu" ("restaurantId_id", "id", "price", "restaurantMenuImg", "menuId_id") SELECT "restaurantId_id", "id", "price", '', "menuId_id" FROM "wej_restaurantmenu__old"; args=[]
+DROP TABLE "wej_restaurantmenu__old"; (params [])
+(0.000) DROP TABLE "wej_restaurantmenu__old"; args=[]
+CREATE INDEX "wej_restaurantmenu_458937d9" ON "wej_restaurantmenu" ("menuId_id"); (params [])
+(0.000) CREATE INDEX "wej_restaurantmenu_458937d9" ON "wej_restaurantmenu" ("menuId_id"); args=[]
+CREATE INDEX "wej_restaurantmenu_eb49549a" ON "wej_restaurantmenu" ("restaurantId_id"); (params [])
+(0.000) CREATE INDEX "wej_restaurantmenu_eb49549a" ON "wej_restaurantmenu" ("restaurantId_id"); args=[]
+ALTER TABLE "wej_restaurant" RENAME TO "wej_restaurant__old"; (params [])
+(0.001) ALTER TABLE "wej_restaurant" RENAME TO "wej_restaurant__old"; args=[]
+CREATE TABLE "wej_restaurant" ("id" integer NOT NULL PRIMARY KEY AUTOINCREMENT, "name" varchar(50) NOT NULL, "viewCount" integer NOT NULL, "restaurantImg" varchar(100) NOT NULL, "keyword" varchar(100) NOT NULL, "callNumber" varchar(15) NOT NULL UNIQUE); (params None)
+(0.000) CREATE TABLE "wej_restaurant" ("id" integer NOT NULL PRIMARY KEY AUTOINCREMENT, "name" varchar(50) NOT NULL, "viewCount" integer NOT NULL, "restaurantImg" varchar(100) NOT NULL, "keyword" varchar(100) NOT NULL, "callNumber" varchar(15) NOT NULL UNIQUE); args=None
+INSERT INTO "wej_restaurant" ("callNumber", "name", "viewCount", "restaurantImg", "id", "keyword") SELECT "callNumber", "name", "viewCount", "restaurantImg", "id", "keyword" FROM "wej_restaurant__old"; (params [])
+(0.000) INSERT INTO "wej_restaurant" ("callNumber", "name", "viewCount", "restaurantImg", "id", "keyword") SELECT "callNumber", "name", "viewCount", "restaurantImg", "id", "keyword" FROM "wej_restaurant__old"; args=[]
+DROP TABLE "wej_restaurant__old"; (params [])
+(0.000) DROP TABLE "wej_restaurant__old"; args=[]
+ALTER TABLE "wej_restaurantmenu" RENAME TO "wej_restaurantmenu__old"; (params [])
+(0.000) ALTER TABLE "wej_restaurantmenu" RENAME TO "wej_restaurantmenu__old"; args=[]
+CREATE TABLE "wej_restaurantmenu" ("id" integer NOT NULL PRIMARY KEY AUTOINCREMENT, "price" integer NOT NULL, "restaurantId_id" integer NOT NULL REFERENCES "wej_restaurant" ("id"), "restaurantMenuImg" varchar(100) NOT NULL); (params None)
+(0.000) CREATE TABLE "wej_restaurantmenu" ("id" integer NOT NULL PRIMARY KEY AUTOINCREMENT, "price" integer NOT NULL, "restaurantId_id" integer NOT NULL REFERENCES "wej_restaurant" ("id"), "restaurantMenuImg" varchar(100) NOT NULL); args=None
+INSERT INTO "wej_restaurantmenu" ("restaurantId_id", "id", "price", "restaurantMenuImg") SELECT "restaurantId_id", "id", "price", "restaurantMenuImg" FROM "wej_restaurantmenu__old"; (params [])
+(0.000) INSERT INTO "wej_restaurantmenu" ("restaurantId_id", "id", "price", "restaurantMenuImg") SELECT "restaurantId_id", "id", "price", "restaurantMenuImg" FROM "wej_restaurantmenu__old"; args=[]
+DROP TABLE "wej_restaurantmenu__old"; (params [])
+(0.000) DROP TABLE "wej_restaurantmenu__old"; args=[]
+CREATE INDEX "wej_restaurantmenu_eb49549a" ON "wej_restaurantmenu" ("restaurantId_id"); (params [])
+(0.000) CREATE INDEX "wej_restaurantmenu_eb49549a" ON "wej_restaurantmenu" ("restaurantId_id"); args=[]
+CREATE TABLE "wej_restaurantmenu_menuId" ("id" integer NOT NULL PRIMARY KEY AUTOINCREMENT, "restaurantmenu_id" integer NOT NULL REFERENCES "wej_restaurantmenu" ("id"), "menu_id" integer NOT NULL REFERENCES "wej_menu" ("id")); (params None)
+(0.000) CREATE TABLE "wej_restaurantmenu_menuId" ("id" integer NOT NULL PRIMARY KEY AUTOINCREMENT, "restaurantmenu_id" integer NOT NULL REFERENCES "wej_restaurantmenu" ("id"), "menu_id" integer NOT NULL REFERENCES "wej_menu" ("id")); args=None
+ALTER TABLE "wej_restaurantmenu" RENAME TO "wej_restaurantmenu__old"; (params [])
+(0.000) ALTER TABLE "wej_restaurantmenu" RENAME TO "wej_restaurantmenu__old"; args=[]
+CREATE TABLE "wej_restaurantmenu" ("id" integer NOT NULL PRIMARY KEY AUTOINCREMENT, "price" integer NOT NULL, "restaurantMenuImg" varchar(100) NOT NULL); (params None)
+(0.000) CREATE TABLE "wej_restaurantmenu" ("id" integer NOT NULL PRIMARY KEY AUTOINCREMENT, "price" integer NOT NULL, "restaurantMenuImg" varchar(100) NOT NULL); args=None
+INSERT INTO "wej_restaurantmenu" ("id", "price", "restaurantMenuImg") SELECT "id", "price", "restaurantMenuImg" FROM "wej_restaurantmenu__old"; (params [])
+(0.000) INSERT INTO "wej_restaurantmenu" ("id", "price", "restaurantMenuImg") SELECT "id", "price", "restaurantMenuImg" FROM "wej_restaurantmenu__old"; args=[]
+DROP TABLE "wej_restaurantmenu__old"; (params [])
+(0.000) DROP TABLE "wej_restaurantmenu__old"; args=[]
+CREATE TABLE "wej_restaurantmenu_restaurantId" ("id" integer NOT NULL PRIMARY KEY AUTOINCREMENT, "restaurantmenu_id" integer NOT NULL REFERENCES "wej_restaurantmenu" ("id"), "restaurant_id" integer NOT NULL REFERENCES "wej_restaurant" ("id")); (params None)
+(0.000) CREATE TABLE "wej_restaurantmenu_restaurantId" ("id" integer NOT NULL PRIMARY KEY AUTOINCREMENT, "restaurantmenu_id" integer NOT NULL REFERENCES "wej_restaurantmenu" ("id"), "restaurant_id" integer NOT NULL REFERENCES "wej_restaurant" ("id")); args=None
+CREATE UNIQUE INDEX "wej_restaurantmenu_restaurantId_restaurantmenu_id_b631b047_uniq" ON "wej_restaurantmenu_restaurantId" ("restaurantmenu_id", "restaurant_id"); (params [])
+(0.000) CREATE UNIQUE INDEX "wej_restaurantmenu_restaurantId_restaurantmenu_id_b631b047_uniq" ON "wej_restaurantmenu_restaurantId" ("restaurantmenu_id", "restaurant_id"); args=[]
+CREATE INDEX "wej_restaurantmenu_restaurantId_e8a3973f" ON "wej_restaurantmenu_restaurantId" ("restaurantmenu_id"); (params [])
+(0.000) CREATE INDEX "wej_restaurantmenu_restaurantId_e8a3973f" ON "wej_restaurantmenu_restaurantId" ("restaurantmenu_id"); args=[]
+CREATE INDEX "wej_restaurantmenu_restaurantId_ee9d9d3e" ON "wej_restaurantmenu_restaurantId" ("restaurant_id"); (params [])
+(0.000) CREATE INDEX "wej_restaurantmenu_restaurantId_ee9d9d3e" ON "wej_restaurantmenu_restaurantId" ("restaurant_id"); args=[]
+(0.000) PRAGMA foreign_keys = 0; args=None
+(0.000) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+(0.000) BEGIN; args=None
+(0.000) INSERT INTO "django_migrations" ("app", "name", "applied") VALUES ('wej', '0004_auto_20170612_1244', '2017-06-12 12:45:36.266719'); args=['wej', '0004_auto_20170612_1244', '2017-06-12 12:45:36.266719']
+(0.000) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+(0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+(0.000) SELECT "django_content_type"."id", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE ("django_content_type"."app_label" = 'admin' AND "django_content_type"."model" = 'logentry'); args=('admin', 'logentry')
+(0.000) SELECT "auth_permission"."content_type_id", "auth_permission"."codename" FROM "auth_permission" INNER JOIN "django_content_type" ON ("auth_permission"."content_type_id" = "django_content_type"."id") WHERE "auth_permission"."content_type_id" IN (1) ORDER BY "django_content_type"."app_label" ASC, "django_content_type"."model" ASC, "auth_permission"."codename" ASC; args=(1,)
+(0.000) SELECT "django_content_type"."id", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE "django_content_type"."app_label" = 'admin'; args=('admin',)
+(0.000) SELECT "django_content_type"."id", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE ("django_content_type"."app_label" = 'auth' AND "django_content_type"."model" = 'permission'); args=('auth', 'permission')
+(0.000) SELECT "django_content_type"."id", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE ("django_content_type"."app_label" = 'auth' AND "django_content_type"."model" = 'group'); args=('auth', 'group')
+(0.000) SELECT "django_content_type"."id", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE ("django_content_type"."app_label" = 'auth' AND "django_content_type"."model" = 'user'); args=('auth', 'user')
+(0.000) SELECT "auth_permission"."content_type_id", "auth_permission"."codename" FROM "auth_permission" INNER JOIN "django_content_type" ON ("auth_permission"."content_type_id" = "django_content_type"."id") WHERE "auth_permission"."content_type_id" IN (2, 3, 4) ORDER BY "django_content_type"."app_label" ASC, "django_content_type"."model" ASC, "auth_permission"."codename" ASC; args=(2, 3, 4)
+(0.000) SELECT "django_content_type"."id", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE "django_content_type"."app_label" = 'auth'; args=('auth',)
+(0.000) SELECT "django_content_type"."id", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE ("django_content_type"."app_label" = 'contenttypes' AND "django_content_type"."model" = 'contenttype'); args=('contenttypes', 'contenttype')
+(0.000) SELECT "auth_permission"."content_type_id", "auth_permission"."codename" FROM "auth_permission" INNER JOIN "django_content_type" ON ("auth_permission"."content_type_id" = "django_content_type"."id") WHERE "auth_permission"."content_type_id" IN (5) ORDER BY "django_content_type"."app_label" ASC, "django_content_type"."model" ASC, "auth_permission"."codename" ASC; args=(5,)
+(0.000) SELECT "django_content_type"."id", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE "django_content_type"."app_label" = 'contenttypes'; args=('contenttypes',)
+(0.000) SELECT "django_content_type"."id", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE ("django_content_type"."app_label" = 'sessions' AND "django_content_type"."model" = 'session'); args=('sessions', 'session')
+(0.000) SELECT "auth_permission"."content_type_id", "auth_permission"."codename" FROM "auth_permission" INNER JOIN "django_content_type" ON ("auth_permission"."content_type_id" = "django_content_type"."id") WHERE "auth_permission"."content_type_id" IN (6) ORDER BY "django_content_type"."app_label" ASC, "django_content_type"."model" ASC, "auth_permission"."codename" ASC; args=(6,)
+(0.000) SELECT "django_content_type"."id", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE "django_content_type"."app_label" = 'sessions'; args=('sessions',)
+(0.000) SELECT "django_content_type"."id", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE ("django_content_type"."app_label" = 'wej' AND "django_content_type"."model" = 'user'); args=('wej', 'user')
+(0.000) SELECT "django_content_type"."id", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE ("django_content_type"."app_label" = 'wej' AND "django_content_type"."model" = 'restaurant'); args=('wej', 'restaurant')
+(0.000) SELECT "django_content_type"."id", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE ("django_content_type"."app_label" = 'wej' AND "django_content_type"."model" = 'rate'); args=('wej', 'rate')
+(0.000) SELECT "django_content_type"."id", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE ("django_content_type"."app_label" = 'wej' AND "django_content_type"."model" = 'menu'); args=('wej', 'menu')
+(0.000) SELECT "django_content_type"."id", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE ("django_content_type"."app_label" = 'wej' AND "django_content_type"."model" = 'restaurantmenu'); args=('wej', 'restaurantmenu')
+(0.000) SELECT "django_content_type"."id", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE ("django_content_type"."app_label" = 'wej' AND "django_content_type"."model" = 'keyword'); args=('wej', 'keyword')
+(0.000) SELECT "django_content_type"."id", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE ("django_content_type"."app_label" = 'wej' AND "django_content_type"."model" = 'keyword'); args=('wej', 'keyword')
+(0.000) BEGIN; args=None
+(0.000) INSERT INTO "django_content_type" ("app_label", "model") VALUES ('wej', 'keyword'); args=['wej', 'keyword']
+(0.000) SELECT "auth_permission"."content_type_id", "auth_permission"."codename" FROM "auth_permission" INNER JOIN "django_content_type" ON ("auth_permission"."content_type_id" = "django_content_type"."id") WHERE "auth_permission"."content_type_id" IN (7, 8, 9, 10, 11, 12) ORDER BY "django_content_type"."app_label" ASC, "django_content_type"."model" ASC, "auth_permission"."codename" ASC; args=(7, 8, 9, 10, 11, 12)
+(0.000) BEGIN; args=None
+(0.001) INSERT INTO "auth_permission" ("name", "content_type_id", "codename") SELECT 'Can add keyword', 12, 'add_keyword' UNION ALL SELECT 'Can change keyword', 12, 'change_keyword' UNION ALL SELECT 'Can delete keyword', 12, 'delete_keyword'; args=('Can add keyword', 12, 'add_keyword', 'Can change keyword', 12, 'change_keyword', 'Can delete keyword', 12, 'delete_keyword')
+(0.000) SELECT "django_content_type"."id", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE "django_content_type"."app_label" = 'wej'; args=('wej',)
+(0.001) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+(0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+(0.001) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."session_key" = 'bul4h97f1s9i0az0q16eyqbst3v8ap4c' AND "django_session"."expire_date" > '2017-06-12 12:46:25.931046'); args=('bul4h97f1s9i0az0q16eyqbst3v8ap4c', '2017-06-12 12:46:25.931046')
+(0.001) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."session_key" = 'bul4h97f1s9i0az0q16eyqbst3v8ap4c' AND "django_session"."expire_date" > '2017-06-12 12:46:26.099122'); args=('bul4h97f1s9i0az0q16eyqbst3v8ap4c', '2017-06-12 12:46:26.099122')
+(0.000) BEGIN; args=None
+(0.001) INSERT INTO "wej_menu" ("name") VALUES ('양념갈비'); args=['양념갈비']
+(0.001) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+(0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+(0.001) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+(0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+(0.001) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+(0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+(0.001) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+(0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+(0.001) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+(0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+(0.001) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+(0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+(0.001) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+(0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+(0.001) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+(0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+(0.001) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+(0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+(0.001) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+(0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+(0.001) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+(0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+(0.001) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+(0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+(0.001) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+(0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+(0.001) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+(0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+(0.002) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+(0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+(0.001) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+(0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+(0.001) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+(0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+(0.001) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+(0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+(0.001) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+(0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+(0.003) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+(0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+(0.001) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+(0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+(0.006) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+(0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+(0.001) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+(0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+(0.001) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+(0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+(0.001) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+(0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+(0.001) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+(0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+(0.001) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+(0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+(0.001) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."expire_date" > '2017-06-12 13:09:23.161345' AND "django_session"."session_key" = 'bul4h97f1s9i0az0q16eyqbst3v8ap4c'); args=('2017-06-12 13:09:23.161345', 'bul4h97f1s9i0az0q16eyqbst3v8ap4c')
+(0.001) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."expire_date" > '2017-06-12 13:09:23.431336' AND "django_session"."session_key" = 'bul4h97f1s9i0az0q16eyqbst3v8ap4c'); args=('2017-06-12 13:09:23.431336', 'bul4h97f1s9i0az0q16eyqbst3v8ap4c')
+(0.001) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."expire_date" > '2017-06-12 13:10:00.841184' AND "django_session"."session_key" = 'bul4h97f1s9i0az0q16eyqbst3v8ap4c'); args=('2017-06-12 13:10:00.841184', 'bul4h97f1s9i0az0q16eyqbst3v8ap4c')
+(0.001) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."expire_date" > '2017-06-12 13:10:01.031996' AND "django_session"."session_key" = 'bul4h97f1s9i0az0q16eyqbst3v8ap4c'); args=('2017-06-12 13:10:01.031996', 'bul4h97f1s9i0az0q16eyqbst3v8ap4c')
+(0.001) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."expire_date" > '2017-06-12 13:10:30.005958' AND "django_session"."session_key" = 'bul4h97f1s9i0az0q16eyqbst3v8ap4c'); args=('2017-06-12 13:10:30.005958', 'bul4h97f1s9i0az0q16eyqbst3v8ap4c')
+(0.001) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."expire_date" > '2017-06-12 13:10:30.208610' AND "django_session"."session_key" = 'bul4h97f1s9i0az0q16eyqbst3v8ap4c'); args=('2017-06-12 13:10:30.208610', 'bul4h97f1s9i0az0q16eyqbst3v8ap4c')
+(0.001) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."expire_date" > '2017-06-12 13:10:48.791448' AND "django_session"."session_key" = 'bul4h97f1s9i0az0q16eyqbst3v8ap4c'); args=('2017-06-12 13:10:48.791448', 'bul4h97f1s9i0az0q16eyqbst3v8ap4c')
+(0.001) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."expire_date" > '2017-06-12 13:10:48.991486' AND "django_session"."session_key" = 'bul4h97f1s9i0az0q16eyqbst3v8ap4c'); args=('2017-06-12 13:10:48.991486', 'bul4h97f1s9i0az0q16eyqbst3v8ap4c')
+(0.001) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."expire_date" > '2017-06-12 13:11:08.975566' AND "django_session"."session_key" = 'bul4h97f1s9i0az0q16eyqbst3v8ap4c'); args=('2017-06-12 13:11:08.975566', 'bul4h97f1s9i0az0q16eyqbst3v8ap4c')
+(0.002) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."expire_date" > '2017-06-12 13:11:09.162794' AND "django_session"."session_key" = 'bul4h97f1s9i0az0q16eyqbst3v8ap4c'); args=('2017-06-12 13:11:09.162794', 'bul4h97f1s9i0az0q16eyqbst3v8ap4c')
+(0.001) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."expire_date" > '2017-06-12 13:11:46.169442' AND "django_session"."session_key" = 'bul4h97f1s9i0az0q16eyqbst3v8ap4c'); args=('2017-06-12 13:11:46.169442', 'bul4h97f1s9i0az0q16eyqbst3v8ap4c')
+(0.001) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."expire_date" > '2017-06-12 13:11:46.386311' AND "django_session"."session_key" = 'bul4h97f1s9i0az0q16eyqbst3v8ap4c'); args=('2017-06-12 13:11:46.386311', 'bul4h97f1s9i0az0q16eyqbst3v8ap4c')
+(0.001) SELECT "wej_restaurant"."id", "wej_restaurant"."name", "wej_restaurant"."callNumber", "wej_restaurant"."viewCount", "wej_restaurant"."restaurantImg", "wej_restaurant"."keyword" FROM "wej_restaurant"; args=()
+(0.000) SELECT "wej_menu"."id", "wej_menu"."name" FROM "wej_menu"; args=()
+Internal Server Error: /loadstoremenuinfo/
+Traceback (most recent call last):
+  File "/Users/kimsno/Documents/virtualenv/wej/lib/python3.5/site-packages/django/core/handlers/base.py", line 149, in get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/kimsno/Documents/virtualenv/wej/lib/python3.5/site-packages/django/core/handlers/base.py", line 147, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/kimsno/Documents/GitHub/what-eat-jeju-univ/wej/wej/views.py", line 244, in loadStoreMenuInfo
+    return HttpResponse(json.loads({'storelist':storelist, 'menulist':menulist}), content_type="application/json")
+  File "/Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/json/__init__.py", line 312, in loads
+    s.__class__.__name__))
+TypeError: the JSON object must be str, not 'dict'
+(0.001) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+(0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+(0.001) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+(0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+(0.001) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."session_key" = 'bul4h97f1s9i0az0q16eyqbst3v8ap4c' AND "django_session"."expire_date" > '2017-06-12 13:12:57.698290'); args=('bul4h97f1s9i0az0q16eyqbst3v8ap4c', '2017-06-12 13:12:57.698290')
+(0.001) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."session_key" = 'bul4h97f1s9i0az0q16eyqbst3v8ap4c' AND "django_session"."expire_date" > '2017-06-12 13:12:57.881346'); args=('bul4h97f1s9i0az0q16eyqbst3v8ap4c', '2017-06-12 13:12:57.881346')
+(0.000) SELECT "wej_restaurant"."id", "wej_restaurant"."name", "wej_restaurant"."callNumber", "wej_restaurant"."viewCount", "wej_restaurant"."restaurantImg", "wej_restaurant"."keyword" FROM "wej_restaurant"; args=()
+(0.000) SELECT "wej_menu"."id", "wej_menu"."name" FROM "wej_menu"; args=()
+(0.001) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."session_key" = 'bul4h97f1s9i0az0q16eyqbst3v8ap4c' AND "django_session"."expire_date" > '2017-06-12 13:13:37.070024'); args=('bul4h97f1s9i0az0q16eyqbst3v8ap4c', '2017-06-12 13:13:37.070024')
+(0.002) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."session_key" = 'bul4h97f1s9i0az0q16eyqbst3v8ap4c' AND "django_session"."expire_date" > '2017-06-12 13:13:37.264634'); args=('bul4h97f1s9i0az0q16eyqbst3v8ap4c', '2017-06-12 13:13:37.264634')
+(0.001) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."session_key" = 'bul4h97f1s9i0az0q16eyqbst3v8ap4c' AND "django_session"."expire_date" > '2017-06-12 13:14:00.074415'); args=('bul4h97f1s9i0az0q16eyqbst3v8ap4c', '2017-06-12 13:14:00.074415')
+(0.004) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."session_key" = 'bul4h97f1s9i0az0q16eyqbst3v8ap4c' AND "django_session"."expire_date" > '2017-06-12 13:14:00.221617'); args=('bul4h97f1s9i0az0q16eyqbst3v8ap4c', '2017-06-12 13:14:00.221617')
+(0.001) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."session_key" = 'bul4h97f1s9i0az0q16eyqbst3v8ap4c' AND "django_session"."expire_date" > '2017-06-12 13:14:05.656910'); args=('bul4h97f1s9i0az0q16eyqbst3v8ap4c', '2017-06-12 13:14:05.656910')
+(0.002) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."session_key" = 'bul4h97f1s9i0az0q16eyqbst3v8ap4c' AND "django_session"."expire_date" > '2017-06-12 13:14:05.857653'); args=('bul4h97f1s9i0az0q16eyqbst3v8ap4c', '2017-06-12 13:14:05.857653')
+(0.001) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."session_key" = 'bul4h97f1s9i0az0q16eyqbst3v8ap4c' AND "django_session"."expire_date" > '2017-06-12 13:14:54.356253'); args=('bul4h97f1s9i0az0q16eyqbst3v8ap4c', '2017-06-12 13:14:54.356253')
+(0.001) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."session_key" = 'bul4h97f1s9i0az0q16eyqbst3v8ap4c' AND "django_session"."expire_date" > '2017-06-12 13:14:54.563417'); args=('bul4h97f1s9i0az0q16eyqbst3v8ap4c', '2017-06-12 13:14:54.563417')
+(0.001) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."session_key" = 'bul4h97f1s9i0az0q16eyqbst3v8ap4c' AND "django_session"."expire_date" > '2017-06-12 13:15:01.296829'); args=('bul4h97f1s9i0az0q16eyqbst3v8ap4c', '2017-06-12 13:15:01.296829')
+(0.002) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."session_key" = 'bul4h97f1s9i0az0q16eyqbst3v8ap4c' AND "django_session"."expire_date" > '2017-06-12 13:15:01.453636'); args=('bul4h97f1s9i0az0q16eyqbst3v8ap4c', '2017-06-12 13:15:01.453636')
+(0.001) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."session_key" = 'bul4h97f1s9i0az0q16eyqbst3v8ap4c' AND "django_session"."expire_date" > '2017-06-12 13:15:09.510533'); args=('bul4h97f1s9i0az0q16eyqbst3v8ap4c', '2017-06-12 13:15:09.510533')
+(0.004) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."session_key" = 'bul4h97f1s9i0az0q16eyqbst3v8ap4c' AND "django_session"."expire_date" > '2017-06-12 13:15:09.637704'); args=('bul4h97f1s9i0az0q16eyqbst3v8ap4c', '2017-06-12 13:15:09.637704')
+(0.001) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."session_key" = 'bul4h97f1s9i0az0q16eyqbst3v8ap4c' AND "django_session"."expire_date" > '2017-06-12 13:15:58.991138'); args=('bul4h97f1s9i0az0q16eyqbst3v8ap4c', '2017-06-12 13:15:58.991138')
+(0.001) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."session_key" = 'bul4h97f1s9i0az0q16eyqbst3v8ap4c' AND "django_session"."expire_date" > '2017-06-12 13:15:59.213285'); args=('bul4h97f1s9i0az0q16eyqbst3v8ap4c', '2017-06-12 13:15:59.213285')
+(0.001) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."session_key" = 'bul4h97f1s9i0az0q16eyqbst3v8ap4c' AND "django_session"."expire_date" > '2017-06-12 13:17:45.788068'); args=('bul4h97f1s9i0az0q16eyqbst3v8ap4c', '2017-06-12 13:17:45.788068')
+(0.001) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."session_key" = 'bul4h97f1s9i0az0q16eyqbst3v8ap4c' AND "django_session"."expire_date" > '2017-06-12 13:17:45.982199'); args=('bul4h97f1s9i0az0q16eyqbst3v8ap4c', '2017-06-12 13:17:45.982199')
+(0.001) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."session_key" = 'bul4h97f1s9i0az0q16eyqbst3v8ap4c' AND "django_session"."expire_date" > '2017-06-12 13:17:58.453454'); args=('bul4h97f1s9i0az0q16eyqbst3v8ap4c', '2017-06-12 13:17:58.453454')
+(0.036) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."session_key" = 'bul4h97f1s9i0az0q16eyqbst3v8ap4c' AND "django_session"."expire_date" > '2017-06-12 13:17:58.591222'); args=('bul4h97f1s9i0az0q16eyqbst3v8ap4c', '2017-06-12 13:17:58.591222')
+(0.001) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+(0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+(0.001) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+(0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+(0.001) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+(0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+(0.001) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+(0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+(0.001) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+(0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+(0.001) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+(0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+(0.001) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+(0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+(0.002) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+(0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+(0.001) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."session_key" = 'bul4h97f1s9i0az0q16eyqbst3v8ap4c' AND "django_session"."expire_date" > '2017-06-12 13:26:33.393527'); args=('bul4h97f1s9i0az0q16eyqbst3v8ap4c', '2017-06-12 13:26:33.393527')
+(0.001) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."session_key" = 'bul4h97f1s9i0az0q16eyqbst3v8ap4c' AND "django_session"."expire_date" > '2017-06-12 13:26:33.606040'); args=('bul4h97f1s9i0az0q16eyqbst3v8ap4c', '2017-06-12 13:26:33.606040')
+(0.001) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."session_key" = 'bul4h97f1s9i0az0q16eyqbst3v8ap4c' AND "django_session"."expire_date" > '2017-06-12 13:27:04.292156'); args=('bul4h97f1s9i0az0q16eyqbst3v8ap4c', '2017-06-12 13:27:04.292156')
+(0.002) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."session_key" = 'bul4h97f1s9i0az0q16eyqbst3v8ap4c' AND "django_session"."expire_date" > '2017-06-12 13:27:04.494295'); args=('bul4h97f1s9i0az0q16eyqbst3v8ap4c', '2017-06-12 13:27:04.494295')
+(0.001) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."session_key" = 'bul4h97f1s9i0az0q16eyqbst3v8ap4c' AND "django_session"."expire_date" > '2017-06-12 13:27:20.082402'); args=('bul4h97f1s9i0az0q16eyqbst3v8ap4c', '2017-06-12 13:27:20.082402')
+(0.003) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."session_key" = 'bul4h97f1s9i0az0q16eyqbst3v8ap4c' AND "django_session"."expire_date" > '2017-06-12 13:27:20.279295'); args=('bul4h97f1s9i0az0q16eyqbst3v8ap4c', '2017-06-12 13:27:20.279295')
+(0.001) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."session_key" = 'bul4h97f1s9i0az0q16eyqbst3v8ap4c' AND "django_session"."expire_date" > '2017-06-12 13:27:31.856225'); args=('bul4h97f1s9i0az0q16eyqbst3v8ap4c', '2017-06-12 13:27:31.856225')
+(0.002) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."session_key" = 'bul4h97f1s9i0az0q16eyqbst3v8ap4c' AND "django_session"."expire_date" > '2017-06-12 13:27:32.037547'); args=('bul4h97f1s9i0az0q16eyqbst3v8ap4c', '2017-06-12 13:27:32.037547')
+(0.001) SELECT "wej_restaurant"."id", "wej_restaurant"."name", "wej_restaurant"."callNumber", "wej_restaurant"."viewCount", "wej_restaurant"."restaurantImg", "wej_restaurant"."keyword" FROM "wej_restaurant"; args=()
+(0.000) SELECT "wej_menu"."id", "wej_menu"."name" FROM "wej_menu"; args=()
+Internal Server Error: /savedatabase/
+Traceback (most recent call last):
+  File "/Users/kimsno/Documents/virtualenv/wej/lib/python3.5/site-packages/django/core/handlers/base.py", line 149, in get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/kimsno/Documents/virtualenv/wej/lib/python3.5/site-packages/django/core/handlers/base.py", line 147, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/kimsno/Documents/GitHub/what-eat-jeju-univ/wej/wej/views.py", line 188, in saveDatabase
+    return restaurantMenuDataSave( request.GET.get('store_id',''), request.GET.get('menu_id',''), request.GET.get('price','') )
+  File "/Users/kimsno/Documents/GitHub/what-eat-jeju-univ/wej/wej/views.py", line 250, in restaurantMenuDataSave
+    RestaurantMenu.price
+AttributeError: type object 'RestaurantMenu' has no attribute 'price'
+(0.001) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+(0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+(0.001) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+(0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+(0.001) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+(0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+(0.000) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+(0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+(0.000) SELECT "django_content_type"."id", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE ("django_content_type"."app_label" = 'admin' AND "django_content_type"."model" = 'logentry'); args=('admin', 'logentry')
+(0.000) SELECT "auth_permission"."content_type_id", "auth_permission"."codename" FROM "auth_permission" INNER JOIN "django_content_type" ON ("auth_permission"."content_type_id" = "django_content_type"."id") WHERE "auth_permission"."content_type_id" IN (1) ORDER BY "django_content_type"."app_label" ASC, "django_content_type"."model" ASC, "auth_permission"."codename" ASC; args=(1,)
+(0.000) SELECT "django_content_type"."id", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE "django_content_type"."app_label" = 'admin'; args=('admin',)
+(0.000) SELECT "django_content_type"."id", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE ("django_content_type"."app_label" = 'auth' AND "django_content_type"."model" = 'permission'); args=('auth', 'permission')
+(0.000) SELECT "django_content_type"."id", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE ("django_content_type"."app_label" = 'auth' AND "django_content_type"."model" = 'group'); args=('auth', 'group')
+(0.000) SELECT "django_content_type"."id", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE ("django_content_type"."app_label" = 'auth' AND "django_content_type"."model" = 'user'); args=('auth', 'user')
+(0.000) SELECT "auth_permission"."content_type_id", "auth_permission"."codename" FROM "auth_permission" INNER JOIN "django_content_type" ON ("auth_permission"."content_type_id" = "django_content_type"."id") WHERE "auth_permission"."content_type_id" IN (2, 3, 4) ORDER BY "django_content_type"."app_label" ASC, "django_content_type"."model" ASC, "auth_permission"."codename" ASC; args=(2, 3, 4)
+(0.000) SELECT "django_content_type"."id", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE "django_content_type"."app_label" = 'auth'; args=('auth',)
+(0.000) SELECT "django_content_type"."id", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE ("django_content_type"."app_label" = 'contenttypes' AND "django_content_type"."model" = 'contenttype'); args=('contenttypes', 'contenttype')
+(0.000) SELECT "auth_permission"."content_type_id", "auth_permission"."codename" FROM "auth_permission" INNER JOIN "django_content_type" ON ("auth_permission"."content_type_id" = "django_content_type"."id") WHERE "auth_permission"."content_type_id" IN (5) ORDER BY "django_content_type"."app_label" ASC, "django_content_type"."model" ASC, "auth_permission"."codename" ASC; args=(5,)
+(0.000) SELECT "django_content_type"."id", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE "django_content_type"."app_label" = 'contenttypes'; args=('contenttypes',)
+(0.000) SELECT "django_content_type"."id", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE ("django_content_type"."app_label" = 'sessions' AND "django_content_type"."model" = 'session'); args=('sessions', 'session')
+(0.000) SELECT "auth_permission"."content_type_id", "auth_permission"."codename" FROM "auth_permission" INNER JOIN "django_content_type" ON ("auth_permission"."content_type_id" = "django_content_type"."id") WHERE "auth_permission"."content_type_id" IN (6) ORDER BY "django_content_type"."app_label" ASC, "django_content_type"."model" ASC, "auth_permission"."codename" ASC; args=(6,)
+(0.000) SELECT "django_content_type"."id", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE "django_content_type"."app_label" = 'sessions'; args=('sessions',)
+(0.000) SELECT "django_content_type"."id", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE ("django_content_type"."app_label" = 'wej' AND "django_content_type"."model" = 'user'); args=('wej', 'user')
+(0.000) SELECT "django_content_type"."id", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE ("django_content_type"."app_label" = 'wej' AND "django_content_type"."model" = 'restaurant'); args=('wej', 'restaurant')
+(0.000) SELECT "django_content_type"."id", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE ("django_content_type"."app_label" = 'wej' AND "django_content_type"."model" = 'rate'); args=('wej', 'rate')
+(0.000) SELECT "django_content_type"."id", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE ("django_content_type"."app_label" = 'wej' AND "django_content_type"."model" = 'menu'); args=('wej', 'menu')
+(0.000) SELECT "django_content_type"."id", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE ("django_content_type"."app_label" = 'wej' AND "django_content_type"."model" = 'restaurantmenu'); args=('wej', 'restaurantmenu')
+(0.000) SELECT "django_content_type"."id", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE ("django_content_type"."app_label" = 'wej' AND "django_content_type"."model" = 'keyword'); args=('wej', 'keyword')
+(0.000) SELECT "auth_permission"."content_type_id", "auth_permission"."codename" FROM "auth_permission" INNER JOIN "django_content_type" ON ("auth_permission"."content_type_id" = "django_content_type"."id") WHERE "auth_permission"."content_type_id" IN (7, 8, 9, 10, 11, 12) ORDER BY "django_content_type"."app_label" ASC, "django_content_type"."model" ASC, "auth_permission"."codename" ASC; args=(7, 8, 9, 10, 11, 12)
+(0.000) SELECT "django_content_type"."id", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE "django_content_type"."app_label" = 'wej'; args=('wej',)
+(0.002) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+(0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+(0.000) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+(0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+(0.000) SELECT "django_content_type"."id", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE ("django_content_type"."app_label" = 'admin' AND "django_content_type"."model" = 'logentry'); args=('admin', 'logentry')
+(0.000) SELECT "auth_permission"."content_type_id", "auth_permission"."codename" FROM "auth_permission" INNER JOIN "django_content_type" ON ("auth_permission"."content_type_id" = "django_content_type"."id") WHERE "auth_permission"."content_type_id" IN (1) ORDER BY "django_content_type"."app_label" ASC, "django_content_type"."model" ASC, "auth_permission"."codename" ASC; args=(1,)
+(0.000) SELECT "django_content_type"."id", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE "django_content_type"."app_label" = 'admin'; args=('admin',)
+(0.000) SELECT "django_content_type"."id", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE ("django_content_type"."app_label" = 'auth' AND "django_content_type"."model" = 'permission'); args=('auth', 'permission')
+(0.000) SELECT "django_content_type"."id", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE ("django_content_type"."app_label" = 'auth' AND "django_content_type"."model" = 'group'); args=('auth', 'group')
+(0.000) SELECT "django_content_type"."id", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE ("django_content_type"."app_label" = 'auth' AND "django_content_type"."model" = 'user'); args=('auth', 'user')
+(0.001) SELECT "auth_permission"."content_type_id", "auth_permission"."codename" FROM "auth_permission" INNER JOIN "django_content_type" ON ("auth_permission"."content_type_id" = "django_content_type"."id") WHERE "auth_permission"."content_type_id" IN (2, 3, 4) ORDER BY "django_content_type"."app_label" ASC, "django_content_type"."model" ASC, "auth_permission"."codename" ASC; args=(2, 3, 4)
+(0.000) SELECT "django_content_type"."id", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE "django_content_type"."app_label" = 'auth'; args=('auth',)
+(0.000) SELECT "django_content_type"."id", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE ("django_content_type"."app_label" = 'contenttypes' AND "django_content_type"."model" = 'contenttype'); args=('contenttypes', 'contenttype')
+(0.000) SELECT "auth_permission"."content_type_id", "auth_permission"."codename" FROM "auth_permission" INNER JOIN "django_content_type" ON ("auth_permission"."content_type_id" = "django_content_type"."id") WHERE "auth_permission"."content_type_id" IN (5) ORDER BY "django_content_type"."app_label" ASC, "django_content_type"."model" ASC, "auth_permission"."codename" ASC; args=(5,)
+(0.000) SELECT "django_content_type"."id", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE "django_content_type"."app_label" = 'contenttypes'; args=('contenttypes',)
+(0.000) SELECT "django_content_type"."id", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE ("django_content_type"."app_label" = 'sessions' AND "django_content_type"."model" = 'session'); args=('sessions', 'session')
+(0.000) SELECT "auth_permission"."content_type_id", "auth_permission"."codename" FROM "auth_permission" INNER JOIN "django_content_type" ON ("auth_permission"."content_type_id" = "django_content_type"."id") WHERE "auth_permission"."content_type_id" IN (6) ORDER BY "django_content_type"."app_label" ASC, "django_content_type"."model" ASC, "auth_permission"."codename" ASC; args=(6,)
+(0.000) SELECT "django_content_type"."id", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE "django_content_type"."app_label" = 'sessions'; args=('sessions',)
+(0.000) SELECT "django_content_type"."id", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE ("django_content_type"."app_label" = 'wej' AND "django_content_type"."model" = 'user'); args=('wej', 'user')
+(0.000) SELECT "django_content_type"."id", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE ("django_content_type"."app_label" = 'wej' AND "django_content_type"."model" = 'restaurant'); args=('wej', 'restaurant')
+(0.000) SELECT "django_content_type"."id", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE ("django_content_type"."app_label" = 'wej' AND "django_content_type"."model" = 'rate'); args=('wej', 'rate')
+(0.000) SELECT "django_content_type"."id", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE ("django_content_type"."app_label" = 'wej' AND "django_content_type"."model" = 'menu'); args=('wej', 'menu')
+(0.000) SELECT "django_content_type"."id", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE ("django_content_type"."app_label" = 'wej' AND "django_content_type"."model" = 'restaurantmenu'); args=('wej', 'restaurantmenu')
+(0.000) SELECT "django_content_type"."id", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE ("django_content_type"."app_label" = 'wej' AND "django_content_type"."model" = 'keyword'); args=('wej', 'keyword')
+(0.001) SELECT "auth_permission"."content_type_id", "auth_permission"."codename" FROM "auth_permission" INNER JOIN "django_content_type" ON ("auth_permission"."content_type_id" = "django_content_type"."id") WHERE "auth_permission"."content_type_id" IN (7, 8, 9, 10, 11, 12) ORDER BY "django_content_type"."app_label" ASC, "django_content_type"."model" ASC, "auth_permission"."codename" ASC; args=(7, 8, 9, 10, 11, 12)
+(0.000) SELECT "django_content_type"."id", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE "django_content_type"."app_label" = 'wej'; args=('wej',)
+(0.001) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+(0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+(0.000) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+(0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+(0.000) SELECT "django_content_type"."id", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE ("django_content_type"."app_label" = 'admin' AND "django_content_type"."model" = 'logentry'); args=('admin', 'logentry')
+(0.000) SELECT "auth_permission"."content_type_id", "auth_permission"."codename" FROM "auth_permission" INNER JOIN "django_content_type" ON ("auth_permission"."content_type_id" = "django_content_type"."id") WHERE "auth_permission"."content_type_id" IN (1) ORDER BY "django_content_type"."app_label" ASC, "django_content_type"."model" ASC, "auth_permission"."codename" ASC; args=(1,)
+(0.000) SELECT "django_content_type"."id", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE "django_content_type"."app_label" = 'admin'; args=('admin',)
+(0.000) SELECT "django_content_type"."id", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE ("django_content_type"."app_label" = 'auth' AND "django_content_type"."model" = 'permission'); args=('auth', 'permission')
+(0.000) SELECT "django_content_type"."id", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE ("django_content_type"."app_label" = 'auth' AND "django_content_type"."model" = 'group'); args=('auth', 'group')
+(0.000) SELECT "django_content_type"."id", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE ("django_content_type"."app_label" = 'auth' AND "django_content_type"."model" = 'user'); args=('auth', 'user')
+(0.000) SELECT "auth_permission"."content_type_id", "auth_permission"."codename" FROM "auth_permission" INNER JOIN "django_content_type" ON ("auth_permission"."content_type_id" = "django_content_type"."id") WHERE "auth_permission"."content_type_id" IN (2, 3, 4) ORDER BY "django_content_type"."app_label" ASC, "django_content_type"."model" ASC, "auth_permission"."codename" ASC; args=(2, 3, 4)
+(0.000) SELECT "django_content_type"."id", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE "django_content_type"."app_label" = 'auth'; args=('auth',)
+(0.000) SELECT "django_content_type"."id", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE ("django_content_type"."app_label" = 'contenttypes' AND "django_content_type"."model" = 'contenttype'); args=('contenttypes', 'contenttype')
+(0.000) SELECT "auth_permission"."content_type_id", "auth_permission"."codename" FROM "auth_permission" INNER JOIN "django_content_type" ON ("auth_permission"."content_type_id" = "django_content_type"."id") WHERE "auth_permission"."content_type_id" IN (5) ORDER BY "django_content_type"."app_label" ASC, "django_content_type"."model" ASC, "auth_permission"."codename" ASC; args=(5,)
+(0.000) SELECT "django_content_type"."id", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE "django_content_type"."app_label" = 'contenttypes'; args=('contenttypes',)
+(0.000) SELECT "django_content_type"."id", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE ("django_content_type"."app_label" = 'sessions' AND "django_content_type"."model" = 'session'); args=('sessions', 'session')
+(0.000) SELECT "auth_permission"."content_type_id", "auth_permission"."codename" FROM "auth_permission" INNER JOIN "django_content_type" ON ("auth_permission"."content_type_id" = "django_content_type"."id") WHERE "auth_permission"."content_type_id" IN (6) ORDER BY "django_content_type"."app_label" ASC, "django_content_type"."model" ASC, "auth_permission"."codename" ASC; args=(6,)
+(0.000) SELECT "django_content_type"."id", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE "django_content_type"."app_label" = 'sessions'; args=('sessions',)
+(0.000) SELECT "django_content_type"."id", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE ("django_content_type"."app_label" = 'wej' AND "django_content_type"."model" = 'user'); args=('wej', 'user')
+(0.000) SELECT "django_content_type"."id", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE ("django_content_type"."app_label" = 'wej' AND "django_content_type"."model" = 'restaurant'); args=('wej', 'restaurant')
+(0.000) SELECT "django_content_type"."id", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE ("django_content_type"."app_label" = 'wej' AND "django_content_type"."model" = 'rate'); args=('wej', 'rate')
+(0.000) SELECT "django_content_type"."id", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE ("django_content_type"."app_label" = 'wej' AND "django_content_type"."model" = 'menu'); args=('wej', 'menu')
+(0.000) SELECT "django_content_type"."id", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE ("django_content_type"."app_label" = 'wej' AND "django_content_type"."model" = 'restaurantmenu'); args=('wej', 'restaurantmenu')
+(0.000) SELECT "django_content_type"."id", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE ("django_content_type"."app_label" = 'wej' AND "django_content_type"."model" = 'keyword'); args=('wej', 'keyword')
+(0.000) SELECT "auth_permission"."content_type_id", "auth_permission"."codename" FROM "auth_permission" INNER JOIN "django_content_type" ON ("auth_permission"."content_type_id" = "django_content_type"."id") WHERE "auth_permission"."content_type_id" IN (7, 8, 9, 10, 11, 12) ORDER BY "django_content_type"."app_label" ASC, "django_content_type"."model" ASC, "auth_permission"."codename" ASC; args=(7, 8, 9, 10, 11, 12)
+(0.000) SELECT "django_content_type"."id", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE "django_content_type"."app_label" = 'wej'; args=('wej',)
+(0.001) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+(0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+Internal Server Error: /savedatabase/
+Traceback (most recent call last):
+  File "/Users/kimsno/Documents/virtualenv/wej/lib/python3.5/site-packages/django/core/handlers/base.py", line 149, in get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/kimsno/Documents/virtualenv/wej/lib/python3.5/site-packages/django/core/handlers/base.py", line 147, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/kimsno/Documents/GitHub/what-eat-jeju-univ/wej/wej/views.py", line 188, in saveDatabase
+    return restaurantMenuDataSave( request.GET.get('store_id',''), request.GET.get('menu_id',''), request.GET.get('price','') )
+  File "/Users/kimsno/Documents/GitHub/what-eat-jeju-univ/wej/wej/views.py", line 254, in restaurantMenuDataSave
+    restaurantMenu = RestaurantMenu.objects.create(storeId=storeId, menuId=menuId, price=price)
+  File "/Users/kimsno/Documents/virtualenv/wej/lib/python3.5/site-packages/django/db/models/manager.py", line 122, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/Users/kimsno/Documents/virtualenv/wej/lib/python3.5/site-packages/django/db/models/query.py", line 399, in create
+    obj = self.model(**kwargs)
+  File "/Users/kimsno/Documents/virtualenv/wej/lib/python3.5/site-packages/django/db/models/base.py", line 451, in __init__
+    raise TypeError("'%s' is an invalid keyword argument for this function" % list(kwargs)[0])
+TypeError: 'storeId' is an invalid keyword argument for this function
+(0.001) SELECT "wej_restaurantmenu"."id", "wej_restaurantmenu"."restaurantMenuImg", "wej_restaurantmenu"."price" FROM "wej_restaurantmenu" LIMIT 21; args=()
+(0.001) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+(0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+(0.001) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+(0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+Internal Server Error: /savedatabase/
+Traceback (most recent call last):
+  File "/Users/kimsno/Documents/virtualenv/wej/lib/python3.5/site-packages/django/core/handlers/base.py", line 149, in get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/kimsno/Documents/virtualenv/wej/lib/python3.5/site-packages/django/core/handlers/base.py", line 147, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/kimsno/Documents/GitHub/what-eat-jeju-univ/wej/wej/views.py", line 188, in saveDatabase
+    return restaurantMenuDataSave( request.GET.get('store_id',''), request.GET.get('menu_id',''), request.GET.get('price','') )
+  File "/Users/kimsno/Documents/GitHub/what-eat-jeju-univ/wej/wej/views.py", line 254, in restaurantMenuDataSave
+    restaurantMenu = RestaurantMenu.objects.create(restaurantId=restaurantId, menuId=menuId, price=price)
+  File "/Users/kimsno/Documents/virtualenv/wej/lib/python3.5/site-packages/django/db/models/manager.py", line 122, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/Users/kimsno/Documents/virtualenv/wej/lib/python3.5/site-packages/django/db/models/query.py", line 399, in create
+    obj = self.model(**kwargs)
+  File "/Users/kimsno/Documents/virtualenv/wej/lib/python3.5/site-packages/django/db/models/base.py", line 451, in __init__
+    raise TypeError("'%s' is an invalid keyword argument for this function" % list(kwargs)[0])
+TypeError: 'menuId' is an invalid keyword argument for this function
+(0.001) SELECT "wej_restaurantmenu"."id", "wej_restaurantmenu"."restaurantMenuImg", "wej_restaurantmenu"."price" FROM "wej_restaurantmenu" LIMIT 21; args=()
+Internal Server Error: /savedatabase/
+Traceback (most recent call last):
+  File "/Users/kimsno/Documents/virtualenv/wej/lib/python3.5/site-packages/django/core/handlers/base.py", line 149, in get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/kimsno/Documents/virtualenv/wej/lib/python3.5/site-packages/django/core/handlers/base.py", line 147, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/kimsno/Documents/GitHub/what-eat-jeju-univ/wej/wej/views.py", line 188, in saveDatabase
+    return restaurantMenuDataSave( request.GET.get('store_id',''), request.GET.get('menu_id',''), request.GET.get('price','') )
+  File "/Users/kimsno/Documents/GitHub/what-eat-jeju-univ/wej/wej/views.py", line 254, in restaurantMenuDataSave
+    restaurantMenu = RestaurantMenu.objects.create(restaurantId=restaurantId, menuId=menuId, price=price)
+  File "/Users/kimsno/Documents/virtualenv/wej/lib/python3.5/site-packages/django/db/models/manager.py", line 122, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/Users/kimsno/Documents/virtualenv/wej/lib/python3.5/site-packages/django/db/models/query.py", line 399, in create
+    obj = self.model(**kwargs)
+  File "/Users/kimsno/Documents/virtualenv/wej/lib/python3.5/site-packages/django/db/models/base.py", line 451, in __init__
+    raise TypeError("'%s' is an invalid keyword argument for this function" % list(kwargs)[0])
+TypeError: 'menuId' is an invalid keyword argument for this function
+(0.000) SELECT "wej_restaurantmenu"."id", "wej_restaurantmenu"."restaurantMenuImg", "wej_restaurantmenu"."price" FROM "wej_restaurantmenu" LIMIT 21; args=()
+(0.002) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+(0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+(0.001) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+(0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+Internal Server Error: /savedatabase/
+Traceback (most recent call last):
+  File "/Users/kimsno/Documents/virtualenv/wej/lib/python3.5/site-packages/django/core/handlers/base.py", line 149, in get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/kimsno/Documents/virtualenv/wej/lib/python3.5/site-packages/django/core/handlers/base.py", line 147, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/kimsno/Documents/GitHub/what-eat-jeju-univ/wej/wej/views.py", line 188, in saveDatabase
+    return restaurantMenuDataSave( request.GET.get('store_id',''), request.GET.get('menu_id',''), request.GET.get('price','') )
+  File "/Users/kimsno/Documents/GitHub/what-eat-jeju-univ/wej/wej/views.py", line 254, in restaurantMenuDataSave
+    restaurantMenu = RestaurantMenu.objects.create(restaurantId=restaurantId, menuId=menuId, price=price)
+  File "/Users/kimsno/Documents/virtualenv/wej/lib/python3.5/site-packages/django/db/models/manager.py", line 122, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/Users/kimsno/Documents/virtualenv/wej/lib/python3.5/site-packages/django/db/models/query.py", line 399, in create
+    obj = self.model(**kwargs)
+  File "/Users/kimsno/Documents/virtualenv/wej/lib/python3.5/site-packages/django/db/models/base.py", line 451, in __init__
+    raise TypeError("'%s' is an invalid keyword argument for this function" % list(kwargs)[0])
+TypeError: 'menuId' is an invalid keyword argument for this function
+(0.001) SELECT "wej_restaurantmenu"."id", "wej_restaurantmenu"."restaurantMenuImg", "wej_restaurantmenu"."price" FROM "wej_restaurantmenu" LIMIT 21; args=()
+(0.001) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+(0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+Internal Server Error: /savedatabase/
+Traceback (most recent call last):
+  File "/Users/kimsno/Documents/virtualenv/wej/lib/python3.5/site-packages/django/core/handlers/base.py", line 149, in get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/kimsno/Documents/virtualenv/wej/lib/python3.5/site-packages/django/core/handlers/base.py", line 147, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/kimsno/Documents/GitHub/what-eat-jeju-univ/wej/wej/views.py", line 188, in saveDatabase
+    return restaurantMenuDataSave( request.GET.get('store_id',''), request.GET.get('menu_id',''), request.GET.get('price','') )
+  File "/Users/kimsno/Documents/GitHub/what-eat-jeju-univ/wej/wej/views.py", line 256, in restaurantMenuDataSave
+    restaurantMenu = RestaurantMenu.objects.create(restaurantId=restaurantId, menuId=menuId, price=price)
+  File "/Users/kimsno/Documents/virtualenv/wej/lib/python3.5/site-packages/django/db/models/manager.py", line 122, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/Users/kimsno/Documents/virtualenv/wej/lib/python3.5/site-packages/django/db/models/query.py", line 399, in create
+    obj = self.model(**kwargs)
+  File "/Users/kimsno/Documents/virtualenv/wej/lib/python3.5/site-packages/django/db/models/base.py", line 451, in __init__
+    raise TypeError("'%s' is an invalid keyword argument for this function" % list(kwargs)[0])
+TypeError: 'menuId' is an invalid keyword argument for this function
+(0.001) SELECT "wej_restaurantmenu"."id", "wej_restaurantmenu"."restaurantMenuImg", "wej_restaurantmenu"."price" FROM "wej_restaurantmenu" LIMIT 21; args=()
+(0.001) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+(0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+(0.002) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+(0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+(0.001) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+(0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+(0.001) SELECT "wej_restaurant"."id", "wej_restaurant"."name", "wej_restaurant"."callNumber", "wej_restaurant"."viewCount", "wej_restaurant"."restaurantImg", "wej_restaurant"."keyword" FROM "wej_restaurant"; args=()
+(0.000) SELECT "wej_menu"."id", "wej_menu"."name" FROM "wej_menu"; args=()
+(0.001) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+(0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+(0.001) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+(0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+(0.001) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+(0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+(0.000) PRAGMA foreign_keys; args=None
+(0.000) PRAGMA foreign_keys = 0; args=None
+(0.000) BEGIN; args=None
+ALTER TABLE "wej_menu" RENAME TO "wej_menu__old"; (params [])
+(0.001) ALTER TABLE "wej_menu" RENAME TO "wej_menu__old"; args=[]
+CREATE TABLE "wej_menu" ("menuId" integer NOT NULL PRIMARY KEY AUTOINCREMENT, "name" varchar(50) NOT NULL); (params None)
+(0.000) CREATE TABLE "wej_menu" ("menuId" integer NOT NULL PRIMARY KEY AUTOINCREMENT, "name" varchar(50) NOT NULL); args=None
+INSERT INTO "wej_menu" ("menuId", "name") SELECT "id", "name" FROM "wej_menu__old"; (params [])
+(0.000) INSERT INTO "wej_menu" ("menuId", "name") SELECT "id", "name" FROM "wej_menu__old"; args=[]
+DROP TABLE "wej_menu__old"; (params [])
+(0.000) DROP TABLE "wej_menu__old"; args=[]
+ALTER TABLE "wej_menu" RENAME TO "wej_menu__old"; (params [])
+(0.000) ALTER TABLE "wej_menu" RENAME TO "wej_menu__old"; args=[]
+CREATE TABLE "wej_menu" ("menuId" integer NOT NULL PRIMARY KEY AUTOINCREMENT, "menuName" varchar(50) NOT NULL); (params None)
+(0.000) CREATE TABLE "wej_menu" ("menuId" integer NOT NULL PRIMARY KEY AUTOINCREMENT, "menuName" varchar(50) NOT NULL); args=None
+INSERT INTO "wej_menu" ("menuId", "menuName") SELECT "menuId", "name" FROM "wej_menu__old"; (params [])
+(0.000) INSERT INTO "wej_menu" ("menuId", "menuName") SELECT "menuId", "name" FROM "wej_menu__old"; args=[]
+DROP TABLE "wej_menu__old"; (params [])
+(0.000) DROP TABLE "wej_menu__old"; args=[]
+ALTER TABLE "wej_restaurant" RENAME TO "wej_restaurant__old"; (params [])
+(0.001) ALTER TABLE "wej_restaurant" RENAME TO "wej_restaurant__old"; args=[]
+CREATE TABLE "wej_restaurant" ("restaurantId" integer NOT NULL PRIMARY KEY AUTOINCREMENT, "name" varchar(50) NOT NULL, "callNumber" varchar(15) NOT NULL UNIQUE, "viewCount" integer NOT NULL, "restaurantImg" varchar(100) NOT NULL, "keyword" varchar(100) NOT NULL); (params None)
+(0.000) CREATE TABLE "wej_restaurant" ("restaurantId" integer NOT NULL PRIMARY KEY AUTOINCREMENT, "name" varchar(50) NOT NULL, "callNumber" varchar(15) NOT NULL UNIQUE, "viewCount" integer NOT NULL, "restaurantImg" varchar(100) NOT NULL, "keyword" varchar(100) NOT NULL); args=None
+INSERT INTO "wej_restaurant" ("restaurantImg", "keyword", "restaurantId", "callNumber", "name", "viewCount") SELECT "restaurantImg", "keyword", "id", "callNumber", "name", "viewCount" FROM "wej_restaurant__old"; (params [])
+(0.000) INSERT INTO "wej_restaurant" ("restaurantImg", "keyword", "restaurantId", "callNumber", "name", "viewCount") SELECT "restaurantImg", "keyword", "id", "callNumber", "name", "viewCount" FROM "wej_restaurant__old"; args=[]
+DROP TABLE "wej_restaurant__old"; (params [])
+(0.000) DROP TABLE "wej_restaurant__old"; args=[]
+ALTER TABLE "wej_restaurant" RENAME TO "wej_restaurant__old"; (params [])
+(0.000) ALTER TABLE "wej_restaurant" RENAME TO "wej_restaurant__old"; args=[]
+CREATE TABLE "wej_restaurant" ("restaurantId" integer NOT NULL PRIMARY KEY AUTOINCREMENT, "callNumber" varchar(15) NOT NULL UNIQUE, "viewCount" integer NOT NULL, "restaurantImg" varchar(100) NOT NULL, "keyword" varchar(100) NOT NULL, "restaurantName" varchar(50) NOT NULL); (params None)
+(0.000) CREATE TABLE "wej_restaurant" ("restaurantId" integer NOT NULL PRIMARY KEY AUTOINCREMENT, "callNumber" varchar(15) NOT NULL UNIQUE, "viewCount" integer NOT NULL, "restaurantImg" varchar(100) NOT NULL, "keyword" varchar(100) NOT NULL, "restaurantName" varchar(50) NOT NULL); args=None
+INSERT INTO "wej_restaurant" ("restaurantImg", "keyword", "restaurantName", "restaurantId", "callNumber", "viewCount") SELECT "restaurantImg", "keyword", "name", "restaurantId", "callNumber", "viewCount" FROM "wej_restaurant__old"; (params [])
+(0.000) INSERT INTO "wej_restaurant" ("restaurantImg", "keyword", "restaurantName", "restaurantId", "callNumber", "viewCount") SELECT "restaurantImg", "keyword", "name", "restaurantId", "callNumber", "viewCount" FROM "wej_restaurant__old"; args=[]
+DROP TABLE "wej_restaurant__old"; (params [])
+(0.000) DROP TABLE "wej_restaurant__old"; args=[]
+DROP TABLE "wej_restaurantmenu_menuId"; (params [])
+(0.000) DROP TABLE "wej_restaurantmenu_menuId"; args=[]
+ALTER TABLE "wej_restaurantmenu" RENAME TO "wej_restaurantmenu__old"; (params [])
+(0.000) ALTER TABLE "wej_restaurantmenu" RENAME TO "wej_restaurantmenu__old"; args=[]
+CREATE TABLE "wej_restaurantmenu" ("id" integer NOT NULL PRIMARY KEY AUTOINCREMENT, "price" integer NOT NULL, "restaurantMenuImg" varchar(100) NOT NULL, "menuId_id" integer NOT NULL REFERENCES "wej_menu" ("menuId")); (params None)
+(0.000) CREATE TABLE "wej_restaurantmenu" ("id" integer NOT NULL PRIMARY KEY AUTOINCREMENT, "price" integer NOT NULL, "restaurantMenuImg" varchar(100) NOT NULL, "menuId_id" integer NOT NULL REFERENCES "wej_menu" ("menuId")); args=None
+INSERT INTO "wej_restaurantmenu" ("id", "restaurantMenuImg", "menuId_id", "price") SELECT "id", "restaurantMenuImg", 0, "price" FROM "wej_restaurantmenu__old"; (params [])
+(0.000) INSERT INTO "wej_restaurantmenu" ("id", "restaurantMenuImg", "menuId_id", "price") SELECT "id", "restaurantMenuImg", 0, "price" FROM "wej_restaurantmenu__old"; args=[]
+DROP TABLE "wej_restaurantmenu__old"; (params [])
+(0.000) DROP TABLE "wej_restaurantmenu__old"; args=[]
+CREATE INDEX "wej_restaurantmenu_458937d9" ON "wej_restaurantmenu" ("menuId_id"); (params [])
+(0.000) CREATE INDEX "wej_restaurantmenu_458937d9" ON "wej_restaurantmenu" ("menuId_id"); args=[]
+DROP TABLE "wej_restaurantmenu_restaurantId"; (params [])
+(0.000) DROP TABLE "wej_restaurantmenu_restaurantId"; args=[]
+ALTER TABLE "wej_restaurantmenu" RENAME TO "wej_restaurantmenu__old"; (params [])
+(0.000) ALTER TABLE "wej_restaurantmenu" RENAME TO "wej_restaurantmenu__old"; args=[]
+CREATE TABLE "wej_restaurantmenu" ("id" integer NOT NULL PRIMARY KEY AUTOINCREMENT, "price" integer NOT NULL, "restaurantMenuImg" varchar(100) NOT NULL, "menuId_id" integer NOT NULL REFERENCES "wej_menu" ("menuId"), "restaurantId_id" integer NOT NULL REFERENCES "wej_restaurant" ("restaurantId")); (params None)
+(0.000) CREATE TABLE "wej_restaurantmenu" ("id" integer NOT NULL PRIMARY KEY AUTOINCREMENT, "price" integer NOT NULL, "restaurantMenuImg" varchar(100) NOT NULL, "menuId_id" integer NOT NULL REFERENCES "wej_menu" ("menuId"), "restaurantId_id" integer NOT NULL REFERENCES "wej_restaurant" ("restaurantId")); args=None
+INSERT INTO "wej_restaurantmenu" ("id", "restaurantMenuImg", "restaurantId_id", "menuId_id", "price") SELECT "id", "restaurantMenuImg", 0, "menuId_id", "price" FROM "wej_restaurantmenu__old"; (params [])
+(0.000) INSERT INTO "wej_restaurantmenu" ("id", "restaurantMenuImg", "restaurantId_id", "menuId_id", "price") SELECT "id", "restaurantMenuImg", 0, "menuId_id", "price" FROM "wej_restaurantmenu__old"; args=[]
+DROP TABLE "wej_restaurantmenu__old"; (params [])
+(0.000) DROP TABLE "wej_restaurantmenu__old"; args=[]
+CREATE INDEX "wej_restaurantmenu_458937d9" ON "wej_restaurantmenu" ("menuId_id"); (params [])
+(0.000) CREATE INDEX "wej_restaurantmenu_458937d9" ON "wej_restaurantmenu" ("menuId_id"); args=[]
+CREATE INDEX "wej_restaurantmenu_eb49549a" ON "wej_restaurantmenu" ("restaurantId_id"); (params [])
+(0.000) CREATE INDEX "wej_restaurantmenu_eb49549a" ON "wej_restaurantmenu" ("restaurantId_id"); args=[]
+(0.000) PRAGMA foreign_keys = 0; args=None
+(0.000) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+(0.000) BEGIN; args=None
+(0.000) INSERT INTO "django_migrations" ("app", "name", "applied") VALUES ('wej', '0005_auto_20170612_1349', '2017-06-12 13:49:35.468868'); args=['wej', '0005_auto_20170612_1349', '2017-06-12 13:49:35.468868']
+(0.000) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+(0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+(0.000) SELECT "django_content_type"."id", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE ("django_content_type"."model" = 'logentry' AND "django_content_type"."app_label" = 'admin'); args=('logentry', 'admin')
+(0.000) SELECT "auth_permission"."content_type_id", "auth_permission"."codename" FROM "auth_permission" INNER JOIN "django_content_type" ON ("auth_permission"."content_type_id" = "django_content_type"."id") WHERE "auth_permission"."content_type_id" IN (1) ORDER BY "django_content_type"."app_label" ASC, "django_content_type"."model" ASC, "auth_permission"."codename" ASC; args=(1,)
+(0.000) SELECT "django_content_type"."id", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE "django_content_type"."app_label" = 'admin'; args=('admin',)
+(0.000) SELECT "django_content_type"."id", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE ("django_content_type"."model" = 'permission' AND "django_content_type"."app_label" = 'auth'); args=('permission', 'auth')
+(0.000) SELECT "django_content_type"."id", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE ("django_content_type"."model" = 'group' AND "django_content_type"."app_label" = 'auth'); args=('group', 'auth')
+(0.000) SELECT "django_content_type"."id", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE ("django_content_type"."model" = 'user' AND "django_content_type"."app_label" = 'auth'); args=('user', 'auth')
+(0.001) SELECT "auth_permission"."content_type_id", "auth_permission"."codename" FROM "auth_permission" INNER JOIN "django_content_type" ON ("auth_permission"."content_type_id" = "django_content_type"."id") WHERE "auth_permission"."content_type_id" IN (2, 3, 4) ORDER BY "django_content_type"."app_label" ASC, "django_content_type"."model" ASC, "auth_permission"."codename" ASC; args=(2, 3, 4)
+(0.000) SELECT "django_content_type"."id", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE "django_content_type"."app_label" = 'auth'; args=('auth',)
+(0.000) SELECT "django_content_type"."id", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE ("django_content_type"."model" = 'contenttype' AND "django_content_type"."app_label" = 'contenttypes'); args=('contenttype', 'contenttypes')
+(0.000) SELECT "auth_permission"."content_type_id", "auth_permission"."codename" FROM "auth_permission" INNER JOIN "django_content_type" ON ("auth_permission"."content_type_id" = "django_content_type"."id") WHERE "auth_permission"."content_type_id" IN (5) ORDER BY "django_content_type"."app_label" ASC, "django_content_type"."model" ASC, "auth_permission"."codename" ASC; args=(5,)
+(0.000) SELECT "django_content_type"."id", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE "django_content_type"."app_label" = 'contenttypes'; args=('contenttypes',)
+(0.000) SELECT "django_content_type"."id", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE ("django_content_type"."model" = 'session' AND "django_content_type"."app_label" = 'sessions'); args=('session', 'sessions')
+(0.000) SELECT "auth_permission"."content_type_id", "auth_permission"."codename" FROM "auth_permission" INNER JOIN "django_content_type" ON ("auth_permission"."content_type_id" = "django_content_type"."id") WHERE "auth_permission"."content_type_id" IN (6) ORDER BY "django_content_type"."app_label" ASC, "django_content_type"."model" ASC, "auth_permission"."codename" ASC; args=(6,)
+(0.000) SELECT "django_content_type"."id", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE "django_content_type"."app_label" = 'sessions'; args=('sessions',)
+(0.000) SELECT "django_content_type"."id", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE ("django_content_type"."model" = 'user' AND "django_content_type"."app_label" = 'wej'); args=('user', 'wej')
+(0.000) SELECT "django_content_type"."id", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE ("django_content_type"."model" = 'restaurant' AND "django_content_type"."app_label" = 'wej'); args=('restaurant', 'wej')
+(0.000) SELECT "django_content_type"."id", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE ("django_content_type"."model" = 'rate' AND "django_content_type"."app_label" = 'wej'); args=('rate', 'wej')
+(0.000) SELECT "django_content_type"."id", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE ("django_content_type"."model" = 'menu' AND "django_content_type"."app_label" = 'wej'); args=('menu', 'wej')
+(0.000) SELECT "django_content_type"."id", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE ("django_content_type"."model" = 'restaurantmenu' AND "django_content_type"."app_label" = 'wej'); args=('restaurantmenu', 'wej')
+(0.000) SELECT "django_content_type"."id", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE ("django_content_type"."model" = 'keyword' AND "django_content_type"."app_label" = 'wej'); args=('keyword', 'wej')
+(0.000) SELECT "auth_permission"."content_type_id", "auth_permission"."codename" FROM "auth_permission" INNER JOIN "django_content_type" ON ("auth_permission"."content_type_id" = "django_content_type"."id") WHERE "auth_permission"."content_type_id" IN (7, 8, 9, 10, 11, 12) ORDER BY "django_content_type"."app_label" ASC, "django_content_type"."model" ASC, "auth_permission"."codename" ASC; args=(7, 8, 9, 10, 11, 12)
+(0.000) SELECT "django_content_type"."id", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE "django_content_type"."app_label" = 'wej'; args=('wej',)
+(0.001) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+(0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+Internal Server Error: /savedatabase/
+Traceback (most recent call last):
+  File "/Users/kimsno/Documents/virtualenv/wej/lib/python3.5/site-packages/django/core/handlers/base.py", line 149, in get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/kimsno/Documents/virtualenv/wej/lib/python3.5/site-packages/django/core/handlers/base.py", line 147, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/kimsno/Documents/GitHub/what-eat-jeju-univ/wej/wej/views.py", line 188, in saveDatabase
+    return restaurantMenuDataSave( request.GET.get('store_id',''), request.GET.get('menu_id',''), int(request.GET.get('price','0')) )
+  File "/Users/kimsno/Documents/GitHub/what-eat-jeju-univ/wej/wej/views.py", line 254, in restaurantMenuDataSave
+    restaurantMenu = RestaurantMenu.objects.create(restaurantId=restaurantId, menuId=menuId, price=price)
+  File "/Users/kimsno/Documents/virtualenv/wej/lib/python3.5/site-packages/django/db/models/manager.py", line 122, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/Users/kimsno/Documents/virtualenv/wej/lib/python3.5/site-packages/django/db/models/query.py", line 399, in create
+    obj = self.model(**kwargs)
+  File "/Users/kimsno/Documents/virtualenv/wej/lib/python3.5/site-packages/django/db/models/base.py", line 439, in __init__
+    setattr(self, field.name, rel_obj)
+  File "/Users/kimsno/Documents/virtualenv/wej/lib/python3.5/site-packages/django/db/models/fields/related_descriptors.py", line 207, in __set__
+    self.field.remote_field.model._meta.object_name,
+ValueError: Cannot assign "'1'": "RestaurantMenu.restaurantId" must be a "Restaurant" instance.
+(0.001) SELECT "wej_restaurantmenu"."id", "wej_restaurantmenu"."restaurantId_id", "wej_restaurantmenu"."menuId_id", "wej_restaurantmenu"."restaurantMenuImg", "wej_restaurantmenu"."price" FROM "wej_restaurantmenu" LIMIT 21; args=()
+(0.001) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."session_key" = 'bul4h97f1s9i0az0q16eyqbst3v8ap4c' AND "django_session"."expire_date" > '2017-06-12 13:49:49.856829'); args=('bul4h97f1s9i0az0q16eyqbst3v8ap4c', '2017-06-12 13:49:49.856829')
+(0.002) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."session_key" = 'bul4h97f1s9i0az0q16eyqbst3v8ap4c' AND "django_session"."expire_date" > '2017-06-12 13:49:50.066889'); args=('bul4h97f1s9i0az0q16eyqbst3v8ap4c', '2017-06-12 13:49:50.066889')
+(0.000) SELECT "wej_restaurant"."restaurantId", "wej_restaurant"."restaurantName", "wej_restaurant"."callNumber", "wej_restaurant"."viewCount", "wej_restaurant"."restaurantImg", "wej_restaurant"."keyword" FROM "wej_restaurant"; args=()
+Internal Server Error: /loadstoremenuinfo/
+Traceback (most recent call last):
+  File "/Users/kimsno/Documents/virtualenv/wej/lib/python3.5/site-packages/django/core/handlers/base.py", line 149, in get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/kimsno/Documents/virtualenv/wej/lib/python3.5/site-packages/django/core/handlers/base.py", line 147, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/kimsno/Documents/GitHub/what-eat-jeju-univ/wej/wej/views.py", line 231, in loadStoreMenuInfo
+    'id': restaurant.id,
+AttributeError: 'Restaurant' object has no attribute 'id'
+(0.001) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+(0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+(0.001) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+(0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+(0.001) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+(0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+(0.001) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+(0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+(0.001) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+(0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+(0.001) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."session_key" = 'bul4h97f1s9i0az0q16eyqbst3v8ap4c' AND "django_session"."expire_date" > '2017-06-12 13:51:48.868756'); args=('bul4h97f1s9i0az0q16eyqbst3v8ap4c', '2017-06-12 13:51:48.868756')
+(0.001) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."session_key" = 'bul4h97f1s9i0az0q16eyqbst3v8ap4c' AND "django_session"."expire_date" > '2017-06-12 13:51:49.170165'); args=('bul4h97f1s9i0az0q16eyqbst3v8ap4c', '2017-06-12 13:51:49.170165')
+(0.000) SELECT "wej_restaurant"."restaurantId", "wej_restaurant"."restaurantName", "wej_restaurant"."callNumber", "wej_restaurant"."viewCount", "wej_restaurant"."restaurantImg", "wej_restaurant"."keyword" FROM "wej_restaurant"; args=()
+Internal Server Error: /loadstoremenuinfo/
+Traceback (most recent call last):
+  File "/Users/kimsno/Documents/virtualenv/wej/lib/python3.5/site-packages/django/core/handlers/base.py", line 149, in get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/kimsno/Documents/virtualenv/wej/lib/python3.5/site-packages/django/core/handlers/base.py", line 147, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/kimsno/Documents/GitHub/what-eat-jeju-univ/wej/wej/views.py", line 231, in loadStoreMenuInfo
+    'id': restaurant.retaueantId,
+AttributeError: 'Restaurant' object has no attribute 'retaueantId'
+(0.001) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+(0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+(0.001) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+(0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+(0.001) SELECT "wej_restaurant"."restaurantId", "wej_restaurant"."restaurantName", "wej_restaurant"."callNumber", "wej_restaurant"."viewCount", "wej_restaurant"."restaurantImg", "wej_restaurant"."keyword" FROM "wej_restaurant"; args=()
+(0.000) SELECT "wej_menu"."menuId", "wej_menu"."menuName" FROM "wej_menu"; args=()
+Internal Server Error: /savedatabase/
+Traceback (most recent call last):
+  File "/Users/kimsno/Documents/virtualenv/wej/lib/python3.5/site-packages/django/core/handlers/base.py", line 149, in get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/kimsno/Documents/virtualenv/wej/lib/python3.5/site-packages/django/core/handlers/base.py", line 147, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/kimsno/Documents/GitHub/what-eat-jeju-univ/wej/wej/views.py", line 188, in saveDatabase
+    return restaurantMenuDataSave( request.GET.get('store_id',''), request.GET.get('menu_id',''), int(request.GET.get('price','0')) )
+  File "/Users/kimsno/Documents/GitHub/what-eat-jeju-univ/wej/wej/views.py", line 254, in restaurantMenuDataSave
+    restaurantMenu = RestaurantMenu.objects.create(restaurantId=restaurantId, menuId=menuId, price=price)
+  File "/Users/kimsno/Documents/virtualenv/wej/lib/python3.5/site-packages/django/db/models/manager.py", line 122, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/Users/kimsno/Documents/virtualenv/wej/lib/python3.5/site-packages/django/db/models/query.py", line 399, in create
+    obj = self.model(**kwargs)
+  File "/Users/kimsno/Documents/virtualenv/wej/lib/python3.5/site-packages/django/db/models/base.py", line 439, in __init__
+    setattr(self, field.name, rel_obj)
+  File "/Users/kimsno/Documents/virtualenv/wej/lib/python3.5/site-packages/django/db/models/fields/related_descriptors.py", line 207, in __set__
+    self.field.remote_field.model._meta.object_name,
+ValueError: Cannot assign "'1'": "RestaurantMenu.restaurantId" must be a "Restaurant" instance.
+(0.001) SELECT "wej_restaurantmenu"."id", "wej_restaurantmenu"."restaurantId_id", "wej_restaurantmenu"."menuId_id", "wej_restaurantmenu"."restaurantMenuImg", "wej_restaurantmenu"."price" FROM "wej_restaurantmenu" LIMIT 21; args=()
+(0.001) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+(0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+(0.001) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+(0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+(0.001) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+(0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+(0.016) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+(0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+(0.001) SELECT "wej_restaurant"."restaurantId", "wej_restaurant"."restaurantName", "wej_restaurant"."callNumber", "wej_restaurant"."viewCount", "wej_restaurant"."restaurantImg", "wej_restaurant"."keyword" FROM "wej_restaurant" WHERE "wej_restaurant"."restaurantId" = 1; args=(1,)
+(0.000) SELECT "wej_menu"."menuId", "wej_menu"."menuName" FROM "wej_menu" WHERE "wej_menu"."menuId" = 1; args=(1,)
+(0.001) SELECT "wej_restaurant"."restaurantId", "wej_restaurant"."restaurantName", "wej_restaurant"."callNumber", "wej_restaurant"."viewCount", "wej_restaurant"."restaurantImg", "wej_restaurant"."keyword" FROM "wej_restaurant" ORDER BY "wej_restaurant"."viewCount" ASC; args=()
+Internal Server Error: /bestrestaurant/
+Traceback (most recent call last):
+  File "/Users/kimsno/Documents/virtualenv/wej/lib/python3.5/site-packages/django/core/handlers/base.py", line 149, in get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/kimsno/Documents/virtualenv/wej/lib/python3.5/site-packages/django/core/handlers/base.py", line 147, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/kimsno/Documents/GitHub/what-eat-jeju-univ/wej/wej/views.py", line 55, in bestrestaurant
+    RateResult = Rate.objects.filter( restaurantId=restaurant.id )
+AttributeError: 'Restaurant' object has no attribute 'id'
+(0.001) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."expire_date" > '2017-06-12 13:53:53.010175' AND "django_session"."session_key" = 'bul4h97f1s9i0az0q16eyqbst3v8ap4c'); args=('2017-06-12 13:53:53.010175', 'bul4h97f1s9i0az0q16eyqbst3v8ap4c')
+(0.001) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."expire_date" > '2017-06-12 13:53:53.097978' AND "django_session"."session_key" = 'bul4h97f1s9i0az0q16eyqbst3v8ap4c'); args=('2017-06-12 13:53:53.097978', 'bul4h97f1s9i0az0q16eyqbst3v8ap4c')
+(0.001) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."expire_date" > '2017-06-12 13:53:54.397129' AND "django_session"."session_key" = 'bul4h97f1s9i0az0q16eyqbst3v8ap4c'); args=('2017-06-12 13:53:54.397129', 'bul4h97f1s9i0az0q16eyqbst3v8ap4c')
+(0.001) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."expire_date" > '2017-06-12 13:53:54.494796' AND "django_session"."session_key" = 'bul4h97f1s9i0az0q16eyqbst3v8ap4c'); args=('2017-06-12 13:53:54.494796', 'bul4h97f1s9i0az0q16eyqbst3v8ap4c')
+(0.000) SELECT "wej_restaurant"."restaurantId", "wej_restaurant"."restaurantName", "wej_restaurant"."callNumber", "wej_restaurant"."viewCount", "wej_restaurant"."restaurantImg", "wej_restaurant"."keyword" FROM "wej_restaurant"; args=()
+(0.000) SELECT "wej_menu"."menuId", "wej_menu"."menuName" FROM "wej_menu"; args=()
+(0.001) SELECT "wej_restaurant"."restaurantId", "wej_restaurant"."restaurantName", "wej_restaurant"."callNumber", "wej_restaurant"."viewCount", "wej_restaurant"."restaurantImg", "wej_restaurant"."keyword" FROM "wej_restaurant" WHERE "wej_restaurant"."restaurantId" = 1; args=(1,)
+(0.000) SELECT "wej_menu"."menuId", "wej_menu"."menuName" FROM "wej_menu" WHERE "wej_menu"."menuId" = 1; args=(1,)
+(0.001) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+(0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+(0.001) SELECT "wej_restaurant"."restaurantId", "wej_restaurant"."restaurantName", "wej_restaurant"."callNumber", "wej_restaurant"."viewCount", "wej_restaurant"."restaurantImg", "wej_restaurant"."keyword" FROM "wej_restaurant" WHERE "wej_restaurant"."restaurantId" = 1; args=(1,)
+(0.000) SELECT "wej_menu"."menuId", "wej_menu"."menuName" FROM "wej_menu" WHERE "wej_menu"."menuId" = 1; args=(1,)
+(0.001) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+(0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+(0.001) SELECT "wej_restaurant"."restaurantId", "wej_restaurant"."restaurantName", "wej_restaurant"."callNumber", "wej_restaurant"."viewCount", "wej_restaurant"."restaurantImg", "wej_restaurant"."keyword" FROM "wej_restaurant" WHERE "wej_restaurant"."restaurantId" = 1; args=(1,)
+(0.000) SELECT "wej_menu"."menuId", "wej_menu"."menuName" FROM "wej_menu" WHERE "wej_menu"."menuId" = 1; args=(1,)
+(0.001) SELECT "wej_restaurant"."restaurantId", "wej_restaurant"."restaurantName", "wej_restaurant"."callNumber", "wej_restaurant"."viewCount", "wej_restaurant"."restaurantImg", "wej_restaurant"."keyword" FROM "wej_restaurant" WHERE "wej_restaurant"."restaurantId" = 1; args=(1,)
+(0.000) SELECT "wej_menu"."menuId", "wej_menu"."menuName" FROM "wej_menu" WHERE "wej_menu"."menuId" = 1; args=(1,)
+(0.001) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."expire_date" > '2017-06-12 13:56:47.953812' AND "django_session"."session_key" = 'bul4h97f1s9i0az0q16eyqbst3v8ap4c'); args=('2017-06-12 13:56:47.953812', 'bul4h97f1s9i0az0q16eyqbst3v8ap4c')
+(0.001) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."expire_date" > '2017-06-12 13:56:48.211727' AND "django_session"."session_key" = 'bul4h97f1s9i0az0q16eyqbst3v8ap4c'); args=('2017-06-12 13:56:48.211727', 'bul4h97f1s9i0az0q16eyqbst3v8ap4c')
+(0.001) SELECT "wej_restaurant"."restaurantId", "wej_restaurant"."restaurantName", "wej_restaurant"."callNumber", "wej_restaurant"."viewCount", "wej_restaurant"."restaurantImg", "wej_restaurant"."keyword" FROM "wej_restaurant"; args=()
+(0.000) SELECT "wej_menu"."menuId", "wej_menu"."menuName" FROM "wej_menu"; args=()
+(0.001) SELECT "wej_restaurant"."restaurantId", "wej_restaurant"."restaurantName", "wej_restaurant"."callNumber", "wej_restaurant"."viewCount", "wej_restaurant"."restaurantImg", "wej_restaurant"."keyword" FROM "wej_restaurant" WHERE "wej_restaurant"."restaurantId" = 1; args=(1,)
+(0.000) SELECT "wej_menu"."menuId", "wej_menu"."menuName" FROM "wej_menu" WHERE "wej_menu"."menuId" = 1; args=(1,)
+(0.001) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+(0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+(0.001) SELECT "wej_restaurant"."restaurantId", "wej_restaurant"."restaurantName", "wej_restaurant"."callNumber", "wej_restaurant"."viewCount", "wej_restaurant"."restaurantImg", "wej_restaurant"."keyword" FROM "wej_restaurant" WHERE "wej_restaurant"."restaurantId" = 1; args=(1,)
+(0.000) SELECT "wej_menu"."menuId", "wej_menu"."menuName" FROM "wej_menu" WHERE "wej_menu"."menuId" = 1; args=(1,)
+(0.001) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+(0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+restaurantId=1, menuId=1, price=13000
+(0.001) SELECT "wej_restaurant"."restaurantId", "wej_restaurant"."restaurantName", "wej_restaurant"."callNumber", "wej_restaurant"."viewCount", "wej_restaurant"."restaurantImg", "wej_restaurant"."keyword" FROM "wej_restaurant" WHERE "wej_restaurant"."restaurantId" = 1; args=(1,)
+(0.000) SELECT "wej_menu"."menuId", "wej_menu"."menuName" FROM "wej_menu" WHERE "wej_menu"."menuId" = 1; args=(1,)
+(0.001) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+(0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+(0.001) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+(0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+(0.004) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+(0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+(0.000) PRAGMA foreign_keys; args=None
+(0.000) PRAGMA foreign_keys = 0; args=None
+(0.000) BEGIN; args=None
+ALTER TABLE "wej_restaurantmenu" RENAME TO "wej_restaurantmenu__old"; (params [])
+(0.001) ALTER TABLE "wej_restaurantmenu" RENAME TO "wej_restaurantmenu__old"; args=[]
+CREATE TABLE "wej_restaurantmenu" ("id" integer NOT NULL PRIMARY KEY AUTOINCREMENT, "price" integer NOT NULL, "restaurantMenuImg" varchar(100) NOT NULL, "restaurantId_id" integer NOT NULL REFERENCES "wej_restaurant" ("restaurantId"), "menu_id" integer NOT NULL REFERENCES "wej_menu" ("menuId")); (params None)
+(0.000) CREATE TABLE "wej_restaurantmenu" ("id" integer NOT NULL PRIMARY KEY AUTOINCREMENT, "price" integer NOT NULL, "restaurantMenuImg" varchar(100) NOT NULL, "restaurantId_id" integer NOT NULL REFERENCES "wej_restaurant" ("restaurantId"), "menu_id" integer NOT NULL REFERENCES "wej_menu" ("menuId")); args=None
+INSERT INTO "wej_restaurantmenu" ("restaurantMenuImg", "price", "menu_id", "restaurantId_id", "id") SELECT "restaurantMenuImg", "price", "menuId_id", "restaurantId_id", "id" FROM "wej_restaurantmenu__old"; (params [])
+(0.001) INSERT INTO "wej_restaurantmenu" ("restaurantMenuImg", "price", "menu_id", "restaurantId_id", "id") SELECT "restaurantMenuImg", "price", "menuId_id", "restaurantId_id", "id" FROM "wej_restaurantmenu__old"; args=[]
+DROP TABLE "wej_restaurantmenu__old"; (params [])
+(0.000) DROP TABLE "wej_restaurantmenu__old"; args=[]
+CREATE INDEX "wej_restaurantmenu_eb49549a" ON "wej_restaurantmenu" ("restaurantId_id"); (params [])
+(0.000) CREATE INDEX "wej_restaurantmenu_eb49549a" ON "wej_restaurantmenu" ("restaurantId_id"); args=[]
+CREATE INDEX "wej_restaurantmenu_93e25458" ON "wej_restaurantmenu" ("menu_id"); (params [])
+(0.000) CREATE INDEX "wej_restaurantmenu_93e25458" ON "wej_restaurantmenu" ("menu_id"); args=[]
+ALTER TABLE "wej_restaurantmenu" RENAME TO "wej_restaurantmenu__old"; (params [])
+(0.002) ALTER TABLE "wej_restaurantmenu" RENAME TO "wej_restaurantmenu__old"; args=[]
+CREATE TABLE "wej_restaurantmenu" ("id" integer NOT NULL PRIMARY KEY AUTOINCREMENT, "price" integer NOT NULL, "restaurantMenuImg" varchar(100) NOT NULL, "menu_id" integer NOT NULL REFERENCES "wej_menu" ("menuId"), "restaurant_id" integer NOT NULL REFERENCES "wej_restaurant" ("restaurantId")); (params None)
+(0.000) CREATE TABLE "wej_restaurantmenu" ("id" integer NOT NULL PRIMARY KEY AUTOINCREMENT, "price" integer NOT NULL, "restaurantMenuImg" varchar(100) NOT NULL, "menu_id" integer NOT NULL REFERENCES "wej_menu" ("menuId"), "restaurant_id" integer NOT NULL REFERENCES "wej_restaurant" ("restaurantId")); args=None
+INSERT INTO "wej_restaurantmenu" ("restaurantMenuImg", "restaurant_id", "price", "menu_id", "id") SELECT "restaurantMenuImg", "restaurantId_id", "price", "menu_id", "id" FROM "wej_restaurantmenu__old"; (params [])
+(0.000) INSERT INTO "wej_restaurantmenu" ("restaurantMenuImg", "restaurant_id", "price", "menu_id", "id") SELECT "restaurantMenuImg", "restaurantId_id", "price", "menu_id", "id" FROM "wej_restaurantmenu__old"; args=[]
+DROP TABLE "wej_restaurantmenu__old"; (params [])
+(0.000) DROP TABLE "wej_restaurantmenu__old"; args=[]
+CREATE INDEX "wej_restaurantmenu_93e25458" ON "wej_restaurantmenu" ("menu_id"); (params [])
+(0.000) CREATE INDEX "wej_restaurantmenu_93e25458" ON "wej_restaurantmenu" ("menu_id"); args=[]
+CREATE INDEX "wej_restaurantmenu_ee9d9d3e" ON "wej_restaurantmenu" ("restaurant_id"); (params [])
+(0.000) CREATE INDEX "wej_restaurantmenu_ee9d9d3e" ON "wej_restaurantmenu" ("restaurant_id"); args=[]
+(0.000) PRAGMA foreign_keys = 0; args=None
+(0.000) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+(0.000) BEGIN; args=None
+(0.000) INSERT INTO "django_migrations" ("app", "name", "applied") VALUES ('wej', '0006_auto_20170612_1403', '2017-06-12 14:03:05.737528'); args=['wej', '0006_auto_20170612_1403', '2017-06-12 14:03:05.737528']
+(0.000) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+(0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+(0.000) SELECT "django_content_type"."id", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE ("django_content_type"."app_label" = 'admin' AND "django_content_type"."model" = 'logentry'); args=('admin', 'logentry')
+(0.000) SELECT "auth_permission"."content_type_id", "auth_permission"."codename" FROM "auth_permission" INNER JOIN "django_content_type" ON ("auth_permission"."content_type_id" = "django_content_type"."id") WHERE "auth_permission"."content_type_id" IN (1) ORDER BY "django_content_type"."app_label" ASC, "django_content_type"."model" ASC, "auth_permission"."codename" ASC; args=(1,)
+(0.000) SELECT "django_content_type"."id", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE "django_content_type"."app_label" = 'admin'; args=('admin',)
+(0.000) SELECT "django_content_type"."id", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE ("django_content_type"."app_label" = 'auth' AND "django_content_type"."model" = 'permission'); args=('auth', 'permission')
+(0.000) SELECT "django_content_type"."id", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE ("django_content_type"."app_label" = 'auth' AND "django_content_type"."model" = 'group'); args=('auth', 'group')
+(0.000) SELECT "django_content_type"."id", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE ("django_content_type"."app_label" = 'auth' AND "django_content_type"."model" = 'user'); args=('auth', 'user')
+(0.001) SELECT "auth_permission"."content_type_id", "auth_permission"."codename" FROM "auth_permission" INNER JOIN "django_content_type" ON ("auth_permission"."content_type_id" = "django_content_type"."id") WHERE "auth_permission"."content_type_id" IN (2, 3, 4) ORDER BY "django_content_type"."app_label" ASC, "django_content_type"."model" ASC, "auth_permission"."codename" ASC; args=(2, 3, 4)
+(0.000) SELECT "django_content_type"."id", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE "django_content_type"."app_label" = 'auth'; args=('auth',)
+(0.000) SELECT "django_content_type"."id", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE ("django_content_type"."app_label" = 'contenttypes' AND "django_content_type"."model" = 'contenttype'); args=('contenttypes', 'contenttype')
+(0.000) SELECT "auth_permission"."content_type_id", "auth_permission"."codename" FROM "auth_permission" INNER JOIN "django_content_type" ON ("auth_permission"."content_type_id" = "django_content_type"."id") WHERE "auth_permission"."content_type_id" IN (5) ORDER BY "django_content_type"."app_label" ASC, "django_content_type"."model" ASC, "auth_permission"."codename" ASC; args=(5,)
+(0.000) SELECT "django_content_type"."id", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE "django_content_type"."app_label" = 'contenttypes'; args=('contenttypes',)
+(0.000) SELECT "django_content_type"."id", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE ("django_content_type"."app_label" = 'sessions' AND "django_content_type"."model" = 'session'); args=('sessions', 'session')
+(0.000) SELECT "auth_permission"."content_type_id", "auth_permission"."codename" FROM "auth_permission" INNER JOIN "django_content_type" ON ("auth_permission"."content_type_id" = "django_content_type"."id") WHERE "auth_permission"."content_type_id" IN (6) ORDER BY "django_content_type"."app_label" ASC, "django_content_type"."model" ASC, "auth_permission"."codename" ASC; args=(6,)
+(0.000) SELECT "django_content_type"."id", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE "django_content_type"."app_label" = 'sessions'; args=('sessions',)
+(0.000) SELECT "django_content_type"."id", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE ("django_content_type"."app_label" = 'wej' AND "django_content_type"."model" = 'user'); args=('wej', 'user')
+(0.000) SELECT "django_content_type"."id", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE ("django_content_type"."app_label" = 'wej' AND "django_content_type"."model" = 'restaurant'); args=('wej', 'restaurant')
+(0.000) SELECT "django_content_type"."id", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE ("django_content_type"."app_label" = 'wej' AND "django_content_type"."model" = 'rate'); args=('wej', 'rate')
+(0.000) SELECT "django_content_type"."id", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE ("django_content_type"."app_label" = 'wej' AND "django_content_type"."model" = 'menu'); args=('wej', 'menu')
+(0.000) SELECT "django_content_type"."id", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE ("django_content_type"."app_label" = 'wej' AND "django_content_type"."model" = 'restaurantmenu'); args=('wej', 'restaurantmenu')
+(0.000) SELECT "django_content_type"."id", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE ("django_content_type"."app_label" = 'wej' AND "django_content_type"."model" = 'keyword'); args=('wej', 'keyword')
+(0.001) SELECT "auth_permission"."content_type_id", "auth_permission"."codename" FROM "auth_permission" INNER JOIN "django_content_type" ON ("auth_permission"."content_type_id" = "django_content_type"."id") WHERE "auth_permission"."content_type_id" IN (7, 8, 9, 10, 11, 12) ORDER BY "django_content_type"."app_label" ASC, "django_content_type"."model" ASC, "auth_permission"."codename" ASC; args=(7, 8, 9, 10, 11, 12)
+(0.000) SELECT "django_content_type"."id", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE "django_content_type"."app_label" = 'wej'; args=('wej',)
+(0.001) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+(0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+restaurantId=1, menuId=1, price=13000
+(0.001) SELECT "wej_restaurant"."restaurantId", "wej_restaurant"."restaurantName", "wej_restaurant"."callNumber", "wej_restaurant"."viewCount", "wej_restaurant"."restaurantImg", "wej_restaurant"."keyword" FROM "wej_restaurant" WHERE "wej_restaurant"."restaurantId" = 1; args=(1,)
+(0.000) SELECT "wej_menu"."menuId", "wej_menu"."menuName" FROM "wej_menu" WHERE "wej_menu"."menuId" = 1; args=(1,)
+restaurantId=1, menuId=1, price=13000
+(0.001) SELECT "wej_restaurant"."restaurantId", "wej_restaurant"."restaurantName", "wej_restaurant"."callNumber", "wej_restaurant"."viewCount", "wej_restaurant"."restaurantImg", "wej_restaurant"."keyword" FROM "wej_restaurant" WHERE "wej_restaurant"."restaurantId" = 1; args=(1,)
+(0.000) SELECT "wej_menu"."menuId", "wej_menu"."menuName" FROM "wej_menu" WHERE "wej_menu"."menuId" = 1; args=(1,)
+(0.001) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+(0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+(0.001) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+(0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+(0.001) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+(0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+(0.001) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+(0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+restaurantId=1, menuId=1, price=13000
+(0.001) SELECT "wej_restaurant"."restaurantId", "wej_restaurant"."restaurantName", "wej_restaurant"."callNumber", "wej_restaurant"."viewCount", "wej_restaurant"."restaurantImg", "wej_restaurant"."keyword" FROM "wej_restaurant" WHERE "wej_restaurant"."restaurantId" = 1; args=(1,)
+(0.000) SELECT "wej_menu"."menuId", "wej_menu"."menuName" FROM "wej_menu" WHERE "wej_menu"."menuId" = 1; args=(1,)
+(0.001) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+(0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+(0.001) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+(0.001) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+(0.001) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+(0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+(0.001) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+(0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+(0.001) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+(0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+(0.001) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+(0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+(0.001) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+(0.001) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+(0.001) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+(0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+(0.001) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+(0.001) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+(0.001) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+(0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+restaurantId=1, menuId=1, price=13000
+(0.001) SELECT "wej_restaurant"."restaurantId", "wej_restaurant"."restaurantName", "wej_restaurant"."callNumber", "wej_restaurant"."viewCount", "wej_restaurant"."restaurantImg", "wej_restaurant"."keyword" FROM "wej_restaurant" WHERE "wej_restaurant"."restaurantId" = 1; args=(1,)
+(0.000) SELECT "wej_menu"."menuId", "wej_menu"."menuName" FROM "wej_menu" WHERE "wej_menu"."menuId" = 1; args=(1,)
+Internal Server Error: /savedatabase/
+Traceback (most recent call last):
+  File "/Users/kimsno/Documents/virtualenv/wej/lib/python3.5/site-packages/django/core/handlers/base.py", line 149, in get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/kimsno/Documents/virtualenv/wej/lib/python3.5/site-packages/django/core/handlers/base.py", line 147, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/kimsno/Documents/GitHub/what-eat-jeju-univ/wej/wej/views.py", line 188, in saveDatabase
+    return restaurantMenuDataSave( int(request.GET.get('store_id','')), int(request.GET.get('menu_id','')), int(request.GET.get('price','0')) )
+  File "/Users/kimsno/Documents/GitHub/what-eat-jeju-univ/wej/wej/views.py", line 257, in restaurantMenuDataSave
+    restaurantMenu = RestaurantMenu.objects.create(restaurant_restaurantId=restaurantId, menu_menuId=menuId, price=price)
+  File "/Users/kimsno/Documents/virtualenv/wej/lib/python3.5/site-packages/django/db/models/manager.py", line 122, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/Users/kimsno/Documents/virtualenv/wej/lib/python3.5/site-packages/django/db/models/query.py", line 399, in create
+    obj = self.model(**kwargs)
+  File "/Users/kimsno/Documents/virtualenv/wej/lib/python3.5/site-packages/django/db/models/base.py", line 451, in __init__
+    raise TypeError("'%s' is an invalid keyword argument for this function" % list(kwargs)[0])
+TypeError: 'menu_menuId' is an invalid keyword argument for this function
+(0.000) SELECT "wej_restaurantmenu"."id", "wej_restaurantmenu"."restaurant_id", "wej_restaurantmenu"."menu_id", "wej_restaurantmenu"."restaurantMenuImg", "wej_restaurantmenu"."price" FROM "wej_restaurantmenu" LIMIT 21; args=()
+(0.001) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+(0.001) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+(0.003) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+(0.002) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+(0.001) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+(0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+(0.001) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+(0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+(0.000) PRAGMA foreign_keys; args=None
+(0.000) PRAGMA foreign_keys = 0; args=None
+(0.000) BEGIN; args=None
+ALTER TABLE "wej_restaurantmenu" RENAME TO "wej_restaurantmenu__old"; (params [])
+(0.002) ALTER TABLE "wej_restaurantmenu" RENAME TO "wej_restaurantmenu__old"; args=[]
+CREATE TABLE "wej_restaurantmenu" ("id" integer NOT NULL PRIMARY KEY AUTOINCREMENT, "price" integer NOT NULL, "restaurantMenuImg" varchar(100) NOT NULL, "restaurant_id" integer NOT NULL REFERENCES "wej_restaurant" ("restaurantId"), "menuId_id" integer NOT NULL REFERENCES "wej_menu" ("menuId")); (params None)
+(0.000) CREATE TABLE "wej_restaurantmenu" ("id" integer NOT NULL PRIMARY KEY AUTOINCREMENT, "price" integer NOT NULL, "restaurantMenuImg" varchar(100) NOT NULL, "restaurant_id" integer NOT NULL REFERENCES "wej_restaurant" ("restaurantId"), "menuId_id" integer NOT NULL REFERENCES "wej_menu" ("menuId")); args=None
+INSERT INTO "wej_restaurantmenu" ("menuId_id", "id", "restaurant_id", "restaurantMenuImg", "price") SELECT "menu_id", "id", "restaurant_id", "restaurantMenuImg", "price" FROM "wej_restaurantmenu__old"; (params [])
+(0.001) INSERT INTO "wej_restaurantmenu" ("menuId_id", "id", "restaurant_id", "restaurantMenuImg", "price") SELECT "menu_id", "id", "restaurant_id", "restaurantMenuImg", "price" FROM "wej_restaurantmenu__old"; args=[]
+DROP TABLE "wej_restaurantmenu__old"; (params [])
+(0.000) DROP TABLE "wej_restaurantmenu__old"; args=[]
+CREATE INDEX "wej_restaurantmenu_ee9d9d3e" ON "wej_restaurantmenu" ("restaurant_id"); (params [])
+(0.000) CREATE INDEX "wej_restaurantmenu_ee9d9d3e" ON "wej_restaurantmenu" ("restaurant_id"); args=[]
+CREATE INDEX "wej_restaurantmenu_458937d9" ON "wej_restaurantmenu" ("menuId_id"); (params [])
+(0.000) CREATE INDEX "wej_restaurantmenu_458937d9" ON "wej_restaurantmenu" ("menuId_id"); args=[]
+ALTER TABLE "wej_restaurantmenu" RENAME TO "wej_restaurantmenu__old"; (params [])
+(0.000) ALTER TABLE "wej_restaurantmenu" RENAME TO "wej_restaurantmenu__old"; args=[]
+CREATE TABLE "wej_restaurantmenu" ("id" integer NOT NULL PRIMARY KEY AUTOINCREMENT, "price" integer NOT NULL, "restaurantMenuImg" varchar(100) NOT NULL, "menuId_id" integer NOT NULL REFERENCES "wej_menu" ("menuId"), "restaurantId_id" integer NOT NULL REFERENCES "wej_restaurant" ("restaurantId")); (params None)
+(0.000) CREATE TABLE "wej_restaurantmenu" ("id" integer NOT NULL PRIMARY KEY AUTOINCREMENT, "price" integer NOT NULL, "restaurantMenuImg" varchar(100) NOT NULL, "menuId_id" integer NOT NULL REFERENCES "wej_menu" ("menuId"), "restaurantId_id" integer NOT NULL REFERENCES "wej_restaurant" ("restaurantId")); args=None
+INSERT INTO "wej_restaurantmenu" ("menuId_id", "id", "restaurantMenuImg", "price", "restaurantId_id") SELECT "menuId_id", "id", "restaurantMenuImg", "price", "restaurant_id" FROM "wej_restaurantmenu__old"; (params [])
+(0.000) INSERT INTO "wej_restaurantmenu" ("menuId_id", "id", "restaurantMenuImg", "price", "restaurantId_id") SELECT "menuId_id", "id", "restaurantMenuImg", "price", "restaurant_id" FROM "wej_restaurantmenu__old"; args=[]
+DROP TABLE "wej_restaurantmenu__old"; (params [])
+(0.000) DROP TABLE "wej_restaurantmenu__old"; args=[]
+CREATE INDEX "wej_restaurantmenu_458937d9" ON "wej_restaurantmenu" ("menuId_id"); (params [])
+(0.000) CREATE INDEX "wej_restaurantmenu_458937d9" ON "wej_restaurantmenu" ("menuId_id"); args=[]
+CREATE INDEX "wej_restaurantmenu_eb49549a" ON "wej_restaurantmenu" ("restaurantId_id"); (params [])
+(0.000) CREATE INDEX "wej_restaurantmenu_eb49549a" ON "wej_restaurantmenu" ("restaurantId_id"); args=[]
+(0.000) PRAGMA foreign_keys = 0; args=None
+(0.000) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+(0.000) BEGIN; args=None
+(0.000) INSERT INTO "django_migrations" ("app", "name", "applied") VALUES ('wej', '0007_auto_20170612_1408', '2017-06-12 14:08:17.706975'); args=['wej', '0007_auto_20170612_1408', '2017-06-12 14:08:17.706975']
+(0.000) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+(0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+(0.000) SELECT "django_content_type"."id", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE ("django_content_type"."app_label" = 'admin' AND "django_content_type"."model" = 'logentry'); args=('admin', 'logentry')
+(0.000) SELECT "auth_permission"."content_type_id", "auth_permission"."codename" FROM "auth_permission" INNER JOIN "django_content_type" ON ("auth_permission"."content_type_id" = "django_content_type"."id") WHERE "auth_permission"."content_type_id" IN (1) ORDER BY "django_content_type"."app_label" ASC, "django_content_type"."model" ASC, "auth_permission"."codename" ASC; args=(1,)
+(0.000) SELECT "django_content_type"."id", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE "django_content_type"."app_label" = 'admin'; args=('admin',)
+(0.000) SELECT "django_content_type"."id", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE ("django_content_type"."app_label" = 'auth' AND "django_content_type"."model" = 'permission'); args=('auth', 'permission')
+(0.000) SELECT "django_content_type"."id", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE ("django_content_type"."app_label" = 'auth' AND "django_content_type"."model" = 'group'); args=('auth', 'group')
+(0.000) SELECT "django_content_type"."id", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE ("django_content_type"."app_label" = 'auth' AND "django_content_type"."model" = 'user'); args=('auth', 'user')
+(0.000) SELECT "auth_permission"."content_type_id", "auth_permission"."codename" FROM "auth_permission" INNER JOIN "django_content_type" ON ("auth_permission"."content_type_id" = "django_content_type"."id") WHERE "auth_permission"."content_type_id" IN (2, 3, 4) ORDER BY "django_content_type"."app_label" ASC, "django_content_type"."model" ASC, "auth_permission"."codename" ASC; args=(2, 3, 4)
+(0.000) SELECT "django_content_type"."id", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE "django_content_type"."app_label" = 'auth'; args=('auth',)
+(0.000) SELECT "django_content_type"."id", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE ("django_content_type"."app_label" = 'contenttypes' AND "django_content_type"."model" = 'contenttype'); args=('contenttypes', 'contenttype')
+(0.000) SELECT "auth_permission"."content_type_id", "auth_permission"."codename" FROM "auth_permission" INNER JOIN "django_content_type" ON ("auth_permission"."content_type_id" = "django_content_type"."id") WHERE "auth_permission"."content_type_id" IN (5) ORDER BY "django_content_type"."app_label" ASC, "django_content_type"."model" ASC, "auth_permission"."codename" ASC; args=(5,)
+(0.000) SELECT "django_content_type"."id", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE "django_content_type"."app_label" = 'contenttypes'; args=('contenttypes',)
+(0.000) SELECT "django_content_type"."id", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE ("django_content_type"."app_label" = 'sessions' AND "django_content_type"."model" = 'session'); args=('sessions', 'session')
+(0.000) SELECT "auth_permission"."content_type_id", "auth_permission"."codename" FROM "auth_permission" INNER JOIN "django_content_type" ON ("auth_permission"."content_type_id" = "django_content_type"."id") WHERE "auth_permission"."content_type_id" IN (6) ORDER BY "django_content_type"."app_label" ASC, "django_content_type"."model" ASC, "auth_permission"."codename" ASC; args=(6,)
+(0.000) SELECT "django_content_type"."id", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE "django_content_type"."app_label" = 'sessions'; args=('sessions',)
+(0.000) SELECT "django_content_type"."id", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE ("django_content_type"."app_label" = 'wej' AND "django_content_type"."model" = 'user'); args=('wej', 'user')
+(0.000) SELECT "django_content_type"."id", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE ("django_content_type"."app_label" = 'wej' AND "django_content_type"."model" = 'restaurant'); args=('wej', 'restaurant')
+(0.000) SELECT "django_content_type"."id", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE ("django_content_type"."app_label" = 'wej' AND "django_content_type"."model" = 'rate'); args=('wej', 'rate')
+(0.000) SELECT "django_content_type"."id", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE ("django_content_type"."app_label" = 'wej' AND "django_content_type"."model" = 'menu'); args=('wej', 'menu')
+(0.000) SELECT "django_content_type"."id", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE ("django_content_type"."app_label" = 'wej' AND "django_content_type"."model" = 'restaurantmenu'); args=('wej', 'restaurantmenu')
+(0.000) SELECT "django_content_type"."id", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE ("django_content_type"."app_label" = 'wej' AND "django_content_type"."model" = 'keyword'); args=('wej', 'keyword')
+(0.000) SELECT "auth_permission"."content_type_id", "auth_permission"."codename" FROM "auth_permission" INNER JOIN "django_content_type" ON ("auth_permission"."content_type_id" = "django_content_type"."id") WHERE "auth_permission"."content_type_id" IN (7, 8, 9, 10, 11, 12) ORDER BY "django_content_type"."app_label" ASC, "django_content_type"."model" ASC, "auth_permission"."codename" ASC; args=(7, 8, 9, 10, 11, 12)
+(0.000) SELECT "django_content_type"."id", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE "django_content_type"."app_label" = 'wej'; args=('wej',)
+(0.001) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+(0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+restaurantId=1, menuId=1, price=13000
+(0.001) SELECT "wej_restaurant"."restaurantId", "wej_restaurant"."restaurantName", "wej_restaurant"."callNumber", "wej_restaurant"."viewCount", "wej_restaurant"."restaurantImg", "wej_restaurant"."keyword" FROM "wej_restaurant" WHERE "wej_restaurant"."restaurantId" = 1; args=(1,)
+(0.000) SELECT "wej_menu"."menuId", "wej_menu"."menuName" FROM "wej_menu" WHERE "wej_menu"."menuId" = 1; args=(1,)
+Internal Server Error: /savedatabase/
+Traceback (most recent call last):
+  File "/Users/kimsno/Documents/virtualenv/wej/lib/python3.5/site-packages/django/core/handlers/base.py", line 149, in get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/kimsno/Documents/virtualenv/wej/lib/python3.5/site-packages/django/core/handlers/base.py", line 147, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/kimsno/Documents/GitHub/what-eat-jeju-univ/wej/wej/views.py", line 188, in saveDatabase
+    return restaurantMenuDataSave( int(request.GET.get('store_id','')), int(request.GET.get('menu_id','')), int(request.GET.get('price','0')) )
+  File "/Users/kimsno/Documents/GitHub/what-eat-jeju-univ/wej/wej/views.py", line 257, in restaurantMenuDataSave
+    restaurantMenu = RestaurantMenu.objects.create(restaurant=restaurantId, menu=menuId, price=price)
+  File "/Users/kimsno/Documents/virtualenv/wej/lib/python3.5/site-packages/django/db/models/manager.py", line 122, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/Users/kimsno/Documents/virtualenv/wej/lib/python3.5/site-packages/django/db/models/query.py", line 399, in create
+    obj = self.model(**kwargs)
+  File "/Users/kimsno/Documents/virtualenv/wej/lib/python3.5/site-packages/django/db/models/base.py", line 451, in __init__
+    raise TypeError("'%s' is an invalid keyword argument for this function" % list(kwargs)[0])
+TypeError: 'restaurant' is an invalid keyword argument for this function
+(0.000) SELECT "wej_restaurantmenu"."id", "wej_restaurantmenu"."restaurantId_id", "wej_restaurantmenu"."menuId_id", "wej_restaurantmenu"."restaurantMenuImg", "wej_restaurantmenu"."price" FROM "wej_restaurantmenu" LIMIT 21; args=()
+(0.002) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+(0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+restaurantId=1, menuId=1, price=13000
+(0.001) SELECT "wej_restaurant"."restaurantId", "wej_restaurant"."restaurantName", "wej_restaurant"."callNumber", "wej_restaurant"."viewCount", "wej_restaurant"."restaurantImg", "wej_restaurant"."keyword" FROM "wej_restaurant" WHERE "wej_restaurant"."restaurantId" = 1; args=(1,)
+(0.000) SELECT "wej_menu"."menuId", "wej_menu"."menuName" FROM "wej_menu" WHERE "wej_menu"."menuId" = 1; args=(1,)
+Internal Server Error: /savedatabase/
+Traceback (most recent call last):
+  File "/Users/kimsno/Documents/virtualenv/wej/lib/python3.5/site-packages/django/core/handlers/base.py", line 149, in get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/kimsno/Documents/virtualenv/wej/lib/python3.5/site-packages/django/core/handlers/base.py", line 147, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/kimsno/Documents/GitHub/what-eat-jeju-univ/wej/wej/views.py", line 188, in saveDatabase
+    return restaurantMenuDataSave( int(request.GET.get('store_id','')), int(request.GET.get('menu_id','')), int(request.GET.get('price','0')) )
+  File "/Users/kimsno/Documents/GitHub/what-eat-jeju-univ/wej/wej/views.py", line 257, in restaurantMenuDataSave
+    restaurantMenu = RestaurantMenu.objects.create(restaurantId=restaurantId, menuId=menuId, price=price)
+  File "/Users/kimsno/Documents/virtualenv/wej/lib/python3.5/site-packages/django/db/models/manager.py", line 122, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/Users/kimsno/Documents/virtualenv/wej/lib/python3.5/site-packages/django/db/models/query.py", line 399, in create
+    obj = self.model(**kwargs)
+  File "/Users/kimsno/Documents/virtualenv/wej/lib/python3.5/site-packages/django/db/models/base.py", line 439, in __init__
+    setattr(self, field.name, rel_obj)
+  File "/Users/kimsno/Documents/virtualenv/wej/lib/python3.5/site-packages/django/db/models/fields/related_descriptors.py", line 207, in __set__
+    self.field.remote_field.model._meta.object_name,
+ValueError: Cannot assign "1": "RestaurantMenu.restaurantId" must be a "Restaurant" instance.
+(0.000) SELECT "wej_restaurantmenu"."id", "wej_restaurantmenu"."restaurantId_id", "wej_restaurantmenu"."menuId_id", "wej_restaurantmenu"."restaurantMenuImg", "wej_restaurantmenu"."price" FROM "wej_restaurantmenu" LIMIT 21; args=()
+(0.001) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+(0.001) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+restaurantId=1, menuId=1, price=13000
+(0.001) SELECT "wej_restaurant"."restaurantId", "wej_restaurant"."restaurantName", "wej_restaurant"."callNumber", "wej_restaurant"."viewCount", "wej_restaurant"."restaurantImg", "wej_restaurant"."keyword" FROM "wej_restaurant" WHERE "wej_restaurant"."restaurantId" = 1; args=(1,)
+(0.000) SELECT "wej_menu"."menuId", "wej_menu"."menuName" FROM "wej_menu" WHERE "wej_menu"."menuId" = 1; args=(1,)
+(0.000) BEGIN; args=None
+(0.000) INSERT INTO "wej_restaurantmenu" ("restaurantId_id", "menuId_id", "restaurantMenuImg", "price") VALUES (1, 1, '', 13000); args=[1, 1, '', 13000]
+(0.001) SELECT "wej_restaurant"."restaurantId", "wej_restaurant"."restaurantName", "wej_restaurant"."callNumber", "wej_restaurant"."viewCount", "wej_restaurant"."restaurantImg", "wej_restaurant"."keyword" FROM "wej_restaurant" ORDER BY "wej_restaurant"."viewCount" ASC; args=()
+(0.000) SELECT "wej_rate"."seq", "wej_rate"."restaurantId_id", "wej_rate"."rate" FROM "wej_rate" WHERE "wej_rate"."restaurantId_id" = 2; args=(2,)
+(0.000) SELECT "wej_rate"."seq", "wej_rate"."restaurantId_id", "wej_rate"."rate" FROM "wej_rate" WHERE "wej_rate"."restaurantId_id" = 1; args=(1,)
+(0.000) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."expire_date" > '2017-06-12 14:09:24.113438' AND "django_session"."session_key" = 'bul4h97f1s9i0az0q16eyqbst3v8ap4c'); args=('2017-06-12 14:09:24.113438', 'bul4h97f1s9i0az0q16eyqbst3v8ap4c')
+(0.001) SELECT "wej_restaurant"."restaurantId", "wej_restaurant"."restaurantName", "wej_restaurant"."callNumber", "wej_restaurant"."viewCount", "wej_restaurant"."restaurantImg", "wej_restaurant"."keyword" FROM "wej_restaurant" ORDER BY "wej_restaurant"."viewCount" ASC; args=()
+(0.000) SELECT "wej_rate"."seq", "wej_rate"."restaurantId_id", "wej_rate"."rate" FROM "wej_rate" WHERE "wej_rate"."restaurantId_id" = 2; args=(2,)
+(0.000) SELECT "wej_rate"."seq", "wej_rate"."restaurantId_id", "wej_rate"."rate" FROM "wej_rate" WHERE "wej_rate"."restaurantId_id" = 1; args=(1,)
+(0.000) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."expire_date" > '2017-06-12 14:09:24.223211' AND "django_session"."session_key" = 'bul4h97f1s9i0az0q16eyqbst3v8ap4c'); args=('2017-06-12 14:09:24.223211', 'bul4h97f1s9i0az0q16eyqbst3v8ap4c')

@@ -36,9 +36,12 @@ def searchkeyword(request):
 
         responseData['keyword'] = keyword
 
+
+
         return render(request, 'search_keyword_result.html', responseData)
 
 def bestrestaurant(request):
+    ''' 가게 리스트를 조회한다 '''
     if request.method == 'GET':
         responseData = {}
 
@@ -49,15 +52,15 @@ def bestrestaurant(request):
         storeList = []
 
         for restaurant in restaurantList:
-            RateResult = Rate.objects.filter( restaurantId=restaurant.id )
+            RateResult = Rate.objects.filter( restaurantId=restaurant.restaurantId )
             if len( RateResult ) > 0:
                 rateAvg = float( RateResult.aggregate( Avg('rate') )['rate__avg'] )
             else:
                 rateAvg = 0
 
             storeList.append( {
-                'storeId' : restaurant.id,
-                'storeName': restaurant.name,
+                'storeId' : restaurant.restaurantId,
+                'storeName': restaurant.restaurantName,
                 'callNumber' : restaurant.callNumber,
                 'viewCount' : restaurant.viewCount,
                 'rate' : rateAvg
@@ -67,8 +70,8 @@ def bestrestaurant(request):
 
         return render(request, 'bestrestaurant.html', responseData)
 
-
 def searchrestaurant(request):
+    ''' 가게 정보 검색한다 '''
     if request.method == 'GET':
         storeId = int( request.GET.get('storeid', '0') )
 
@@ -85,8 +88,8 @@ def searchrestaurant(request):
             rateAvg = 0
 
         responseData['store'] = {
-            'storeId' : restaurant.id,
-            'storeName': restaurant.name,
+            'storeId' : restaurant.restaurantId,
+            'storeName': restaurant.restaurantName,
             'callNumber' : restaurant.callNumber,
             'viewCount' : restaurant.viewCount,
             'rate': rateAvg
@@ -105,14 +108,15 @@ def searchrestaurant(request):
         return render(request, 'search_restaurant.html', responseData)
 
 def ratestore(request):
+    ''' 평점을 입력한다 '''
+
     if request.method == 'GET':
         storeId = request.GET.get('store_id', '')
         menuId = request.GET.get('store_id', '')
 
         responseData = {}
 
-
-        return HttpResponse(json.loads(responseData), content_type="application/json")
+        return HttpResponse(json.dumps(responseData), content_type="application/json")
 
     if request.method == 'POST':
         storeId = request.GET.get('store_id', '')
@@ -120,9 +124,10 @@ def ratestore(request):
 
         responseData = {}
 
-        return  HttpResponse(json.loads(responseData), content_type="application/json")
+        return  HttpResponse(json.dumps(responseData), content_type="application/json")
 
 def login(request):
+    ''' 로그인 '''
 
     if request.method == 'POST':
         id = request.POST.get('id','')
@@ -137,6 +142,7 @@ def login(request):
             return HttpResponse(status=404)
 
 def signup(request):
+    ''' 회원가입 '''
 
     if request.method == 'POST':
         id = request.POST.get('id','')
@@ -152,6 +158,7 @@ def signup(request):
             return HttpResponse(status=404)
 
 def logout(request):
+    ''' 로그아웃 '''
 
     if request.method == 'GET':
         request.session['user_id'] = ''
@@ -159,6 +166,7 @@ def logout(request):
         return HttpResponse(status=200)
 
 def addDatabasePageView(request):
+    ''' 데이터베이스 저장 화면 이동 '''
 
     if request.method == 'GET':
         if request.session['user_id'] and request.session['user_id'] == 'admin':
@@ -167,6 +175,7 @@ def addDatabasePageView(request):
             return redirect('/')
 
 def saveDatabase(request):
+    ''' 데이터를 저장한다 '''
 
     if request.method == 'GET':
         type = request.GET.get('data_type', '')
@@ -174,22 +183,80 @@ def saveDatabase(request):
         if type == 'store':
             return storeDataSave( request.GET.get('name',''), request.GET.get('call_number', ''), request.GET.get('keyword', ''))
         elif type == 'menu':
-            ''
+            return menuDataSave( request.GET.get('name','') )
         elif type == 'store_menu':
-            ''
+            return restaurantMenuDataSave( int(request.GET.get('store_id','')), int(request.GET.get('menu_id','')), int(request.GET.get('price','0')) )
         else:
             return HttpResponse(status=404)
 
 def storeDataSave( name='', callNumber='', keyword='', img=None):
+    ''' 가게정보를 저장한다 '''
 
     logger.debug('name={}, callNumber={}, keyword={}', name, callNumber, keyword)
 
     if name == '':
         return HttpResponse(status=404)
 
-    restaurant = Restaurant.objects.create(name=name, keyword=keyword, callNumber=callNumber)
+    restaurant = Restaurant.objects.create(retaueantName=name, keyword=keyword, callNumber=callNumber)
 
     if restaurant:
+        return HttpResponse(status=200)
+    else:
+        return HttpResponse(status=404)
+
+def menuDataSave( name ):
+    ''' 메뉴명을 저장 한다 '''
+
+    logger.debug('name={}', name)
+
+    if name == '':
+        return HttpResponse(status=404)
+
+    menu = Menu.objects.create(name=name)
+
+    if menu:
+        return HttpResponse(status=200)
+    else:
+        return HttpResponse(status=404)
+
+def loadStoreMenuInfo(request):
+    ''' 가게정보와 메뉴 정보를 구한다. '''
+
+    if request.method == 'GET':
+        restaurantList = Restaurant.objects.all()
+
+        storelist = []
+        for restaurant in restaurantList:
+            storelist.append({
+                'id': restaurant.restaurantId,
+                'name': restaurant.restaurantName
+            })
+
+        menuList = Menu.objects.all()
+
+        menulist = []
+        for menu in menuList:
+            menulist.append({
+                'id': menu.menuId,
+                'name': menu.menuName
+            })
+
+            return HttpResponse(json.dumps({'storelist':storelist, 'menulist':menulist}), content_type="application/json")
+
+def restaurantMenuDataSave( restaurantId, menuId, price ):
+    ''' 가게 메뉴 정보를 저장한다 '''
+
+    logger.debug('restaurantId={}, menuId={}, price={}'.format(restaurantId, menuId, price))
+
+    restaurant = Restaurant.objects.get(restaurantId=restaurantId)
+    menu = Menu.objects.get(menuId=menuId)
+
+    if not restaurant or not menu or price == 0:
+        return HttpResponse(status=404)
+
+    restaurantMenu = RestaurantMenu.objects.create(restaurantId=restaurant, menuId=menu, price=price)
+
+    if restaurantMenu:
         return HttpResponse(status=200)
     else:
         return HttpResponse(status=404)

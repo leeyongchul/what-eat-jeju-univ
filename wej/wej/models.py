@@ -5,11 +5,11 @@ class User(models.Model):
     password = models.CharField(max_length=30)
 
 class Restaurant(models.Model):
-    id = models.AutoField(auto_created=True, primary_key=True)
-    name = models.CharField(max_length=50)
+    restaurantId = models.AutoField(auto_created=True, primary_key=True)
+    restaurantName = models.CharField(max_length=50)
     callNumber = models.CharField(max_length=15, unique=True)
     viewCount = models.IntegerField(default=0)
-    restaurantImg = models.CharField(max_length=100) #comment img로 바꿀것
+    restaurantImg = models.CharField(max_length=100)
     keyword = models.CharField(max_length=100)
 
 
@@ -20,11 +20,18 @@ class Rate(models.Model):
 
 
 class Menu(models.Model):
-    id = models.AutoField(auto_created=True, primary_key=True)
-    name = models.CharField(max_length=50)
+    menuId = models.AutoField(auto_created=True, primary_key=True)
+    menuName = models.CharField(max_length=50)
 
 
 class RestaurantMenu(models.Model):
-    restaurantId = models.ForeignKey('Restaurant')
-    menuId = models.ForeignKey('Menu')
+    restaurantId = models.ForeignKey(Restaurant, related_name='restaurant_rel', unique=False, default=0)
+    menuId = models.ForeignKey(Menu, related_name='menu_rel', unique=False, default=0)
+    restaurantMenuImg = models.CharField(max_length=100, default='')
     price = models.IntegerField(null=False)
+
+
+class Keyword(models.Model):
+    keyword = models.CharField(max_length=100, primary_key=True)
+    count = models.IntegerField(default=0)
+

@@ -29,4 +29,5 @@ urlpatterns = [
     url(r'^logout/$', views.logout, name="logout"),
     url(r'^adddatabaseview/$', views.addDatabasePageView, name="add_database_view"),
     url(r'^savedatabase/$', views.saveDatabase, name="save_database"),
+    url(r'^loadstoremenuinfo/$', views.loadStoreMenuInfo, name="load_store_menu_info"),
 ]
