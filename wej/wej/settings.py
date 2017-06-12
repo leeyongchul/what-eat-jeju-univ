@@ -153,11 +153,6 @@ LOGGING = {
             'class': 'logging.FileHandler',
             'filename': 'log/system.log',
         },
-        'file2': {
-            'level': 'ERROR',
-            'class': 'logging.FileHandler',
-            'filename': 'log/system.log',
-        },
     },
     'loggers': {
         'django': {
