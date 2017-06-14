@@ -202,7 +202,7 @@ def saveDatabase(request):
 def storeDataSave( name='', callNumber='', keyword='', img=None):
     ''' 가게정보를 저장한다 '''
 
-    logger.debug('name={}, callNumber={}, keyword={}', name, callNumber, keyword)
+    logger.debug('name={}, callNumber={}, keyword={}'.format(name, callNumber, keyword) )
 
     if name == '':
         return HttpResponse(status=404)
@@ -217,12 +217,12 @@ def storeDataSave( name='', callNumber='', keyword='', img=None):
 def menuDataSave( name ):
     ''' 메뉴명을 저장 한다 '''
 
-    logger.debug('name={}', name)
+    logger.debug('name={}'.format( name ))
 
     if name == '':
         return HttpResponse(status=404)
 
-    menu = Menu.objects.create(name=name)
+    menu = Menu.objects.create(menuName=name)
 
     if menu:
         return HttpResponse(status=200)
@@ -251,7 +251,7 @@ def loadStoreMenuInfo(request):
                 'name': menu.menuName
             })
 
-            return HttpResponse(json.dumps({'storelist':storelist, 'menulist':menulist}), content_type="application/json")
+        return HttpResponse(json.dumps({'storelist':storelist, 'menulist':menulist}), content_type="application/json")
 
 def restaurantMenuDataSave( restaurantId, menuId, price ):
     ''' 가게 메뉴 정보를 저장한다 '''

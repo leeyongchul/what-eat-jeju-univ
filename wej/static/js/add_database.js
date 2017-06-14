@@ -62,7 +62,6 @@ function loadStoreAndMenu() {
             $('#menu_list_selectbox').html( $('<option value="0" selected>메뉴</option>') );
             $('#store_menu_info_table input[name=price]').val('');
 
-
             if( 'storelist' in data && data['storelist'] )
                 $.each(data['storelist'], function(idx){
                    var store = data['storelist'][idx];
