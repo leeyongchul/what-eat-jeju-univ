@@ -16,6 +16,7 @@ class Restaurant(models.Model):
 class Rate(models.Model):
     seq = models.AutoField(auto_created=True, primary_key=True)
     restaurantId = models.ForeignKey('Restaurant')
+    restaurantMenuId = models.ForeignKey('RestaurantMenu', related_name='restaurantMenu_rel', unique=False, default=0)
     rate = models.FloatField(default=0)
 
 

@@ -12,6 +12,7 @@ logger = logging.getLogger('django')
 responseFalse = {'resultStatus':False}
 
 def searchkeywordlist(request):
+
     if request.method == 'GET':
         responseData = {}
 
@@ -127,11 +128,18 @@ def searchrestaurant(request):
 
         menuList = []
         for restaurantMenu in restaurantMenuList:
+            menuRate = Rate.objects.filter(restaurantId=restaurant.restaurantId, restaurantMenuId=restaurantMenu.pk)
+            if len( menuRate ) > 0:
+                rate = float( menuRate.aggregate(Avg('rate'))['rate__avg'] )
+            else:
+                rate = 0
+
             menuList.append({
-                'number': restaurantMenu.pk,
-                'name': restaurantMenu.menuId.menuName,
-                'price': restaurantMenu.price,
-                'imgurl': 'http://placehold.it/320x150'
+                'number' : restaurantMenu.pk,
+                'name' : restaurantMenu.menuId.menuName,
+                'price' : restaurantMenu.price,
+                'imgurl' : 'http://placehold.it/320x150',
+                'rate' : rate
             })
 
         responseData['menulist'] = menuList
@@ -142,20 +150,25 @@ def ratestore(request):
     ''' 평점을 입력한다 '''
 
     if request.method == 'GET':
-        storeId = request.GET.get('store_id', '')
-        menuId = request.GET.get('store_id', '')
+        restaurantId = int( request.GET.get('store_id', '0') )
+        rmenu_id = int( request.GET.get('menu_id', '0') )
+        rateScore = float( request.GET.get('rate', '0') )
 
-        responseData = {}
+        logger.debug("ratestore = {}, {}, {}".format(restaurantId, rmenu_id, rateScore))
 
-        return HttpResponse(json.dumps(responseData), content_type="application/json")
+        restaurant = Restaurant.objects.get(restaurantId=restaurantId)
+        restaurantMenu = RestaurantMenu.objects.get(pk=rmenu_id )
 
-    if request.method == 'POST':
-        storeId = request.GET.get('store_id', '')
-        menuId = request.GET.get('menu_id', '')
+        if not restaurant or not restaurantMenu :
+            return HttpResponse(json.dumps(responseFalse), content_type="application/json")
 
-        responseData = {}
+        rate = Rate.objects.create(restaurantId=restaurant, restaurantMenuId=restaurantMenu, rate=rateScore)
 
-        return  HttpResponse(json.dumps(responseData), content_type="application/json")
+        if rate:
+            return HttpResponse(json.dumps({'resultStatus': True}), content_type="application/json")
+        else:
+            return HttpResponse(json.dumps( responseFalse ), content_type="application/json")
+
 
 def login(request):
     ''' 로그인 '''
@@ -227,6 +240,7 @@ def storeDataSave( name='', callNumber='', keyword='', img=None):
     ''' 가게정보를 저장한다 '''
 
     logger.debug('name={}, callNumber={}, keyword={}'.format(name, callNumber, keyword) )
+    keyword.replace('\s','')
 
     if name == '':
         return HttpResponse(status=404)

@@ -17,7 +17,7 @@
                 <thead>
                     <th><img src="http://placehold.it/320x150" width=""></th>
                     <th>
-                        <div><a href="/searchrestaurant?storeid={{ store.storeId }}"><label class="lead">{{ store.storeName }}</label></a></div>
+                        <div><a href="/searchrestaurant?storeid={{ store.storeId }}"><label class="lead" id="store_name">{{ store.storeName }}</label></a></div>
                         <div>전화번호 : {{ store.callNumber }}</div>
                         <div>조회횟수 : {{ store.viewCount }}</div>
                         <div>식당평점 : {{ store.rate }}</div>
@@ -32,18 +32,18 @@
                 </colgroup>
                 <tbody>
                     <tr>
-                         {% for menu in menulist %}
-                            <td>
-                                <div><img src="{{ menu.imgurl }}"/></div>
-                                <div><label>{{ menu.name }}</label></div>
-                                <div>{{ menu.price }}</div>
-                                <div><input type="button" class="btn btn-primary" value="평점보기" onclick="javascript:rateStoreView('{{ store.storeId }}','{{ menu.number }}');"></div>
-                            </td>
-                             {% if forloop.counter|divisibleby:"3" %}
-                                 </tr><tr>
-                             {% endif %}
-                         {% endfor %}
-
+                     {% for menu in menulist %}
+                        <td>
+                            <div><img src="{{ menu.imgurl }}"/></div>
+                            <div><label id="menu_{{ menu.number }}_name">{{ menu.name }}</label></div>
+                            <div>가격 : {{ menu.price }}</div>
+                            <div>평점 : {{ menu.rate }}</div>
+                            <div><input type="button" class="btn btn-primary" value="평점주기" onclick="javascript:rateAddView('{{ store.storeId }}','{{ menu.number }}');"></div>
+                        </td>
+                         {% if forloop.counter|divisibleby:"3" %}
+                             </tr><tr>
+                         {% endif %}
+                     {% endfor %}
                     </tr>
                 </tbody>
             </table>
@@ -54,10 +54,60 @@
                 </tr>
             </table>
         {% endif %}
+
+        <div class="modal fade" id="rate_save_modal" role="dialog">
+            <div class="modal-dialog modal-md">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                        <h4 class="modal-title">메뉴 평점 입력</h4>
+                    </div>
+                    <div class="modal-body">
+                        <div class="">
+                            <label class="danger">*메뉴 평점은 가게 평점에도 영향을 줍니다. 거짓 평점은 법적 책임을 물을 수 있습니다.</label>
+                            <table class="table table-bordered">
+                                <colgroup>
+                                    <col width="30%">
+                                    <col width="70%">
+                                </colgroup>
+                                <tr>
+                                    <td><label>가게명 : </label></td>
+                                    <td id="rate_modal_storename"></td>
+                                </tr>
+                                <tr>
+                                    <td><label>메뉴명 : </label></td>
+                                    <td id="rate_modal_menuname"></td>
+                                </tr>
+                                <tr>
+                                    <td><label>평점 : </label></td>
+                                    <td>
+                                        <div id="star_rate">
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr style="display: none;">
+                                    <td colspan="2">
+                                        <input type="hidden" id="menu_rate" >
+                                        <input type="hidden" id="modal_menu_id" >
+                                        <input type="hidden" id="modal_store_id" >
+                                    </td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-primary" id="rate_save_btn">Save</button>
+                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
 {% endblock %}
 
 {% block appendBlock %}
     {% load staticfiles %}
     <script type="text/javascript" src="{% static "js/search_restaurant.js" %}"></script>
+    <script type="text/javascript" src="{% static "js/jquery.rateyo.min.js" %}"></script>
+    <link rel="stylesheet" href="{% static "css/jquery.rateyo.min.css" %}">
 {% endblock %}
