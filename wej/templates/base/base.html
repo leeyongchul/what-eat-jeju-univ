@@ -1,14 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<head>
 
+<head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="">
     <meta name="author" content="">
-
     <title>WhatEatJejuUniv</title>
     {% load staticfiles %}
     <!-- Bootstrap Core CSS -->
@@ -95,7 +94,7 @@
                         <li>
                             <a href="/bestrestaurant"><i class="fa fa-table fa-fw"></i> 추천식당</a>
                         </li>
-                        {% if request.session.user_id and request.session.user_id == 'admin'%}
+                        {% if request.session.user_id and request.session.is_admin_user %}
                             <li>
                                 <a href="/adddatabaseview"><i class="fa fa-table fa-fw"></i> 관리자 페이지</a>
                             </li>

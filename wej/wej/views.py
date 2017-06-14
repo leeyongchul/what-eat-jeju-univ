@@ -7,6 +7,7 @@ from wej.models import User, Restaurant, RestaurantMenu, Menu, Rate, SearchKeywo
 from django.db.models import Avg
 import logging
 import json
+import re
 
 logger = logging.getLogger('django')
 responseFalse = {'resultStatus':False}
@@ -179,11 +180,16 @@ def login(request):
 
         user = User.objects.get(id=id)
 
-        if user.password == pw:
-            request.session['user_id'] = user.id
-            return HttpResponse(status=200)
-        else:
+        if not user.password == pw:
             return HttpResponse(status=404)
+
+        request.session['user_id'] = user.id
+        if bool( re.match( 'admin', user.id ) ):
+            request.session['is_admin_user'] = True
+        else:
+            request.session['is_admin_user'] = False
+
+        return HttpResponse(status=200)
 
 def signup(request):
     ''' 회원가입 '''
@@ -192,9 +198,14 @@ def signup(request):
         id = request.POST.get('id','')
         pw = request.POST.get('pw','')
 
-        User.objects.create(id=id, password=pw)
-        user = User.objects.get(id=id)
+        if not id or not pw:
+            return HttpResponse(status=404)
 
+        if User.objects.get(id=id):
+            return HttpResponse(status=404)
+
+        user = User.objects.create(id=id, password=pw)
+        
         if user:
             request.session['user_id'] = user.id
             return HttpResponse(status=200)
@@ -206,6 +217,7 @@ def logout(request):
 
     if request.method == 'GET':
         request.session['user_id'] = ''
+        request.session['is_admin_user'] = False
 
         return HttpResponse(status=200)
 
