@@ -205,7 +205,7 @@ def signup(request):
             return HttpResponse(status=404)
 
         user = User.objects.create(id=id, password=pw)
-        
+
         if user:
             request.session['user_id'] = user.id
             return HttpResponse(status=200)
