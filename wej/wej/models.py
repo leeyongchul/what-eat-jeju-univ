@@ -31,7 +31,7 @@ class RestaurantMenu(models.Model):
     price = models.IntegerField(null=False)
 
 
-class Keyword(models.Model):
-    keyword = models.CharField(max_length=100, primary_key=True)
-    count = models.IntegerField(default=0)
+class SearchKeyword(models.Model):
+    searchKeyword = models.CharField(max_length=100, primary_key=True)
+    searchCount = models.IntegerField(default=0)
 

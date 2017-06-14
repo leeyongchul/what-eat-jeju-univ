@@ -9,8 +9,8 @@ $(document).ready(function(){
         searchKeyword( $('#search_keyword_input').val() );
     });
 
-    $('#search_keyword_input').keypress(function() {
-        if( $(this).keyCode == 13 ) {
+    $('#search_keyword_input').keypress(function(event) {
+        if( event.which == 13 ) {
             searchKeyword( $(this).val() );
         }
     });

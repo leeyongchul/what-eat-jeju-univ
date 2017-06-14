@@ -48,7 +48,11 @@
                 </tbody>
             </table>
         {% else %}
-            <!-- 검색결과 없을 때 처리 추가필요 comment -->
+            <table class="table-bordered table col-lg-12">
+                <tr>
+                    <th>찾으시는 키워드의 식당이 없습니다. 새로운 키워드로 검색해주세요.</th>
+                </tr>
+            </table>
         {% endif %}
     </div>
 {% endblock %}

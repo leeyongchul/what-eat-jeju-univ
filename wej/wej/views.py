@@ -3,40 +3,68 @@ from django.template.context import RequestContext
 from django.views.generic import TemplateView
 from django.http import HttpResponse
 from django.shortcuts import render, render_to_response,redirect
-from wej.models import User, Restaurant, RestaurantMenu, Menu, Rate
+from wej.models import User, Restaurant, RestaurantMenu, Menu, Rate, SearchKeyword
 from django.db.models import Avg
 import logging
 import json
 
 logger = logging.getLogger('django')
+responseFalse = {'resultStatus':False}
 
 def searchkeywordlist(request):
     if request.method == 'GET':
         responseData = {}
 
-        responseData['keywordList'] = [
-            '정문',
-            '후문',
-            '식당이름',
-            '밥',
-            '자장면',
-            '면',
-            '돈까스',
-            '국수',
-            '국밥',
-            '라면'
-        ]
+        searchKeywordList = SearchKeyword.objects.order_by('searchCount')
+        if len( searchKeywordList ) > 10:
+            searchKeywordList = searchKeywordList[10:]
+
+        keywordList = []
+        for searchKeyword in searchKeywordList:
+            keywordList.append( searchKeyword.searchKeyword )
+
+        responseData['keywordList'] = keywordList
 
         return render(request, 'search_keyword_list.html', responseData)
 
-def searchkeyword(request):
+def searchkeywordView(request):
     if request.method == 'GET':
         keyword = request.GET.get('keyword', '')
         responseData = {}
 
+        if not keyword:
+            return render(request, 'search_keyword_result.html', responseFalse)
+
+        restaurantList = Restaurant.objects.filter(keyword__icontains=keyword)
+        if len( restaurantList ) > 0:
+            searchkeywordFilter = SearchKeyword.objects.filter(searchKeyword=keyword)
+
+            if len( searchkeywordFilter ) > 0:
+                searchKeyword = SearchKeyword.objects.get(searchKeyword=keyword)
+            else :
+                searchKeyword = SearchKeyword.objects.create(searchKeyword=keyword)
+
+            searchKeyword.searchCount += 1
+            searchKeyword.save()
+
+        storeList = []
+        for restaurant in restaurantList:
+            RateResult = Rate.objects.filter( restaurantId=restaurant.restaurantId )
+            if len( RateResult ) > 0:
+                rateAvg = float( RateResult.aggregate( Avg('rate') )['rate__avg'] )
+            else:
+                rateAvg = 0
+
+            storeList.append( {
+                'storeId' : restaurant.restaurantId,
+                'storeName': restaurant.restaurantName,
+                'callNumber' : restaurant.callNumber,
+                'viewCount' : restaurant.viewCount,
+                'rate' : rateAvg
+            } )
+
         responseData['keyword'] = keyword
-
-
+        responseData['storeList'] = storeList
 
         return render(request, 'search_keyword_result.html', responseData)
 
@@ -107,13 +135,6 @@ def searchrestaurant(request):
             })
 
         responseData['menulist'] = menuList
-        #     [
-        #     {},
-        #     {'number':2, 'name':'감자탕', 'price':7000, 'imgurl':'http://placehold.it/320x150' },
-        #     {'number':3, 'name':'감자탕', 'price':7000, 'imgurl':'http://placehold.it/320x150' },
-        #     {'number':4, 'name':'감자탕', 'price':7000, 'imgurl':'http://placehold.it/320x150' },
-        #     {'number':5, 'name':'감자탕', 'price':7000, 'imgurl':'http://placehold.it/320x150' },
-        # ]
 
         return render(request, 'search_restaurant.html', responseData)
 
@@ -195,7 +216,10 @@ def saveDatabase(request):
         elif type == 'menu':
             return menuDataSave( request.GET.get('name','') )
         elif type == 'store_menu':
-            return restaurantMenuDataSave( int(request.GET.get('store_id','')), int(request.GET.get('menu_id','')), int(request.GET.get('price','0')) )
+            return restaurantMenuDataSave(
+                int(request.GET.get('store_id','')), int(request.GET.get('menu_id','')), int(request.GET.get('price','0')),
+                request.GET.get('store_name',''), request.GET.get('menu_name','')
+            )
         else:
             return HttpResponse(status=404)
 
@@ -253,13 +277,21 @@ def loadStoreMenuInfo(request):
 
         return HttpResponse(json.dumps({'storelist':storelist, 'menulist':menulist}), content_type="application/json")
 
-def restaurantMenuDataSave( restaurantId, menuId, price ):
+def restaurantMenuDataSave( restaurantId, menuId, price, restaurantName, menuName ):
     ''' 가게 메뉴 정보를 저장한다 '''
 
     logger.debug('restaurantId={}, menuId={}, price={}'.format(restaurantId, menuId, price))
 
     restaurant = Restaurant.objects.get(restaurantId=restaurantId)
     menu = Menu.objects.get(menuId=menuId)
+
+    if not restaurant:
+        restaurant = Restaurant.objects.get(restaurantName=restaurantName)
+
+    if not menu:
+        menu = Menu.objects.get(menuName=menuName)
+        if not menu and restaurant:
+            menu = Menu.objects.create(menuName=menuName)
 
     if not restaurant or not menu or price == 0:
         return HttpResponse(status=404)
