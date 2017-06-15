@@ -257,7 +257,7 @@ def storeDataSave( name='', callNumber='', keyword='', img=None):
     if name == '':
         return HttpResponse(status=404)
 
-    restaurant = Restaurant.objects.create(retaueantName=name, keyword=keyword, callNumber=callNumber)
+    restaurant = Restaurant.objects.create(restaurantName=name, keyword=keyword, callNumber=callNumber)
 
     if restaurant:
         return HttpResponse(status=200)
