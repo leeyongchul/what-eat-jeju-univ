@@ -27,8 +27,8 @@ function saveData( dataType ) {
             return;
         }
 
-        data['store_id'] = $('#store_list_selectbox option:selected').val();
-        data['menu_id'] = $('#menu_list_selectbox option:selected').val();
+        data['store_id'] = $('#store_list_menu_selectbox option:selected').val();
+        data['menu_id'] = $('#menu_list_menu_selectbox option:selected').val();
         data['price'] = $('#store_menu_info_table input[name=price]').val();
         data['img_link'] = $('#store_menu_img_link').val();
     }

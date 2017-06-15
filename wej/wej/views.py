@@ -245,7 +245,7 @@ def saveDatabase(request):
             return menuDataSave( request.GET.get('name','') )
         elif type == 'store_menu':
             return restaurantMenuDataSave(
-                int(request.GET.get('store_id','')), int(request.GET.get('menu_id','')), int(request.GET.get('price','0')), request.GET.get('img_link',''),
+                int(request.GET.get('store_id','0')), int(request.GET.get('menu_id','0')), int(request.GET.get('price','0')), request.GET.get('img_link',''),
                 request.GET.get('store_name',''), request.GET.get('menu_name','')
             )
         else:
