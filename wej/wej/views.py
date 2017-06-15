@@ -348,3 +348,30 @@ def restaurantMenuDataSave( restaurantId, menuId, price, img, restaurantName, me
         return HttpResponse(status=200)
     else:
         return HttpResponse(status=404)
+
+
+def updateImg(request):
+
+    if request.method == 'GET':
+        option = request.GET.get('option', '')
+        id = int( request.GET.get('id', '0') )
+        imgUrl = request.GET.get('imgurl', '')
+
+        if not option:
+            return HttpResponse(status=404)
+
+        if option == 'store':
+            restaurant = Restaurant.objects.get(restaurantId=id)
+            if not restaurant:
+                return HttpResponse(status=404)
+            restaurant.restaurantImg = imgUrl
+            restaurant.save()
+
+        elif option == 'store_menu':
+            restaurantMenu = RestaurantMenu.objects.get(pk=id)
+            if not restaurantMenu:
+                return HttpResponse(status=404)
+            restaurantMenu.restaurantMenuImg = imgUrl
+            restaurantMenu.save()
+
+        return HttpResponse(status=200)

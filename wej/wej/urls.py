@@ -30,4 +30,6 @@ urlpatterns = [
     url(r'^adddatabaseview/$', views.addDatabasePageView, name="add_database_view"),
     url(r'^savedatabase/$', views.saveDatabase, name="save_database"),
     url(r'^loadstoremenuinfo/$', views.loadStoreMenuInfo, name="load_store_menu_info"),
+    url(r'^updateimg/$', views.updateImg, name="update_img"),
+
 ]

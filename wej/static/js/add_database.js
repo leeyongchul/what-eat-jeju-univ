@@ -64,7 +64,7 @@ function loadStoreAndMenu( selectboxOption ) {
             $('#store_list_'+ selectboxOption +'_selectbox').html( $('<option value="0" selected>가게</option>') );
             $('#menu_list_'+ selectboxOption +'_selectbox').html( $('<option value="0" selected>메뉴</option>') );
             $('#store_menu_info_table input[name=price]').val('');
-            console.log( data );
+
             if( 'storelist' in data && data['storelist'] )
                 $.each(data['storelist'], function(idx){
                    var store = data['storelist'][idx];
@@ -92,6 +92,38 @@ function loadStoreAndMenu( selectboxOption ) {
         },
         error : function() {
             alert('데이터를 불러오던중 오류가 발생했습니다. 잠시후 다시 시도해 주세요');
+        }
+    });
+}
+
+function updateImg( option ) {
+
+    var id;
+    var imgurl;
+    if( option == 'store' ) {
+        id = $('#store_list_img_selectbox option:selected').val();
+        imgurl = $('#store_img_input').val();
+    }else if( option == 'store_menu' ) {
+        id = $('#menu_list_img_selectbox option:selected').val();
+        imgurl = $('#menu_img_input').val();
+    }
+
+    if( id == 0 || imgurl == '' ) {
+        alert( '선택박스에서 변경할 가게or가게메뉴를 선택후 이미지 링크를 입력하세요. ');
+        return;
+    }
+
+    $.ajax({
+        url : '/updateimg',
+        method : 'get',
+        data : {'option' : option, 'id':id, 'imgurl':imgurl},
+        success : function() {
+            alert('데이터를 저장 했습니다. ');
+            $('#store_img_input').val('');
+            $('#menu_img_input').val('');
+        },
+        error : function() {
+            alert('데이터 저장중 오류가 발생했습니다. 잠시후 다시 시도해 주세요');
         }
     });
 }
