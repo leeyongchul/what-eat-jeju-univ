@@ -29,7 +29,7 @@
                                 <input class="form-control" type="text" name="name">
                             </div>
                         </td>
-                        <td rowspan="3" class="align-middle">
+                        <td rowspan="4" class="align-middle">
                             <input type="button" class="btn btn-primary" value="저장" onclick="javascript:saveData('store');">
                         </td>
                     </tr>
@@ -57,6 +57,14 @@
                             </div>
                             <div class="col-lg-11">
                                 <input class="form-control" type="text" name="keyword">
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="active"><label>이미지 링크 </label>: </td>
+                        <td colspan="3">
+                            <div class="col-lg-11">
+                                <input class="form-control" type="text" name="img_link">
                             </div>
                         </td>
                     </tr>
@@ -104,9 +112,10 @@
             <table class="table table-bordered" id="store_menu_info_table">
                 <colgroup>
                     <col width="10%">
-                    <col width="40%">
+                    <col width="37%">
                     <col width="10%">
-                    <col width="40%">
+                    <col width="38%">
+                    <col width="5%">
                 </colgroup>
                 <tbody>
                     <tr>
@@ -126,6 +135,11 @@
                                 </select>
                             </div>
                         </td>
+                        <td rowspan="2">
+                             <div>
+                                <input type="button" class="btn btn-primary" value="저장" onclick="javascript:saveData('store_menu');">
+                            </div>
+                        </td>
                     </tr>
                     <tr>
                         <td class="active"><label>가격</label> :</td>
@@ -134,9 +148,10 @@
                                 <input type="number" class="form-control" name="price"  disabled>
                             </div>
                         </td>
-                        <td colspan="2">
-                            <div>
-                                <input type="button" class="btn btn-primary" value="저장" onclick="javascript:saveData('store_menu');">
+                        <td class="active"><label>이미지 링크</label> :</td>
+                        <td>
+                            <div class="col-lg-11">
+                                <input type="text" class="form-control" name="img_link" id="store_menu_img_link" disabled>
                             </div>
                         </td>
                     </tr>
@@ -144,7 +159,6 @@
             </table>
         </div>
     </div>
-
 {% endblock %}
 
 

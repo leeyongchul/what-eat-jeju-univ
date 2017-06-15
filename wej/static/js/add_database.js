@@ -12,6 +12,7 @@ function saveData( dataType ) {
         data['call_number'] = call_number;
         data['keyword'] = $('#' + dataType + '_data_table').find( 'input[name=keyword]' ).val();
         data['name'] = $('#' + dataType + '_data_table').find( 'input[name=name]' ).val();
+        data['img_link'] = $('#' + dataType + '_data_table').find( 'input[name=img_link]').val();
 
     }else if( dataType == 'menu' ){
 
@@ -29,6 +30,7 @@ function saveData( dataType ) {
         data['store_id'] = $('#store_list_selectbox option:selected').val();
         data['menu_id'] = $('#menu_list_selectbox option:selected').val();
         data['price'] = $('#store_menu_info_table input[name=price]').val();
+        data['img_link'] = $('#store_menu_img_link').val();
     }
 
     data['data_type'] = dataType;
@@ -79,6 +81,7 @@ function loadStoreAndMenu() {
             $('#store_list_selectbox').prop('disabled', false);
             $('#menu_list_selectbox').prop('disabled', false);
             $('#store_menu_info_table input[name=price]').prop('disabled', false);
+            $('#store_menu_info_table input[name=img_link]').prop('disabled', false);
         },
         error : function() {
             alert('데이터를 불러오던중 오류가 발생했습니다. 잠시후 다시 시도해 주세요');

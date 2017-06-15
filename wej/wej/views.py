@@ -62,6 +62,7 @@ def searchkeywordView(request):
                 'storeName': restaurant.restaurantName,
                 'callNumber' : restaurant.callNumber,
                 'viewCount' : restaurant.viewCount,
+                'imgurl' : restaurant.restaurantImg,
                 'rate' : rateAvg
             } )
 
@@ -91,6 +92,7 @@ def bestrestaurant(request):
             storeList.append( {
                 'storeId' : restaurant.restaurantId,
                 'storeName': restaurant.restaurantName,
+                'imgurl': restaurant.restaurantImg,
                 'callNumber' : restaurant.callNumber,
                 'viewCount' : restaurant.viewCount,
                 'rate' : rateAvg
@@ -122,6 +124,7 @@ def searchrestaurant(request):
             'storeName': restaurant.restaurantName,
             'callNumber' : restaurant.callNumber,
             'viewCount' : restaurant.viewCount,
+            'imgurl': restaurant.restaurantImg,
             'rate': rateAvg
         }
 
@@ -139,7 +142,7 @@ def searchrestaurant(request):
                 'number' : restaurantMenu.pk,
                 'name' : restaurantMenu.menuId.menuName,
                 'price' : restaurantMenu.price,
-                'imgurl' : 'http://placehold.it/320x150',
+                'imgurl' : restaurantMenu.restaurantMenuImg,
                 'rate' : rate
             })
 
@@ -237,27 +240,27 @@ def saveDatabase(request):
         type = request.GET.get('data_type', '')
 
         if type == 'store':
-            return storeDataSave( request.GET.get('name',''), request.GET.get('call_number', ''), request.GET.get('keyword', ''))
+            return storeDataSave( request.GET.get('name',''), request.GET.get('call_number', ''), request.GET.get('keyword', ''), request.GET.get('img_link','http://placehold.it/320x150'))
         elif type == 'menu':
             return menuDataSave( request.GET.get('name','') )
         elif type == 'store_menu':
             return restaurantMenuDataSave(
-                int(request.GET.get('store_id','')), int(request.GET.get('menu_id','')), int(request.GET.get('price','0')),
+                int(request.GET.get('store_id','')), int(request.GET.get('menu_id','')), int(request.GET.get('price','0')), request.GET.get('img_link',''),
                 request.GET.get('store_name',''), request.GET.get('menu_name','')
             )
         else:
             return HttpResponse(status=404)
 
-def storeDataSave( name='', callNumber='', keyword='', img=None):
+def storeDataSave( name='', callNumber='', keyword='', img='' ):
     ''' 가게정보를 저장한다 '''
 
-    logger.debug('name={}, callNumber={}, keyword={}'.format(name, callNumber, keyword) )
+    logger.debug('name={}, callNumber={}, keyword={}, img={}'.format(name, callNumber, keyword, img) )
     keyword.replace('\s','')
 
     if name == '':
         return HttpResponse(status=404)
 
-    restaurant = Restaurant.objects.create(restaurantName=name, keyword=keyword, callNumber=callNumber)
+    restaurant = Restaurant.objects.create(restaurantName=name, keyword=keyword, callNumber=callNumber, restaurantImg=img)
 
     if restaurant:
         return HttpResponse(status=200)
@@ -303,10 +306,12 @@ def loadStoreMenuInfo(request):
 
         return HttpResponse(json.dumps({'storelist':storelist, 'menulist':menulist}), content_type="application/json")
 
-def restaurantMenuDataSave( restaurantId, menuId, price, restaurantName, menuName ):
+def restaurantMenuDataSave( restaurantId, menuId, price, img, restaurantName, menuName ):
     ''' 가게 메뉴 정보를 저장한다 '''
 
-    logger.debug('restaurantId={}, menuId={}, price={}'.format(restaurantId, menuId, price))
+    logger.debug('restaurantId={}, menuId={}, price={}, img={}'.format(restaurantId, menuId, price, img))
+    if not img:
+        img = 'http://placehold.it/320x150'
 
     restaurant = Restaurant.objects.get(restaurantId=restaurantId)
     menu = Menu.objects.get(menuId=menuId)
@@ -322,7 +327,7 @@ def restaurantMenuDataSave( restaurantId, menuId, price, restaurantName, menuNam
     if not restaurant or not menu or price == 0:
         return HttpResponse(status=404)
 
-    restaurantMenu = RestaurantMenu.objects.create(restaurantId=restaurant, menuId=menu, price=price)
+    restaurantMenu = RestaurantMenu.objects.create(restaurantId=restaurant, menuId=menu, price=price, restaurantMenuImg=img)
 
     if restaurantMenu:
         return HttpResponse(status=200)
