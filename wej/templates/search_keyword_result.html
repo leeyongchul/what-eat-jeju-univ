@@ -19,7 +19,9 @@
                 {% if storeList %}
                     {% for store in storeList %}
                         <tr>
-                            <td><img src="{{ store.imgurl }}"></td>
+                            <td>
+                                <div class="text-center"><img src="{{ store.imgurl }}"></div>
+                            </td>
                             <td>
                                 <div><a href="/searchrestaurant?storeid={{ store.storeId }}"><label>{{ store.storeName }}</label></a></div>
                                 <div>전화번호 : {{ store.callNumber }}</div>

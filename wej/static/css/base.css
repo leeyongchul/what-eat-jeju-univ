@@ -1,0 +1,10 @@
+img {
+    max-width : 350px;
+    height : auto;
+    object-fit : contain;
+    align : center;
+}
+
+.img_div {
+    text-align : center;
+}

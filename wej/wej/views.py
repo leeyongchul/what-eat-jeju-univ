@@ -19,7 +19,7 @@ def searchkeywordlist(request):
 
         searchKeywordList = SearchKeyword.objects.order_by('-searchCount')
         if len( searchKeywordList ) > 10:
-            searchKeywordList = searchKeywordList[10:]
+            searchKeywordList = searchKeywordList[:10]
 
         keywordList = []
         for searchKeyword in searchKeywordList:
@@ -77,11 +77,11 @@ def bestrestaurant(request):
         responseData = {}
 
         restaurantList = Restaurant.objects.order_by( '-viewCount' )
+
         if len( restaurantList ) > 10:
-            restaurantList = restaurantList[10:]
+            restaurantList = restaurantList[:10]
 
         storeList = []
-
         for restaurant in restaurantList:
             RateResult = Rate.objects.filter( restaurantId=restaurant.restaurantId )
             if len( RateResult ) > 0:

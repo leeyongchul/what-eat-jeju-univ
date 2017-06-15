@@ -15,7 +15,7 @@
                     <col width="60%">
                 </colgroup>
                 <thead>
-                    <th><img src="{{ store.imgurl }}"></th>
+                    <th><div class="text-center"><img src="{{ store.imgurl }}"></div></th>
                     <th>
                         <div><a href="/searchrestaurant?storeid={{ store.storeId }}"><label class="lead" id="store_name">{{ store.storeName }}</label></a></div>
                         <div>전화번호 : {{ store.callNumber }}</div>
@@ -34,7 +34,7 @@
                     <tr>
                      {% for menu in menulist %}
                         <td>
-                            <div><img src="{{ menu.imgurl }}"></div>
+                            <div><div class="text-center"><img src="{{ menu.imgurl }}"></div></div>
                             <div><label id="menu_{{ menu.number }}_name">{{ menu.name }}</label></div>
                             <div>가격 : {{ menu.price }}</div>
                             <div>평점 : {{ menu.rate }}</div>
