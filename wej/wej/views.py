@@ -17,7 +17,7 @@ def searchkeywordlist(request):
     if request.method == 'GET':
         responseData = {}
 
-        searchKeywordList = SearchKeyword.objects.order_by('searchCount')
+        searchKeywordList = SearchKeyword.objects.order_by('-searchCount')
         if len( searchKeywordList ) > 10:
             searchKeywordList = searchKeywordList[10:]
 
@@ -75,7 +75,7 @@ def bestrestaurant(request):
     if request.method == 'GET':
         responseData = {}
 
-        restaurantList = Restaurant.objects.order_by( 'viewCount' )
+        restaurantList = Restaurant.objects.order_by( '-viewCount' )
         if len( restaurantList ) > 10:
             restaurantList = restaurantList[10:]
 
