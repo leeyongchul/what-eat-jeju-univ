@@ -104,7 +104,7 @@
                     <label class="text-danger">*가게 메뉴를 추가하기전 밑의 버튼을 눌러서 가게메뉴 정보를 갱신하세요.</label>
                 </div>
                 <div class="col-lg-12">
-                    <input type="button" class="btn btn-xs btn-primary align-right" value="가게&메뉴 정보 불러오기" onclick="javascript:loadStoreAndMenu();">
+                    <input type="button" class="btn btn-xs btn-primary align-right" value="가게&메뉴 정보 불러오기" onclick="javascript:loadStoreAndMenu('menu');">
                 </div>
             </div>
         </div>
@@ -122,7 +122,7 @@
                         <td class="active"><label>가게선택 </label>:</td>
                         <td>
                             <div class="col-lg-10">
-                                <select class="form-control" id="store_list_selectbox" disabled>
+                                <select class="form-control" id="store_list_menu_selectbox" disabled>
 
                                 </select>
                             </div>
@@ -130,7 +130,7 @@
                         <td class="active"><label>메뉴선택 </label>:</td>
                         <td>
                             <div class="col-lg-10">
-                                <select class="form-control" id="menu_list_selectbox" disabled>
+                                <select class="form-control" id="menu_list_menu_selectbox" disabled>
 
                                 </select>
                             </div>
@@ -157,6 +157,85 @@
                     </tr>
                 </tbody>
             </table>
+        </div>
+    </div>
+
+    <h2>이미지 파일 업데이트</h2>
+    <div class="col-lg-12">
+        <div class="col-lg-12">
+            <label class="text-danger">*가게 메뉴를 추가하기전 밑의 버튼을 눌러서 가게메뉴 정보를 갱신하세요.</label>
+        </div>
+        <div class="col-lg-12">
+            <input type="button" class="btn btn-xs btn-primary align-right" value="가게&메뉴 정보 불러오기" onclick="javascript:loadStoreAndMenu('img');">
+        </div>
+    </div>
+
+    <div class="col-lg-12">
+        <div class="row">
+            <div class="col-lg-2">
+                <h4>가게 이미지 </h4>
+            </div>
+            <div class="col-lg-12">
+                <table class="table table-bordered">
+                    <colgroup>
+                        <col width="10%">
+                        <col width="80%">
+                        <col width="10%">
+                    </colgroup>
+                    <tr>
+                        <th class="active"><label>가게 :</label></th>
+                        <td>
+                            <div class="col-lg-10">
+                                <select class="form-control" id="store_list_img_selectbox" disabled></select>
+                            </div>
+                        </td>
+                        <td rowspan="2">
+                             <input type="button" class="btn btn-primary" value="저장" onclick="javascript:updateImg('store');">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="active"><label>이미지 링크</label> :</td>
+                        <td>
+                            <div class="col-lg-11">
+                                <input type="text" class="form-control" name="img_link" id="store_img_input" disabled>
+                            </div>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-2">
+                <h4>가게메뉴 이미지 </h4>
+            </div>
+            <div class="col-lg-12">
+                <table class="table table-bordered">
+                    <colgroup>
+                        <col width="10%">
+                        <col width="80%">
+                        <col width="10%">
+                    </colgroup>
+                    <tr>
+                        <th class="active"><label>가게메뉴 :</label></th>
+                        <td>
+                            <div class="col-lg-5">
+                                <select class="form-control" id="menu_list_img_selectbox" disabled></select>
+                            </div>
+                        </td>
+                        <td rowspan="2">
+                             <input type="button" class="btn btn-primary" value="저장" onclick="javascript:updateImg('store_menu');">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="active"><label>이미지 링크</label> :</td>
+                        <td>
+                            <div class="col-lg-11">
+                                <input type="text" class="form-control" name="img_link" id="menu_img_input" disabled>
+                            </div>
+                        </td>
+                    </tr>
+                </table>
+            </div>
         </div>
     </div>
 {% endblock %}

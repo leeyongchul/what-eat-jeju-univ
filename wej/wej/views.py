@@ -286,6 +286,8 @@ def loadStoreMenuInfo(request):
     ''' 가게정보와 메뉴 정보를 구한다. '''
 
     if request.method == 'GET':
+        option = request.GET.get('option', 'menu')
+
         restaurantList = Restaurant.objects.all()
 
         storelist = []
@@ -295,14 +297,27 @@ def loadStoreMenuInfo(request):
                 'name': restaurant.restaurantName
             })
 
-        menuList = Menu.objects.all()
-
         menulist = []
-        for menu in menuList:
-            menulist.append({
-                'id': menu.menuId,
-                'name': menu.menuName
-            })
+        if option == 'menu':
+            menuList = Menu.objects.all()
+
+            for menu in menuList:
+                menulist.append({
+                    'id': menu.menuId,
+                    'name': menu.menuName
+                })
+        elif option == 'img':
+            restaurantMenuList = RestaurantMenu.objects.all()
+
+            for restaurantMenu in restaurantMenuList:
+                restaurant = restaurantMenu.restaurantId
+                menu = restaurantMenu.menuId
+                name = restaurant.restaurantName + '_' + menu.menuName
+
+                menulist.append({
+                    'id' : restaurantMenu.pk,
+                    'name' : name
+                })
 
         return HttpResponse(json.dumps({'storelist':storelist, 'menulist':menulist}), content_type="application/json")
 
